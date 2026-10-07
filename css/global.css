@@ -67,6 +67,131 @@
 
     --transition:
         0.25s ease;
+
+    --bg-page: #ffffff;
+    --bg-section: #ffffff;
+    --bg-section-alt: #f3f4f6;
+
+    --surface: #ffffff;
+    --surface-soft: #f8fafc;
+
+    --text-main: #111827;
+    --text-secondary: #4b5563;
+    --text-muted: #6b7280;
+
+    --border-color: #e5e7eb;
+
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+
+    --header-bg: #07111f;
+}
+html[data-theme="dark"] {
+
+    /* New theme variables */
+
+    --bg-page: #070b12;
+    --bg-section: #0b1220;
+    --bg-section-alt: #101827;
+
+    --surface: #111827;
+    --surface-soft: #172033;
+
+    --text-main: #f3f4f6;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+
+    --border-color: #263244;
+
+    --accent: #60a5fa;
+    --accent-soft: #172554;
+
+    --header-bg: #030712;
+
+
+    /* Existing variables used by your old CSS */
+
+    --color-white: #0b1220;
+
+    --color-header: #030712;
+
+    --color-text: #f3f4f6;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+
+    --color-primary: #60a5fa;
+    --color-primary-light: #172554;
+    --color-primary-border: #334155;
+
+    --color-gray-section: #101827;
+    --color-gray-light: #172033;
+
+    --color-border: #263244;
+    --color-border-dark: #334155;
+
+    color-scheme: dark;
+}
+
+body {
+    background: var(--bg-page);
+    color: var(--text-main);
+}
+
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-main);
+}
+
+
+p {
+    color: var(--text-secondary);
+}
+
+
+/* white sections */
+
+.about,
+.Skills,
+.Contact {
+    background: var(--bg-section);
+}
+
+
+/* gray sections */
+
+.Services,
+.Portfolio {
+    background: var(--bg-section-alt);
+}
+
+
+/* cards */
+
+.serviceCard,
+.projectCard {
+    background: var(--surface);
+
+    border-color: var(--border-color);
+}
+
+
+/* secondary elements */
+
+.serviceTags span,
+.projectTags span,
+.contactAvailability {
+    background: var(--surface-soft);
+
+    border-color: var(--border-color);
+
+    color: var(--text-secondary);
 }
 
 
@@ -723,6 +848,30 @@ p {
     background: #ffffff;
 }
 
+.aboutContent p {
+    color: var(--text-secondary);
+}
+
+
+.aboutProfile {
+    border-color: var(--border-color);
+}
+
+
+.aboutProfileItem {
+    border-color: var(--border-color);
+}
+
+
+.aboutLabel {
+    color: var(--text-muted);
+}
+
+
+.aboutProfileItem strong {
+    color: var(--text-main);
+}
+
 
 .aboutGrid {
     display: grid;
@@ -841,6 +990,30 @@ p {
     padding: 100px 0;
 }
 
+.Services .sectionTitle,
+.serviceCard h3 {
+    color: var(--text-main);
+}
+
+
+.Services .sectionHeader p,
+.serviceCard p {
+    color: var(--text-secondary);
+}
+
+
+.serviceNumber {
+    color: var(--text-muted);
+}
+
+
+.serviceIcon {
+    color: var(--accent);
+
+    background: var(--accent-soft);
+
+    border-color: var(--border-color);
+}
 
 /* =========================================================
    SERVICES HEADER
@@ -1180,6 +1353,25 @@ p {
     background: #ffffff;
 }
 
+.Skills .sectionHeader p,
+.skillGroup p {
+    color: var(--text-secondary);
+}
+
+
+.skillGroup {
+    border-color: var(--border-color);
+}
+
+
+.skillGroup h3 {
+    color: var(--text-main);
+}
+
+
+.skillsExpertise {
+    border-color: var(--border-color);
+}
 
 /* =========================================================
    HEADER
@@ -1542,6 +1734,20 @@ p {
     background: #f3f4f6;
 }
 
+.Portfolio .sectionHeader p,
+.projectContent p {
+    color: var(--text-secondary);
+}
+
+
+.projectContent h3 {
+    color: var(--text-main);
+}
+
+
+.projectMeta {
+    color: var(--text-muted);
+}
 
 /* =========================================================
    HEADER
@@ -1973,6 +2179,37 @@ p {
     background: #ffffff;
 }
 
+.contactLead {
+    color: var(--text-secondary);
+}
+
+
+.contactForm {
+    background: var(--surface-soft);
+
+    border-color: var(--border-color);
+}
+
+
+.formGroup label {
+    color: var(--text-main);
+}
+
+
+.formGroup input,
+.formGroup textarea {
+    color: var(--text-main);
+
+    background: var(--surface);
+
+    border-color: var(--border-color);
+}
+
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: var(--text-muted);
+}
 
 /* =========================================================
    CONTACT LAYOUT
@@ -3095,4 +3332,269 @@ p {
             0.01ms !important;
     }
 
+}
+
+/* =========================================================
+   DARK MODE — FINAL OVERRIDES
+   Must remain at the end of global.css
+   ========================================================= */
+
+html[data-theme="dark"] body {
+    background: var(--bg-page);
+    color: var(--text-main);
+}
+
+
+/* Sections */
+
+html[data-theme="dark"] .about,
+html[data-theme="dark"] .Skills,
+html[data-theme="dark"] .Contact {
+    background: var(--bg-section);
+}
+
+
+html[data-theme="dark"] .Services,
+html[data-theme="dark"] .Portfolio {
+    background: var(--bg-section-alt);
+}
+
+
+/* General text */
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+    color: var(--text-main);
+}
+
+
+html[data-theme="dark"] p {
+    color: var(--text-secondary);
+}
+
+
+/* About */
+
+html[data-theme="dark"] .aboutContent p {
+    color: var(--text-secondary);
+}
+
+
+html[data-theme="dark"] .aboutProfile,
+html[data-theme="dark"] .aboutProfileItem {
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .aboutLabel {
+    color: var(--text-muted);
+}
+
+
+html[data-theme="dark"] .aboutProfileItem strong {
+    color: var(--text-main);
+}
+
+
+/* Services */
+
+html[data-theme="dark"] .Services .sectionTitle,
+html[data-theme="dark"] .serviceCard h3 {
+    color: var(--text-main);
+}
+
+
+html[data-theme="dark"] .Services .sectionHeader p,
+html[data-theme="dark"] .serviceCard p {
+    color: var(--text-secondary);
+}
+
+
+html[data-theme="dark"] .serviceCard {
+    background: var(--surface);
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .serviceNumber {
+    color: var(--text-muted);
+}
+
+
+html[data-theme="dark"] .serviceTags span {
+    color: var(--text-secondary);
+
+    background: var(--surface-soft);
+
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .serviceIcon {
+    color: #93c5fd;
+
+    background: #172554;
+
+    border-color: #263244;
+}
+
+
+/* Skills */
+
+html[data-theme="dark"] .Skills .sectionHeader p,
+html[data-theme="dark"] .skillGroup p {
+    color: var(--text-secondary);
+}
+
+
+html[data-theme="dark"] .skillGroup h3 {
+    color: var(--text-main);
+}
+
+
+html[data-theme="dark"] .skillsExpertise,
+html[data-theme="dark"] .skillGroup {
+    border-color: var(--border-color);
+}
+
+
+/* Portfolio */
+
+html[data-theme="dark"] .projectCard {
+    background: var(--surface);
+
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .Portfolio .sectionHeader p,
+html[data-theme="dark"] .projectContent p {
+    color: var(--text-secondary);
+}
+
+
+html[data-theme="dark"] .projectContent h3 {
+    color: var(--text-main);
+}
+
+
+html[data-theme="dark"] .projectMeta {
+    color: var(--text-muted);
+}
+
+
+html[data-theme="dark"] .projectTags span,
+html[data-theme="dark"] .projectStatus {
+    color: var(--text-secondary);
+
+    background: var(--surface-soft);
+
+    border-color: var(--border-color);
+}
+
+
+/* Contact */
+
+html[data-theme="dark"] .Contact .sectionTitle {
+    color: var(--text-main);
+}
+
+
+html[data-theme="dark"] .contactLead {
+    color: var(--text-secondary);
+}
+
+
+html[data-theme="dark"] .contactAvailability {
+    color: var(--text-secondary);
+
+    background: var(--surface-soft);
+
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .contactForm {
+    background: var(--surface-soft);
+
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .formGroup label {
+    color: var(--text-main);
+}
+
+
+html[data-theme="dark"] .formGroup input,
+html[data-theme="dark"] .formGroup textarea {
+    color: var(--text-main);
+
+    background: var(--surface);
+
+    border-color: var(--border-color);
+}
+
+
+html[data-theme="dark"] .formGroup input:focus,
+html[data-theme="dark"] .formGroup textarea:focus {
+    background: var(--surface);
+}
+
+
+/* Header */
+
+html[data-theme="dark"] .header {
+    background: var(--header-bg);
+}
+
+/* =========================================================
+   THEME TOGGLE
+   ========================================================= */
+
+.themeToggle {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    color: #d1d5db;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.themeToggle:hover {
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    transform: translateY(-2px);
+}
+
+
+.themeIcon {
+    font-size: 1.15rem;
+
+    line-height: 1;
 }
