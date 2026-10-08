@@ -505,6 +505,18 @@ p {
     color: var(--color-white);
 }
 
+/* =========================================================
+   ACTIVE NAVIGATION LINK
+   ========================================================= */
+
+.navbar a.active {
+    color: #ffffff;
+}
+
+
+.navbar a.active::after {
+    width: 100%;
+}
 
 .navbar a::after {
     content: "";
