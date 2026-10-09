@@ -1,79 +1,36 @@
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
-
-    <!-- =====================================================
-         BASIC META
-         ===================================================== -->
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Pascal Nague | Machine Learning, Data & AI Portfolio
-    </title>
-
+    <title>Pascal Nague | Machine Learning, Data & AI Portfolio</title>
     <meta name="description"
-        content="Portfolio of Pascal Nague, Computer Science student in Germany focused on Machine Learning, Data Engineering, AI evaluation and PyTorch systems.">
-
+        content="Portfolio of Pascal Nague, Computer Science student in Germany focused on Machine Learning, Data Engineering, AI evaluation, computer vision and PyTorch systems.">
     <meta name="author" content="Pascal Cabrel Nague">
-
     <meta name="robots" content="index, follow">
-
-
-    <!-- =====================================================
-         CANONICAL URL
-         ===================================================== -->
-
-    <link rel="canonical" href="https://pascal-cabrel-nague-portfolio.netlify.app/">
-
-
-    <!-- =====================================================
-         OPEN GRAPH
-         LinkedIn, WhatsApp, Facebook, Discord...
-         ===================================================== -->
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:title" content="Pascal Nague | Machine Learning, Data & AI Portfolio">
-
-    <meta property="og:description"
-        content="Computer Science student focused on Machine Learning, Data Engineering, AI evaluation and high-performance PyTorch data pipelines.">
-
-    <meta property="og:url" content="https://pascal-cabrel-nague-portfolio.netlify.app/">
-
-    <meta property="og:image" content="https://pascal-cabrel-nague-portfolio.netlify.app/img/hero-pascal.png">
-
-    <meta property="og:image:alt" content="Pascal Nague — Machine Learning, Data and AI Portfolio">
-
-
-    <!-- =====================================================
-         TWITTER / X CARD
-         ===================================================== -->
-
-    <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title" content="Pascal Nague | Machine Learning, Data & AI Portfolio">
-
-    <meta name="twitter:description"
-        content="Computer Science student focused on Machine Learning, Data Engineering, AI evaluation and PyTorch systems.">
-
-    <meta name="twitter:image" content="https://pascal-cabrel-nague-portfolio.netlify.app/img/hero-pascal.png">
-
-
-    <!-- =====================================================
-         BROWSER
-         ===================================================== -->
-
+    <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#07111f">
 
+    <link rel="canonical" href="https://pascal-cabrel-nague-portfolio.netlify.app/">
     <link rel="shortcut icon" href="./img/favicon.png?v=1" type="image/x-icon">
 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pascal Nague Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Pascal Nague | Machine Learning, Data & AI Portfolio">
+    <meta property="og:description"
+        content="Computer Science student focused on Machine Learning, Data Engineering, AI evaluation, computer vision and performance-oriented PyTorch systems.">
+    <meta property="og:url" content="https://pascal-cabrel-nague-portfolio.netlify.app/">
+    <meta property="og:image" content="https://pascal-cabrel-nague-portfolio.netlify.app/img/hero-pascal.png">
+    <meta property="og:image:alt" content="Pascal Nague — Machine Learning, Data and AI Portfolio">
 
-    <!-- =====================================================
-         STRUCTURED DATA — PERSON
-         ===================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pascal Nague | Machine Learning, Data & AI Portfolio">
+    <meta name="twitter:description"
+        content="Computer Science student focused on Machine Learning, Data Engineering, AI evaluation, computer vision and PyTorch systems.">
+    <meta name="twitter:image" content="https://pascal-cabrel-nague-portfolio.netlify.app/img/hero-pascal.png">
+    <meta name="twitter:image:alt" content="Pascal Nague — Machine Learning, Data and AI Portfolio">
 
     <script type="application/ld+json">
     {
@@ -85,15 +42,18 @@
         "jobTitle": "Computer Science Student",
         "affiliation": {
             "@type": "EducationalOrganization",
-            "name": "RPTU Kaiserslautern"
+            "name": "RPTU Kaiserslautern-Landau"
         },
         "knowsAbout": [
             "Machine Learning",
             "Data Engineering",
             "Artificial Intelligence",
             "LLM Evaluation",
+            "Speech Recognition Evaluation",
+            "Computer Vision",
             "PyTorch",
             "Data Pipelines",
+            "Performance Benchmarking",
             "Python"
         ],
         "sameAs": [
@@ -105,141 +65,197 @@
     }
     </script>
 
-
-    <!-- =====================================================
-         CSS
-         ===================================================== -->
+    <script>
+        (() => {
+            try {
+                const savedTheme = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+            } catch (_) {
+                document.documentElement.dataset.theme = "light";
+            }
+        })();
+    </script>
 
     <link rel="stylesheet" href="./css/global.css">
-
 </head>
 
 <body>
 
-
-    <!-- 
-    Header
-     logo
-     menu
-     social media
-     burger
-    hero
-     left
-     right
-     
-    About
-     left
-     right
-    
-    Services
-    competences/Skills
-    Portfolio
-    Contact
-
-    Footer
-    -->
-
     <header class="header" id="toto">
+
         <div class="container">
+
             <div class="logo">
 
-                <img src="./img/favicon.png?v=1" alt="Mr. Nague" class="logo-favicon">
+                <img src="./img/favicon.png?v=1" alt="Pascal Nague" class="logo-favicon">
+
                 <span>Pascal Nague</span>
+
             </div>
 
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Primary navigation">
+
                 <ul class="menu list-unstyled">
-                    <li><a href="#hero">Accueil</a></li>
+
+                    <li><a href="#hero">Home</a></li>
+
                     <li><a href="#About">About</a></li>
+
                     <li><a href="#Services">Services</a></li>
+
                     <li><a href="#Skills">Skills</a></li>
+
                     <li><a href="#portfolio">Portfolio</a></li>
+
                     <li><a href="#Contact">Contact</a></li>
+
                 </ul>
+
             </nav>
 
             <div class="right">
+
                 <ul class="social list-unstyled">
-                    <li><a href="https://www.linkedin.com/in/pascal-nague/" target="_blank">
+
+                    <li><a href="https://www.linkedin.com/in/pascal-nague/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+
                             <svg width="18" height="18" class="icon-linkedin" xmlns="http://www.w3.org/2000/svg"
+
                                 viewBox="0 0 640 640">
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+
                                 <path
+
                                     d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
+
                             </svg>
+
                         </a>
+
                     </li>
-                    <li><a href="https://www.youtube.com/@Mr_Nague" target="_blank">
+
+                    <li><a href="https://www.youtube.com/@Mr_Nague" target="_blank" rel="noopener noreferrer" aria-label="YouTube channel">
+
                             <svg width="18" height="18" class="icon-youtube" xmlns="http://www.w3.org/2000/svg"
+
                                 viewBox="0 0 640 640">
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+
                                 <path
+
                                     d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
+
                             </svg>
+
                         </a>
+
                     </li>
-                    <li><a href="https://www.youtube.com/@Mr_Nague_DE" target="_blank">
+
+                    <li><a href="https://www.youtube.com/@Mr_Nague_DE" target="_blank" rel="noopener noreferrer" aria-label="German YouTube channel">
+
                             <svg width="18" height="18" class="icon-youtube" xmlns="http://www.w3.org/2000/svg"
+
                                 viewBox="0 0 640 640">
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+
                                 <path
+
                                     d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
+
                             </svg>
+
                         </a></li>
-                    <li><a href="https://www.youtube.com/@Mr_Nague_EN" target="_blank">
+
+                    <li><a href="https://www.youtube.com/@Mr_Nague_EN" target="_blank" rel="noopener noreferrer" aria-label="English YouTube channel">
+
                             <svg width="18" height="18" class="icon-youtube" xmlns="http://www.w3.org/2000/svg"
+
                                 viewBox="0 0 640 640">
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+
                                 <path
+
                                     d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
+
                             </svg>
+
                         </a></li>
-                    <li><a href="https://www.xing.com/profile/Pascal_Nague" target="_blank">
+
+                    <li><a href="https://www.xing.com/profile/Pascal_Nague" target="_blank" rel="noopener noreferrer" aria-label="Xing profile">
+
                             <svg width="18" height="18" class="icon-Xing" xmlns="http://www.w3.org/2000/svg"
+
                                 viewBox="0 0 640 640">
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+
                                 <path
+
                                     d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM189.8 384.2C184.3 384.2 181.1 378.9 183.8 373.9L233.1 287.2C233.2 287.2 233.2 287.1 233.1 287L201.7 233C198.7 227.4 201.9 222.9 207.7 222.9L254.3 222.9C259.5 222.9 263.8 225.8 267.2 231.6L299.1 286.9C297.8 289.2 281.1 318.6 249 375.1C245.5 381.3 241.3 384.2 236.4 384.2L189.8 384.2zM353.3 350.8L353.3 351L418.8 470C421.6 475.1 418.9 480.1 412.8 480.1L366.2 480.1C360.7 480.1 356.5 477.2 353.3 471.4L287.3 351.1C289.1 347.9 310.2 310.7 350.6 239.5C362.3 218.8 375.7 195.2 390.7 168.7C394 162.9 398.1 160 403.2 160L450.1 160C455.8 159.9 458.9 164.7 456.1 170L353.3 350.8z" />
+
                             </svg>
+
                         </a>
+
                     </li>
-                    <li><a href="https://github.com/MrNague" target="_blank">
+
+                    <li><a href="https://github.com/MrNague" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+
                             <svg width="18" height="18" class="icon-gitHub" xmlns="http://www.w3.org/2000/svg"
+
                                 viewBox="0 0 640 640">
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+
                                 <path
+
                                     d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z" />
+
                             </svg>
+
                         </a>
+
                     </li>
+
                 </ul>
-                <button class="themeToggle" id="themeToggle" type="button" aria-label="Switch to dark mode"
-                    title="Change theme">
-                    <span class="themeIcon">☾</span>
+
+                <button class="themeToggle" id="themeToggle" type="button"
+                    aria-label="Switch to dark mode" title="Change theme">
+                    <span class="themeIcon" aria-hidden="true">☾</span>
                 </button>
+
                 <button class="burguer" type="button" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="bar">Menu</span>
                 </button>
+
             </div>
+
         </div>
+
     </header>
 
     <section id="hero" class="hero">
-        <div class="container">
-            <div class="grid">
-                <div class="hero_item left">
-                    <span><i>Machine Learning & Data</i></span>
-                    <h1 class="title">Hello, I'm Pascal Nague</h1>
-                    <p>
-                        Computer Science student specializing in Machine Learning and Data.
-                        I develop practical AI solutions, analyze data, evaluate models and optimize
-                        machine learning pipelines with Python and PyTorch.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
+        <div class="container">
+
+            <div class="grid">
+
+                <div class="hero_item left">
+
+                    <span><i>Machine Learning & Data</i></span>
+
+                    <h1 class="title">Hello, I'm Pascal Nague</h1>
+
+                    <p>
+
+                        Computer Science student specializing in Machine Learning and Data.
+
+                        I develop practical AI solutions, analyze data, evaluate models and optimize
+
+                        machine learning pipelines with Python and PyTorch.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
     <section id="About" class="about">
 
@@ -247,7 +263,6 @@
 
             <div class="aboutGrid">
 
-                <!-- LEFT -->
                 <div class="aboutContent">
 
                     <h2 class="sectionTitle">About</h2>
@@ -255,35 +270,45 @@
                     <h3>Who I am</h3>
 
                     <p>
+
                         I’m Pascal Nague, a Computer Science student at RPTU
+
                         Kaiserslautern with a strong focus on Machine Learning,
+
                         Data and AI systems.
+
                     </p>
 
                     <p>
+
                         I enjoy understanding how intelligent systems work —
+
                         from the data they consume to the way their performance,
+
                         reliability and efficiency are measured.
+
                     </p>
 
                     <p>
                         My work combines Python, PyTorch, data analysis,
-                        machine learning experimentation and performance
-                        benchmarking. My bachelor project focuses on efficient
-                        data loading for PyTorch, particularly the pipeline
-                        between storage, preprocessing and model training.
+                        machine learning experimentation and performance benchmarking.
+                        My completed Bachelor Project at DFKI focused on efficient
+                        PyTorch data loading, concurrent pipelines and reproducible
+                        performance measurement, followed by external validation on Food-101.
                     </p>
 
                     <p>
+
                         I am especially interested in building practical systems
+
                         that are measurable, understandable and useful in
+
                         real-world environments.
+
                     </p>
 
                 </div>
 
-
-                <!-- RIGHT -->
                 <div class="aboutProfile">
 
                     <div class="aboutProfileItem">
@@ -291,51 +316,57 @@
                         <span class="aboutLabel">Current focus</span>
 
                         <strong>
-                            Machine Learning & Data Engineering
+
+                            Machine Learning · Data Engineering · AI Systems
+
                         </strong>
 
                     </div>
-
 
                     <div class="aboutProfileItem">
 
                         <span class="aboutLabel">Bachelor Project</span>
 
                         <strong>
+
                             Efficient PyTorch Data Loading
+
                         </strong>
 
                     </div>
-
 
                     <div class="aboutProfileItem">
 
                         <span class="aboutLabel">Core technologies</span>
 
                         <strong>
-                            Python · PyTorch · SQL · Linux · Git
+
+                            Python · PyTorch · SQL · Git · Linux · Docker
+
                         </strong>
 
                     </div>
-
 
                     <div class="aboutProfileItem">
 
                         <span class="aboutLabel">Interests</span>
 
                         <strong>
-                            ML Systems · LLM Evaluation · Data Pipelines
+
+                            ML Systems · LLM Evaluation · Computer Vision · Data Pipelines
+
                         </strong>
 
                     </div>
-
 
                     <div class="aboutProfileItem">
 
                         <span class="aboutLabel">Location</span>
 
                         <strong>
+
                             Germany
+
                         </strong>
 
                     </div>
@@ -347,7 +378,6 @@
         </div>
 
     </section>
-
 
     <section id="Services" class="Services">
 
@@ -360,17 +390,19 @@
                 <h2 class="sectionTitle">Services</h2>
 
                 <p>
+
                     I work on practical problems across data, machine learning and AI evaluation.
+
                     My focus is on building measurable solutions, understanding model behaviour,
+
                     automating data workflows and improving the performance of ML pipelines.
+
                 </p>
 
             </div>
 
-
             <div class="servicesGrid">
 
-                <!-- 01 -->
                 <article class="serviceCard">
 
                     <div class="serviceCardTop">
@@ -378,10 +410,15 @@
                         <span class="serviceNumber">01</span>
 
                         <div class="serviceIcon">
+
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
                                 <path d="M3 4h18l-7 8v7l-4 2v-9L3 4Z" />
+
                             </svg>
+
                         </div>
 
                     </div>
@@ -389,20 +426,25 @@
                     <h3>Data Analysis & Preparation</h3>
 
                     <p>
+
                         Cleaning, exploring and structuring datasets so that raw data becomes
+
                         reliable, understandable and ready for analysis or machine learning.
+
                     </p>
 
                     <div class="serviceTags">
+
                         <span>Python</span>
+
                         <span>NumPy</span>
+
                         <span>EDA</span>
+
                     </div>
 
                 </article>
 
-
-                <!-- 02 -->
                 <article class="serviceCard">
 
                     <div class="serviceCardTop">
@@ -410,23 +452,39 @@
                         <span class="serviceNumber">02</span>
 
                         <div class="serviceIcon">
+
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
                                 <circle cx="4" cy="6" r="2" />
+
                                 <circle cx="4" cy="18" r="2" />
+
                                 <circle cx="12" cy="4" r="2" />
+
                                 <circle cx="12" cy="12" r="2" />
+
                                 <circle cx="12" cy="20" r="2" />
+
                                 <circle cx="20" cy="12" r="2" />
 
                                 <path d="M6 6l4-2" />
+
                                 <path d="M6 6l4 6" />
+
                                 <path d="M6 18l4-6" />
+
                                 <path d="M6 18l4 2" />
+
                                 <path d="M14 4l4 8" />
+
                                 <path d="M14 12h4" />
+
                                 <path d="M14 20l4-8" />
+
                             </svg>
+
                         </div>
 
                     </div>
@@ -434,20 +492,25 @@
                     <h3>Machine Learning Prototyping</h3>
 
                     <p>
+
                         Building initial classification, regression or clustering models,
+
                         establishing baselines and evaluating whether an ML approach is useful.
+
                     </p>
 
                     <div class="serviceTags">
+
                         <span>PyTorch</span>
+
                         <span>ML</span>
+
                         <span>Prototyping</span>
+
                     </div>
 
                 </article>
 
-
-                <!-- 03 -->
                 <article class="serviceCard">
 
                     <div class="serviceCardTop">
@@ -455,15 +518,25 @@
                         <span class="serviceNumber">03</span>
 
                         <div class="serviceIcon">
+
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
                                 <path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3" />
+
                                 <rect x="9" y="2" width="6" height="4" rx="1" />
+
                                 <path d="m7 11 1.5 1.5L11 10" />
+
                                 <path d="M14 11h3" />
+
                                 <path d="m7 17 1.5 1.5L11 16" />
+
                                 <path d="M14 17h3" />
+
                             </svg>
+
                         </div>
 
                     </div>
@@ -471,20 +544,25 @@
                     <h3>ML Model Evaluation</h3>
 
                     <p>
+
                         Measuring model performance using appropriate metrics, error analysis
+
                         and structured comparisons to understand where a model succeeds or fails.
+
                     </p>
 
                     <div class="serviceTags">
+
                         <span>F1</span>
+
                         <span>Precision</span>
+
                         <span>Error Analysis</span>
+
                     </div>
 
                 </article>
 
-
-                <!-- 04 -->
                 <article class="serviceCard">
 
                     <div class="serviceCardTop">
@@ -492,14 +570,23 @@
                         <span class="serviceNumber">04</span>
 
                         <div class="serviceIcon">
+
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
                                 <path d="M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16l4-4h5" />
+
                                 <path d="M7 7h10" />
+
                                 <path d="M7 11h5" />
+
                                 <circle cx="18" cy="17" r="5" />
+
                                 <path d="m15.5 17 1.5 1.5 3-3" />
+
                             </svg>
+
                         </div>
 
                     </div>
@@ -507,20 +594,25 @@
                     <h3>AI & LLM Quality Evaluation</h3>
 
                     <p>
+
                         Designing test cases, evaluation criteria and error categories to assess
+
                         chatbot and LLM behaviour across realistic prompts and edge cases.
+
                     </p>
 
                     <div class="serviceTags">
+
                         <span>LLM</span>
+
                         <span>Evaluation</span>
+
                         <span>QA</span>
+
                     </div>
 
                 </article>
 
-
-                <!-- 05 -->
                 <article class="serviceCard">
 
                     <div class="serviceCardTop">
@@ -528,14 +620,23 @@
                         <span class="serviceNumber">05</span>
 
                         <div class="serviceIcon">
+
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
                                 <path d="M20 8a8.5 8.5 0 0 0-14-3L3 8" />
+
                                 <path d="M3 3v5h5" />
+
                                 <path d="M4 16a8.5 8.5 0 0 0 14 3l3-3" />
+
                                 <path d="M16 16h5v5" />
+
                                 <path d="m13 7-4 6h4l-2 4 5-6h-4l1-4Z" />
+
                             </svg>
+
                         </div>
 
                     </div>
@@ -543,20 +644,25 @@
                     <h3>Data Workflow Automation</h3>
 
                     <p>
+
                         Automating repetitive data tasks such as merging files, transforming
+
                         exports, calculating metrics and generating repeatable reports.
+
                     </p>
 
                     <div class="serviceTags">
+
                         <span>Python</span>
+
                         <span>Automation</span>
+
                         <span>Workflows</span>
+
                     </div>
 
                 </article>
 
-
-                <!-- 06 -->
                 <article class="serviceCard">
 
                     <div class="serviceCardTop">
@@ -564,16 +670,27 @@
                         <span class="serviceNumber">06</span>
 
                         <div class="serviceIcon">
+
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
                                 <rect x="2" y="3" width="5" height="5" rx="1" />
+
                                 <rect x="17" y="3" width="5" height="5" rx="1" />
+
                                 <path d="M7 5.5h10" />
+
                                 <path d="m14 3 3 2.5-3 2.5" />
+
                                 <circle cx="12" cy="16" r="6" />
+
                                 <path d="M12 13v3l2 1" />
+
                                 <path d="M10 8h4" />
+
                             </svg>
+
                         </div>
 
                     </div>
@@ -581,14 +698,21 @@
                     <h3>PyTorch Pipeline Performance Analysis</h3>
 
                     <p>
+
                         Benchmarking data-loading pipelines, comparing DataLoader configurations
+
                         and identifying bottlenecks that affect throughput and model training.
+
                     </p>
 
                     <div class="serviceTags">
+
                         <span>PyTorch</span>
+
                         <span>DataLoader</span>
+
                         <span>Benchmarking</span>
+
                     </div>
 
                 </article>
@@ -598,8 +722,6 @@
         </div>
 
     </section>
-
-
 
     <section id="Skills" class="Skills">
 
@@ -612,17 +734,19 @@
                 <h2 class="sectionTitle">Skills & Technologies</h2>
 
                 <p>
+
                     My technical background combines software development,
+
                     data analysis, machine learning and performance-oriented
+
                     ML systems.
+
                 </p>
 
             </div>
 
-
             <div class="skillsLayout">
 
-                <!-- LEFT -->
                 <div class="skillsExpertise">
 
                     <article class="skillGroup">
@@ -630,144 +754,193 @@
                         <span class="skillNumber">01</span>
 
                         <div>
+
                             <h3>Programming</h3>
 
                             <p>
+
                                 Python · Java · SQL · HTML · CSS · JavaScript
+
                             </p>
+
                         </div>
 
                     </article>
-
 
                     <article class="skillGroup">
 
                         <span class="skillNumber">02</span>
 
                         <div>
+
                             <h3>Data Analysis</h3>
 
                             <p>
+
                                 Data Cleaning · Exploratory Data Analysis ·
+
                                 Data Visualization · Numerical Computing
+
                             </p>
+
                         </div>
 
                     </article>
-
 
                     <article class="skillGroup">
 
                         <span class="skillNumber">03</span>
 
                         <div>
+
                             <h3>Machine Learning</h3>
 
                             <p>
+
                                 Classification · Regression · Model Evaluation ·
+
                                 Cross-Validation · Error Analysis
+
                             </p>
+
                         </div>
 
                     </article>
-
 
                     <article class="skillGroup">
 
                         <span class="skillNumber">04</span>
 
                         <div>
+
                             <h3>Deep Learning & Computer Vision</h3>
 
                             <p>
-                                PyTorch · CNNs · Image Classification ·
+
+                                PyTorch · CNNs · YOLOv8 · OpenCV · Image Classification ·
+
                                 Training · Validation · Image Preprocessing
+
                             </p>
+
                         </div>
 
                     </article>
-
 
                     <article class="skillGroup">
 
                         <span class="skillNumber">05</span>
 
                         <div>
+
                             <h3>ML Systems & Performance</h3>
 
                             <p>
-                                PyTorch DataLoader · Data Pipelines ·
-                                Throughput Benchmarking · Bottleneck Analysis ·
-                                Multiprocessing
+
+                                PyTorch DataLoader · Data Pipelines · Concurrency ·
+
+                                Multithreading · Multiprocessing · Throughput Benchmarking ·
+
+                                Bottleneck Analysis
+
                             </p>
+
                         </div>
 
                     </article>
-
 
                     <article class="skillGroup">
 
                         <span class="skillNumber">06</span>
 
                         <div>
+
                             <h3>AI & LLM Evaluation</h3>
 
                             <p>
-                                Test Case Design · Evaluation Criteria ·
+
+                                Test Case Design · WER/CER · ASR Evaluation ·
+
                                 Error Classification · Quality Assessment
+
                             </p>
+
                         </div>
 
                     </article>
 
                 </div>
 
-
-                <!-- RIGHT -->
                 <aside class="skillsStack">
 
                     <span class="skillsStackLabel">
+
                         Core stack
+
                     </span>
 
                     <h3>
+
                         Tools I work with
+
                     </h3>
 
                     <p class="skillsStackIntro">
-                        Technologies and environments I use across
-                        development, experimentation and evaluation.
-                    </p>
 
+                        Technologies and environments I use across
+
+                        development, experimentation and evaluation.
+
+                    </p>
 
                     <div class="technologyGrid">
 
                         <span>Python</span>
+
                         <span>PyTorch</span>
+
                         <span>NumPy</span>
+
                         <span>SQL</span>
+
                         <span>Git</span>
+
                         <span>Linux</span>
+
                         <span>Jupyter</span>
+
                         <span>SLURM</span>
+
+                        <span>OpenCV</span>
+
+                        <span>scikit-learn</span>
+
+                        <span>FastAPI</span>
+
+                        <span>Docker</span>
 
                     </div>
 
-
                     <div class="skillsStackDivider"></div>
 
-
                     <span class="skillsStackLabel">
+
                         Current focus
+
                     </span>
 
                     <div class="focusTags">
 
                         <span>Machine Learning</span>
+
                         <span>Data Pipelines</span>
+
                         <span>ML Evaluation</span>
+
                         <span>LLM Evaluation</span>
+
                         <span>Performance Benchmarking</span>
+
                         <span>Computer Vision</span>
 
                     </div>
@@ -780,7 +953,6 @@
 
     </section>
 
-
     <section id="portfolio" class="Portfolio">
 
         <div class="container">
@@ -792,25 +964,74 @@
                 <h2 class="sectionTitle">Portfolio</h2>
 
                 <p>
-                    A selection of projects focused on machine learning,
-                    AI evaluation, data pipelines and performance analysis.
+                    Selected engineering projects across ML systems, AI evaluation,
+                    computer vision, end-to-end ML applications and performance benchmarking.
                 </p>
 
             </div>
 
-
             <div class="portfolioGrid">
 
-                <!-- PROJECT 01 -->
                 <article class="projectCard projectFeatured">
+
+                    <div class="projectVisual projectVisualPerformance">
+
+                        <div class="projectVisualContent">
+
+                            <span class="projectVisualLabel">ML Systems · Bachelor Project</span>
+
+                            <strong>
+                                Minimal Dataset
+                                <br>
+                                for PyTorch
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="projectContent">
+
+                        <div class="projectMeta">
+                            <span>01</span>
+                            <span>Completed · DFKI</span>
+                        </div>
+
+                        <h3>Minimal Dependency Dataset Library for PyTorch</h3>
+
+                        <p>
+                            A lightweight experimental library for Parquet-backed image datasets with a
+                            custom multi-threaded DataLoader, throughput instrumentation and reproducible
+                            benchmarks. The optimized loader reached a measured peak of 3,245 samples/s on
+                            the project benchmark and was published as a PyPI package.
+                        </p>
+
+                        <div class="projectTags">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>Parquet</span>
+                            <span>Concurrency</span>
+                            <span>Benchmarking</span>
+                            <span>PyPI</span>
+                        </div>
+
+                        <a href="https://github.com/MrNague/minimal-dataset-pytorch" target="_blank"
+                            rel="noopener noreferrer" class="projectLink">
+                            View project
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="projectCard">
 
                     <div class="projectVisual">
 
                         <div class="projectVisualContent">
 
-                            <span class="projectVisualLabel">
-                                AI Evaluation
-                            </span>
+                            <span class="projectVisualLabel">AI Evaluation</span>
 
                             <strong>
                                 Speech & LLM
@@ -822,38 +1043,27 @@
 
                     </div>
 
-
                     <div class="projectContent">
 
                         <div class="projectMeta">
-
-                            <span>01</span>
-
-                            <span>Machine Learning · AI</span>
-
+                            <span>02</span>
+                            <span>Active development</span>
                         </div>
 
-
-                        <h3>
-                            Speech & LLM Quality Lab
-                        </h3>
+                        <h3>Speech & LLM Quality Lab</h3>
 
                         <p>
-                            An experimental evaluation environment for studying
-                            speech transcription quality, LLM-assisted workflows
-                            and reproducible quality measurements.
+                            An engineering and learning project for evaluating French speech-to-text
+                            outputs and reviewing language-model responses. The current foundation includes
+                            manifest validation, ASR pilot tooling, WER/CER metrics, reporting and automated tests.
                         </p>
 
-
                         <div class="projectTags">
-
                             <span>Python</span>
+                            <span>ASR</span>
+                            <span>WER/CER</span>
                             <span>LLM Evaluation</span>
-                            <span>Speech</span>
-                            <span>Benchmarking</span>
-
                         </div>
-
 
                         <a href="https://github.com/MrNague/speech-llm-quality-lab" target="_blank"
                             rel="noopener noreferrer" class="projectLink">
@@ -865,126 +1075,149 @@
 
                 </article>
 
-
-                <!-- PROJECT 02 -->
                 <article class="projectCard">
 
-                    <div class="projectVisual projectVisualPerformance">
+                    <div class="projectVisual projectVisualBenchmark">
 
                         <div class="projectVisualContent">
 
-                            <span class="projectVisualLabel">
-                                ML Systems
-                            </span>
+                            <span class="projectVisualLabel">External Validation</span>
 
                             <strong>
-                                PyTorch Data
+                                Food-101
                                 <br>
-                                Loading
+                                Benchmark
                             </strong>
 
                         </div>
 
                     </div>
 
-
                     <div class="projectContent">
 
                         <div class="projectMeta">
-                            <span>02</span>
-                            <span>Bachelor Project</span>
+                            <span>03</span>
+                            <span>ML Systems</span>
                         </div>
 
-                        <h3>
-                            PyTorch Data Loading Performance
-                        </h3>
+                        <h3>Real-World Food-101 DataLoader Benchmark</h3>
 
                         <p>
-                            A completed performance study of machine learning data pipelines,
-                            including throughput measurements, DataLoader configuration comparisons
-                            and bottleneck analysis between storage and model training.
+                            External validation of the custom PyTorch data-loading library on a reproducible
+                            10,000-image Food-101 workload. The experiments compare scaling across worker counts,
+                            resolutions and batch sizes and demonstrate that DataLoader performance is workload-dependent.
                         </p>
 
                         <div class="projectTags">
                             <span>PyTorch</span>
-                            <span>DataLoader</span>
-                            <span>Performance</span>
+                            <span>Food-101</span>
+                            <span>Parquet</span>
                             <span>Benchmarking</span>
                         </div>
 
-                        <a href="https://github.com/MrNague/minimal-dataset-pytorch" target="_blank"
+                        <a href="https://github.com/MrNague/food101-dataloader-benchmark" target="_blank"
                             rel="noopener noreferrer" class="projectLink">
                             View project
                             <span aria-hidden="true">↗</span>
                         </a>
+
                     </div>
 
                 </article>
 
-
-                <!-- PROJECT 03 -->
                 <article class="projectCard">
 
-                    <div class="projectVisual projectVisualWeb">
+                    <div class="projectVisual projectVisualVision">
 
                         <div class="projectVisualContent">
 
-                            <span class="projectVisualLabel">
-                                Web Development
-                            </span>
+                            <span class="projectVisualLabel">Computer Vision</span>
 
                             <strong>
-                                Personal
+                                YOLO Webcam
                                 <br>
-                                Portfolio
+                                Detection
                             </strong>
 
                         </div>
 
                     </div>
 
-
                     <div class="projectContent">
 
                         <div class="projectMeta">
-
-                            <span>03</span>
-
-                            <span>Frontend</span>
-
+                            <span>04</span>
+                            <span>Real-time application</span>
                         </div>
 
-
-                        <h3>
-                            Personal Portfolio Website
-                        </h3>
+                        <h3>YOLO Webcam Detection</h3>
 
                         <p>
-                            A responsive portfolio designed and developed from scratch
-                            to present my machine learning projects, technical skills
-                            and professional profile.
+                            A modular real-time computer-vision application built with YOLOv8 and OpenCV,
+                            including webcam streaming, person filtering, configurable alert logic,
+                            automated screenshots and runtime statistics.
                         </p>
 
-
                         <div class="projectTags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Responsive Design</span>
-
+                            <span>Python</span>
+                            <span>YOLOv8</span>
+                            <span>OpenCV</span>
+                            <span>Computer Vision</span>
                         </div>
 
-
-                        <span class="projectStatus">
-                            Current project
-                        </span>
-
-                        <a href="https://github.com/MrNague/front-end-training" target="_blank"
+                        <a href="https://github.com/MrNague/yolo-webcam-detection" target="_blank"
                             rel="noopener noreferrer" class="projectLink">
                             View project
                             <span aria-hidden="true">↗</span>
                         </a>
+
+                    </div>
+
+                </article>
+
+                <article class="projectCard">
+
+                    <div class="projectVisual projectVisualMLOps">
+
+                        <div class="projectVisualContent">
+
+                            <span class="projectVisualLabel">End-to-End ML</span>
+
+                            <strong>
+                                Real Estate
+                                <br>
+                                Price Prediction
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="projectContent">
+
+                        <div class="projectMeta">
+                            <span>05</span>
+                            <span>ML Application</span>
+                        </div>
+
+                        <h3>Real Estate Price Prediction</h3>
+
+                        <p>
+                            An end-to-end machine-learning application covering data generation and feature engineering,
+                            Random Forest modelling, MLflow experiment tracking, a FastAPI prediction API,
+                            a Streamlit interface and Docker-based packaging.
+                        </p>
+
+                        <div class="projectTags">
+                            <span>scikit-learn</span>
+                            <span>FastAPI</span>
+                            <span>MLflow</span>
+                            <span>Streamlit</span>
+                            <span>Docker</span>
+                        </div>
+
+                        <span class="projectStatus">Private repository</span>
+
                     </div>
 
                 </article>
@@ -1004,17 +1237,25 @@
                 <div class="contactIntro">
 
                     <span class="sectionEyebrow">
+
                         Get in touch
+
                     </span>
 
                     <h2 class="sectionTitle">
+
                         Let's work together
+
                     </h2>
 
                     <p class="contactLead">
+
                         Whether you have a data problem, a machine learning project,
+
                         an AI evaluation task or simply want to discuss a technical
+
                         collaboration, feel free to contact me.
+
                     </p>
 
                     <div class="contactAvailability">
@@ -1022,8 +1263,11 @@
                         <span class="availabilityDot"></span>
 
                         <span>
+
                             Open to Werkstudent opportunities, projects
+
                             and technical collaborations.
+
                         </span>
 
                     </div>
@@ -1031,41 +1275,54 @@
                     <div class="contactLinks">
 
                         <a href="https://www.linkedin.com/in/pascal-nague/" target="_blank" rel="noopener noreferrer">
+
                             LinkedIn
+
                             <span aria-hidden="true">↗</span>
+
                         </a>
 
                         <a href="https://github.com/MrNague" target="_blank" rel="noopener noreferrer">
+
                             GitHub
+
                             <span aria-hidden="true">↗</span>
+
                         </a>
 
                     </div>
 
                 </div>
 
-                <form name="contact" method="post" data-netlify="true" class="contactForm">
+                <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" class="contactForm">
                     <input type="hidden" name="form-name" value="contact">
+                    <p hidden>
+                        <label>Do not fill this out: <input name="bot-field"></label>
+                    </p>
 
                     <div class="formRow">
 
                         <div class="formGroup">
 
                             <label for="firstname">
+
                                 First name
+
                             </label>
 
-                            <input type="text" id="firstname" name="firstname" placeholder="Your first name" required>
+                            <input type="text" id="firstname" name="firstname" autocomplete="given-name" placeholder="Your first name" required>
 
                         </div>
 
                         <div class="formGroup">
 
                             <label for="lastname">
+
                                 Last name
+
                             </label>
 
-                            <input type="text" id="lastname" name="lastname" placeholder="Your last name" required>
+                            <input type="text" id="lastname" name="lastname" autocomplete="family-name" placeholder="Your last name" required>
 
                         </div>
 
@@ -1074,20 +1331,25 @@
                     <div class="formGroup">
 
                         <label for="email">
+
                             Email
+
                         </label>
 
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="your@email.com" required>
 
                     </div>
 
                     <div class="formGroup">
 
                         <label for="subject">
+
                             Subject
+
                         </label>
 
                         <input type="text" id="subject" name="subject" placeholder="What would you like to discuss?"
+
                             required>
 
                     </div>
@@ -1095,17 +1357,23 @@
                     <div class="formGroup">
 
                         <label for="message">
+
                             Message
+
                         </label>
 
                         <textarea id="message" name="message" rows="7"
+
                             placeholder="Tell me a little about your project or opportunity..." required></textarea>
 
                     </div>
 
                     <button type="submit" class="contactSubmit">
+
                         Send message
+
                         <span aria-hidden="true">→</span>
+
                     </button>
 
                 </form>
@@ -1120,7 +1388,6 @@
 
                 <div class="footerGrid">
 
-                    <!-- BRAND -->
                     <div class="footerBrand">
 
                         <div class="footerLogo">
@@ -1132,19 +1399,20 @@
                         </div>
 
                         <p>
+
                             Computer Science student focused on
+
                             Machine Learning, Data and AI systems.
+
                         </p>
 
                     </div>
 
-
-                    <!-- NAVIGATION -->
                     <div class="footerColumn">
 
                         <h3>Navigation</h3>
 
-                        <nav class="footerNav">
+                        <nav class="footerNav" aria-label="Footer navigation">
 
                             <a href="#About">About</a>
 
@@ -1160,8 +1428,6 @@
 
                     </div>
 
-
-                    <!-- SOCIAL -->
                     <div class="footerColumn">
 
                         <h3>Connect</h3>
@@ -1169,19 +1435,29 @@
                         <div class="footerSocial">
 
                             <a href="https://www.linkedin.com/in/pascal-nague/" target="_blank"
+
                                 rel="noopener noreferrer">
+
                                 LinkedIn
+
                                 <span aria-hidden="true">↗</span>
+
                             </a>
 
                             <a href="https://github.com/MrNague" target="_blank" rel="noopener noreferrer">
+
                                 GitHub
+
                                 <span aria-hidden="true">↗</span>
+
                             </a>
 
                             <a href="https://www.youtube.com/@Mr_Nague" target="_blank" rel="noopener noreferrer">
+
                                 YouTube
+
                                 <span aria-hidden="true">↗</span>
+
                             </a>
 
                         </div>
@@ -1190,16 +1466,20 @@
 
                 </div>
 
-
                 <div class="footerBottom">
 
                     <p>
+
                         © 2026 Pascal Nague. All rights reserved.
+
                     </p>
 
                     <a href="#hero" class="backToTop">
+
                         Back to top
+
                         <span aria-hidden="true">↑</span>
+
                     </a>
 
                 </div>
@@ -1207,7 +1487,11 @@
             </div>
 
         </footer>
-        <script src="./js/main.js"></script>
+
+    </section>
+
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>
