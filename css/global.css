@@ -1,41 +1,30 @@
-/* =========================================================
-   PASCAL NAGUE — PORTFOLIO
-   Machine Learning • Data • AI • Automation
-
-   Clean version
-   Ready for JavaScript and future React migration
-   ========================================================= */
-
-
-/* =========================================================
-   1. DESIGN SYSTEM
-   ========================================================= */
-
 :root {
 
-    /* Main colors */
-
     --color-white: #ffffff;
+
     --color-black: #000000;
 
     --color-header: #07111f;
 
     --color-text: #111827;
+
     --color-text-secondary: #4b5563;
+
     --color-text-muted: #6b7280;
 
     --color-primary: #2563eb;
+
     --color-primary-light: #eff6ff;
+
     --color-primary-border: #bfdbfe;
 
     --color-gray-section: #f3f4f6;
+
     --color-gray-light: #f8fafc;
 
     --color-border: #e5e7eb;
+
     --color-border-dark: #d1d5db;
-
-
-    /* Layout */
 
     --container-width: 1180px;
 
@@ -43,180 +32,204 @@
 
     --header-height: 76px;
 
-
-    /* Radius */
-
     --radius-small: 5px;
+
     --radius-medium: 12px;
+
     --radius-large: 18px;
 
-
-    /* Shadows */
-
     --shadow-header:
+
         0 4px 16px rgba(0, 0, 0, 0.12);
 
     --shadow-card:
+
         0 8px 30px rgba(15, 23, 42, 0.07);
 
     --shadow-card-hover:
+
         0 14px 38px rgba(15, 23, 42, 0.12);
 
-
-    /* Animation */
-
     --transition:
+
         0.25s ease;
 
     --bg-page: #ffffff;
+
     --bg-section: #ffffff;
+
     --bg-section-alt: #f3f4f6;
 
     --surface: #ffffff;
+
     --surface-soft: #f8fafc;
 
     --text-main: #111827;
+
     --text-secondary: #4b5563;
+
     --text-muted: #6b7280;
 
     --border-color: #e5e7eb;
 
     --accent: #2563eb;
+
     --accent-soft: #eff6ff;
 
     --header-bg: #07111f;
+
 }
+
 html[data-theme="dark"] {
 
-    /* New theme variables */
-
     --bg-page: #070b12;
+
     --bg-section: #0b1220;
+
     --bg-section-alt: #101827;
 
     --surface: #111827;
+
     --surface-soft: #172033;
 
     --text-main: #f3f4f6;
+
     --text-secondary: #cbd5e1;
+
     --text-muted: #94a3b8;
 
     --border-color: #263244;
 
     --accent: #60a5fa;
+
     --accent-soft: #172554;
 
     --header-bg: #030712;
-
-
-    /* Existing variables used by your old CSS */
 
     --color-white: #0b1220;
 
     --color-header: #030712;
 
     --color-text: #f3f4f6;
+
     --color-text-secondary: #cbd5e1;
+
     --color-text-muted: #94a3b8;
 
     --color-primary: #60a5fa;
+
     --color-primary-light: #172554;
+
     --color-primary-border: #334155;
 
     --color-gray-section: #101827;
+
     --color-gray-light: #172033;
 
     --color-border: #263244;
+
     --color-border-dark: #334155;
 
     color-scheme: dark;
+
 }
 
 body {
+
     background: var(--bg-page);
+
     color: var(--text-main);
+
 }
-
-
-/* headings */
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--text-main);
-}
 
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+    color: var(--text-main);
+
+}
 
 p {
+
     color: var(--text-secondary);
+
 }
-
-
-/* white sections */
 
 .about,
+
 .Skills,
+
 .Contact {
+
     background: var(--bg-section);
+
 }
-
-
-/* gray sections */
 
 .Services,
+
 .Portfolio {
+
     background: var(--bg-section-alt);
+
 }
 
-
-/* cards */
-
 .serviceCard,
+
 .projectCard {
+
     background: var(--surface);
 
     border-color: var(--border-color);
+
 }
 
-
-/* secondary elements */
-
 .serviceTags span,
+
 .projectTags span,
+
 .contactAvailability {
+
     background: var(--surface-soft);
 
     border-color: var(--border-color);
 
     color: var(--text-secondary);
+
 }
 
-
-/* =========================================================
-   2. RESET
-   ========================================================= */
-
 *,
+
 *::before,
+
 *::after {
+
     box-sizing: border-box;
 
     margin: 0;
+
     padding: 0;
+
 }
 
-
 html {
+
     scroll-behavior: smooth;
 
     scroll-padding-top: calc(var(--header-height) + 20px);
+
 }
 
-
 body {
+
     margin: 0;
 
     background: var(--color-white);
@@ -224,171 +237,197 @@ body {
     color: var(--color-text);
 
     font-family:
+
         "Times New Roman",
+
         Times,
+
         serif;
 
     line-height: 1.7;
 
     overflow-x: hidden;
-}
 
+}
 
 button,
+
 input,
+
 textarea,
+
 select {
+
     font-family:
+
         "Times New Roman",
+
         Times,
+
         serif;
+
 }
 
-
 img {
+
     display: block;
 
     max-width: 100%;
 
     height: auto;
+
 }
 
-
 a {
+
     color: inherit;
 
     text-decoration: none;
-}
 
+}
 
 ul {
-    list-style-position: inside;
-}
 
+    list-style-position: inside;
+
+}
 
 .list-unstyled {
+
     list-style: none;
+
 }
 
-
-/* =========================================================
-   3. GENERAL LAYOUT
-   ========================================================= */
-
 .container,
+
 .contain {
+
     width: min(92%, var(--container-width));
 
     margin-inline: auto;
+
 }
 
-
 section {
+
     width: 100%;
 
     padding: var(--section-padding) 0;
-}
 
+}
 
 .grid {
-    min-width: 0;
-}
 
+    min-width: 0;
+
+}
 
 .gridItem {
+
     min-width: 0;
+
 }
 
-
-/* =========================================================
-   4. TYPOGRAPHY
-   ========================================================= */
-
 h1,
+
 h2,
+
 h3,
+
 h4,
+
 h5,
+
 h6 {
+
     color: var(--color-text);
 
     line-height: 1.2;
+
 }
 
-
 h1 {
+
     font-size:
+
         clamp(2.8rem, 5vw, 5rem);
 
     font-weight: 700;
 
     letter-spacing: -0.035em;
+
 }
 
-
 h2 {
+
     font-size:
+
         clamp(2rem, 4vw, 3.2rem);
 
     letter-spacing: -0.025em;
-}
 
+}
 
 h3 {
-    font-size: 1.25rem;
-}
 
+    font-size: 1.25rem;
+
+}
 
 p {
+
     color: var(--color-text-secondary);
+
 }
 
-
 .sectionHeader {
+
     max-width: 760px;
 
     margin-bottom: 50px;
+
 }
 
-
 .sectionHeader p {
+
     max-width: 700px;
 
     font-size: 1.05rem;
+
 }
 
-
 .sectionTitle {
+
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 22px;
+
 }
 
-
 .sectionTitle::after {
+
     content: "";
 
     position: absolute;
 
     left: 0;
+
     bottom: -8px;
 
     width: 50px;
+
     height: 3px;
 
     background: var(--color-primary);
 
     border-radius: 4px;
+
 }
 
-
-/* =========================================================
-   5. HEADER
-   ========================================================= */
-
 .header {
+
     position: sticky;
 
     top: 0;
@@ -398,32 +437,33 @@ p {
     height: var(--header-height);
 
     display: flex;
+
     align-items: center;
 
     background: var(--color-header);
 
     border-bottom:
+
         1px solid rgba(255, 255, 255, 0.06);
 
     box-shadow: var(--shadow-header);
+
 }
 
-
 .header .container {
+
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     gap: 28px;
+
 }
 
-
-/* =========================================================
-   HEADER LOGO
-   ========================================================= */
-
 .logo {
+
     display: flex;
 
     align-items: center;
@@ -437,37 +477,43 @@ p {
     font-weight: 700;
 
     white-space: nowrap;
+
 }
 
 @media screen and (max-width: 600px) {
 
     .logo {
+
         gap: 7px;
 
         font-size: 1.05rem;
-    }
 
+    }
 
     .logo-favicon {
+
         width: 30px;
+
         height: 30px;
+
     }
 
 }
 
-/* Remove the old blue point */
-
 .logo::before,
+
 .logo::after {
+
     content: none;
+
     display: none;
+
 }
 
-
-/* Favicon next to Pascal Nague */
-
 .logo-favicon {
+
     width: 34px;
+
     height: 34px;
 
     object-fit: cover;
@@ -475,22 +521,21 @@ p {
     border-radius: 50%;
 
     flex-shrink: 0;
+
 }
 
-/* =========================================================
-   HEADER NAVIGATION
-   ========================================================= */
-
 .navbar .menu {
+
     display: flex;
 
     align-items: center;
 
     gap: 24px;
+
 }
 
-
 .navbar a {
+
     position: relative;
 
     color: #d1d5db;
@@ -498,75 +543,77 @@ p {
     font-size: 0.92rem;
 
     transition: color var(--transition);
-}
 
+}
 
 .navbar a:hover {
-    color: var(--color-white);
-}
 
-/* =========================================================
-   ACTIVE NAVIGATION LINK
-   ========================================================= */
+    color: #ffffff;
+
+}
 
 .navbar a.active {
     color: #ffffff;
 }
-
 
 .navbar a.active::after {
     width: 100%;
 }
 
 .navbar a::after {
+
     content: "";
 
     position: absolute;
 
     left: 0;
+
     bottom: -7px;
 
     width: 0;
+
     height: 2px;
 
     background: #60a5fa;
 
     transition: width var(--transition);
-}
 
+}
 
 .navbar a:hover::after {
+
     width: 100%;
+
 }
 
-
-/* =========================================================
-   HEADER SOCIALS
-   ========================================================= */
-
 .header .right {
+
     display: flex;
 
     align-items: center;
 
     gap: 10px;
+
 }
 
-
 .social {
+
     display: flex;
 
     align-items: center;
 
     gap: 8px;
+
 }
 
-
 .social a {
+
     width: 32px;
+
     height: 32px;
 
     display: grid;
+
     place-items: center;
 
     color: #9ca3af;
@@ -574,39 +621,43 @@ p {
     border-radius: 6px;
 
     transition:
+
         color var(--transition),
+
         background var(--transition),
+
         transform var(--transition);
+
 }
 
-
 .social a:hover {
-    color: var(--color-white);
+
+    color: #ffffff;
 
     background:
+
         rgba(255, 255, 255, 0.08);
 
     transform: translateY(-2px);
-}
 
+}
 
 .social svg {
+
     fill: currentColor;
+
 }
 
-
-/* =========================================================
-   BURGER BUTTON
-   JS will later control .is-open
-   ========================================================= */
-
 .burguer {
+
     display: none;
 
     width: 42px;
+
     height: 42px;
 
     align-items: center;
+
     justify-content: center;
 
     padding: 0;
@@ -615,26 +666,30 @@ p {
 
     background: transparent;
 
-    color: var(--color-white);
+    color: #ffffff;
 
     cursor: pointer;
+
 }
 
-
 .burguer .bar {
+
     font-size: 0;
 
     position: relative;
 
     width: 24px;
+
     height: 2px;
 
     background: currentColor;
+
 }
 
-
 .burguer .bar::before,
+
 .burguer .bar::after {
+
     content: "";
 
     position: absolute;
@@ -642,55 +697,57 @@ p {
     left: 0;
 
     width: 24px;
+
     height: 2px;
 
     background: currentColor;
 
     transition: var(--transition);
-}
 
+}
 
 .burguer .bar::before {
-    top: -7px;
-}
 
+    top: -7px;
+
+}
 
 .burguer .bar::after {
+
     top: 7px;
+
 }
-
-
-/* Future JS class */
 
 .header.is-menu-open .burguer .bar {
+
     background: transparent;
+
 }
 
-
 .header.is-menu-open .burguer .bar::before {
+
     top: 0;
 
     transform: rotate(45deg);
+
 }
 
-
 .header.is-menu-open .burguer .bar::after {
+
     top: 0;
 
     transform: rotate(-45deg);
+
 }
 
-
-/* =========================================================
-   6. HERO
-   ========================================================= */
-
 .hero {
+
     position: relative;
 
     width: 100%;
 
     min-height:
+
         calc(100vh - var(--header-height));
 
     display: flex;
@@ -700,16 +757,6 @@ p {
     padding: 90px 0;
 
     background-color: #edf4fa;
-
-    /*
-       IMPORTANT
-
-       global.css is inside /css
-       hero image is inside /img
-
-       therefore:
-       ../img/hero-pascal.png
-    */
 
     background-image:
 
@@ -734,41 +781,43 @@ p {
     background-repeat: no-repeat;
 
     border-bottom:
+
         1px solid var(--color-border);
 
     overflow: hidden;
+
 }
 
-
 .hero .container {
+
     position: relative;
 
     z-index: 2;
+
 }
 
-
 .hero .grid {
+
     display: block;
 
     width: 100%;
+
 }
 
-
 .hero_item.left {
+
     width: 52%;
 
     max-width: 650px;
+
 }
 
-
-/* =========================================================
-   MACHINE LEARNING & DATA BADGE
-   ========================================================= */
-
 .hero_item.left>span {
+
     display: inline-block;
 
     margin-bottom: 20px;
+
     padding: 7px 12px;
 
     background: rgba(253, 241, 255, 0.78);
@@ -780,141 +829,165 @@ p {
     border-radius: 5px;
 
     font-weight: 700;
+
     letter-spacing: 0.05em;
+
     text-transform: uppercase;
+
 }
-
-
-/* Remove old green dot */
 
 .hero_item.left>span::before {
+
     display: none;
+
 }
 
-
-/* Hero title */
-
 .hero .title {
+
     max-width: 650px;
+
     margin-bottom: 22px;
 
     font-family: "Times New Roman", Times, serif;
+
     font-size: clamp(3rem, 5vw, 5rem);
+
     font-weight: 700;
+
     line-height: 1.04;
+
     letter-spacing: -0.035em;
 
     background: linear-gradient(90deg,
+
             #000000 0%,
+
             #111827 30%,
+
             #12315c 58%,
+
             #0b3a75 78%,
+
             #071f45 100%);
 
     -webkit-background-clip: text;
+
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
+
     color: transparent;
+
 }
 
-
-/* Hero text */
-
 .hero p {
+
     max-width: 570px;
 
     font-size: 1.08rem;
+
     line-height: 1.75;
+
     font-weight: 600;
 
     background: linear-gradient(90deg,
+
             #111111 0%,
+
             #1f2937 45%,
+
             #163a63 72%,
+
             #0b2d57 100%);
 
     -webkit-background-clip: text;
+
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
-    color: transparent;
-}
 
-/*
-   The old hero avatar is no longer needed because
-   Pascal is part of the background image.
-*/
+    color: transparent;
+
+}
 
 .hero_item.right,
+
 .heroAvatar {
+
     display: none;
+
 }
 
-
-/* =========================================================
-   7.ABOUT
-   ========================================================= */
-
 .about {
+
     background: #ffffff;
+
 }
 
 .aboutContent p {
-    color: var(--text-secondary);
-}
 
+    color: var(--text-secondary);
+
+}
 
 .aboutProfile {
-    border-color: var(--border-color);
-}
 
+    border-color: var(--border-color);
+
+}
 
 .aboutProfileItem {
-    border-color: var(--border-color);
-}
 
+    border-color: var(--border-color);
+
+}
 
 .aboutLabel {
-    color: var(--text-muted);
-}
 
+    color: var(--text-muted);
+
+}
 
 .aboutProfileItem strong {
+
     color: var(--text-main);
+
 }
 
-
 .aboutGrid {
+
     display: grid;
 
     grid-template-columns:
+
         minmax(0, 1.25fr) minmax(300px, 0.75fr);
 
     gap: 80px;
 
     align-items: start;
+
 }
-
-
-/* LEFT */
 
 .aboutContent {
+
     max-width: 700px;
+
 }
 
-
 .aboutContent h3 {
+
     margin:
+
         15px 0 20px;
 
     color: #2563eb;
 
     font-size: 1.35rem;
+
 }
 
-
 .aboutContent p {
+
     margin-bottom: 18px;
 
     color: #4b5563;
@@ -922,22 +995,23 @@ p {
     font-size: 1.02rem;
 
     line-height: 1.75;
+
 }
 
-
-/* RIGHT PROFILE */
-
 .aboutProfile {
+
     display: flex;
 
     flex-direction: column;
 
     border-top:
+
         1px solid #e5e7eb;
+
 }
 
-
 .aboutProfileItem {
+
     display: flex;
 
     flex-direction: column;
@@ -945,14 +1019,17 @@ p {
     gap: 5px;
 
     padding:
+
         18px 0;
 
     border-bottom:
+
         1px solid #e5e7eb;
+
 }
 
-
 .aboutLabel {
+
     color: #6b7280;
 
     font-size: 0.82rem;
@@ -960,85 +1037,89 @@ p {
     text-transform: uppercase;
 
     letter-spacing: 0.07em;
+
 }
 
-
 .aboutProfileItem strong {
+
     color: #111827;
 
     font-size: 1rem;
 
     font-weight: 600;
+
 }
-
-
-/* TABLET / MOBILE */
 
 @media screen and (max-width: 850px) {
 
     .aboutGrid {
+
         grid-template-columns: 1fr;
 
         gap: 45px;
+
     }
 
-
     .aboutContent {
+
         max-width: 100%;
+
     }
 
 }
 
-
-/* =========================================================
-  8. SERVICES
-   ========================================================= */
-
 .Services {
+
     width: 100%;
 
     background: #f3f4f6;
 
     padding: 100px 0;
+
 }
 
 .Services .sectionTitle,
-.serviceCard h3 {
-    color: var(--text-main);
-}
 
+.serviceCard h3 {
+
+    color: var(--text-main);
+
+}
 
 .Services .sectionHeader p,
-.serviceCard p {
-    color: var(--text-secondary);
-}
 
+.serviceCard p {
+
+    color: var(--text-secondary);
+
+}
 
 .serviceNumber {
+
     color: var(--text-muted);
+
 }
 
-
 .serviceIcon {
+
     color: var(--accent);
 
     background: var(--accent-soft);
 
     border-color: var(--border-color);
+
 }
 
-/* =========================================================
-   SERVICES HEADER
-   ========================================================= */
-
 .Services .sectionHeader {
+
     max-width: 760px;
 
     margin-bottom: 50px;
+
 }
 
-
 .sectionEyebrow {
+
     display: block;
 
     margin-bottom: 8px;
@@ -1052,44 +1133,41 @@ p {
     letter-spacing: 0.12em;
 
     text-transform: uppercase;
-}
 
+}
 
 .Services .sectionTitle {
+
     color: #111827;
+
 }
 
-
 .Services .sectionHeader p {
+
     color: #4b5563;
 
     font-size: 1.05rem;
 
     line-height: 1.7;
+
 }
 
-
-/* =========================================================
-   SERVICES GRID
-   ========================================================= */
-
 .servicesGrid {
+
     display: grid;
 
     grid-template-columns:
+
         repeat(3, minmax(0, 1fr));
 
     gap: 24px;
 
     width: 100%;
+
 }
 
-
-/* =========================================================
-   SERVICE CARD
-   ========================================================= */
-
 .serviceCard {
+
     position: relative;
 
     min-width: 0;
@@ -1109,33 +1187,41 @@ p {
     border-radius: 12px;
 
     box-shadow:
+
         0 8px 30px rgba(15, 23, 42, 0.06);
 
     overflow: hidden;
 
     transition:
+
         transform 0.25s ease,
+
         box-shadow 0.25s ease,
+
         border-color 0.25s ease;
+
 }
 
-
-/* subtle upper border */
-
 .serviceCard::before {
+
     content: "";
 
     position: absolute;
 
     top: 0;
+
     left: 0;
 
     width: 100%;
+
     height: 3px;
 
     background:
+
         linear-gradient(90deg,
+
             #07111f,
+
             #2563eb);
 
     transform: scaleX(0);
@@ -1143,44 +1229,47 @@ p {
     transform-origin: left;
 
     transition:
+
         transform 0.3s ease;
+
 }
 
-
 .serviceCard:hover {
+
     transform:
+
         translateY(-6px);
 
     border-color:
+
         rgba(37, 99, 235, 0.25);
 
     box-shadow:
-        0 18px 45px rgba(15, 23, 42, 0.11);
-}
 
+        0 18px 45px rgba(15, 23, 42, 0.11);
+
+}
 
 .serviceCard:hover::before {
+
     transform: scaleX(1);
+
 }
 
-
-/* =========================================================
-   TOP PART
-   ========================================================= */
-
 .serviceCardTop {
+
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     margin-bottom: 28px;
+
 }
 
-
-/* number */
-
 .serviceNumber {
+
     color: #9ca3af;
 
     font-size: 0.82rem;
@@ -1188,18 +1277,19 @@ p {
     font-weight: 700;
 
     letter-spacing: 0.08em;
+
 }
 
-
-/* icon */
-
 .serviceIcon {
+
     width: 48px;
+
     height: 48px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     color: #17477d;
@@ -1207,38 +1297,43 @@ p {
     background: #eff6ff;
 
     border:
+
         1px solid #dbeafe;
 
     border-radius: 10px;
 
     transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-}
 
+        background 0.25s ease,
+
+        color 0.25s ease,
+
+        transform 0.25s ease;
+
+}
 
 .serviceIcon svg {
+
     width: 25px;
+
     height: 25px;
+
 }
 
-
 .serviceCard:hover .serviceIcon {
+
     background: #07111f;
 
     color: #ffffff;
 
     transform:
+
         translateY(-2px);
+
 }
 
-
-/* =========================================================
-   SERVICE CONTENT
-   ========================================================= */
-
 .serviceCard h3 {
+
     margin-bottom: 14px;
 
     color: #111827;
@@ -1246,10 +1341,11 @@ p {
     font-size: 1.25rem;
 
     line-height: 1.25;
+
 }
 
-
 .serviceCard p {
+
     margin-bottom: 24px;
 
     color: #4b5563;
@@ -1257,14 +1353,11 @@ p {
     font-size: 0.96rem;
 
     line-height: 1.65;
+
 }
 
-
-/* =========================================================
-   TAGS
-   ========================================================= */
-
 .serviceTags {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -1272,15 +1365,17 @@ p {
     gap: 7px;
 
     margin-top: auto;
+
 }
 
-
 .serviceTags span {
+
     display: inline-flex;
 
     align-items: center;
 
     padding:
+
         5px 9px;
 
     color: #374151;
@@ -1288,6 +1383,7 @@ p {
     background: #f8fafc;
 
     border:
+
         1px solid #e5e7eb;
 
     border-radius: 5px;
@@ -1295,108 +1391,111 @@ p {
     font-size: 0.76rem;
 
     font-weight: 600;
+
 }
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
 
 @media screen and (max-width: 1000px) {
 
     .servicesGrid {
+
         grid-template-columns:
+
             repeat(2, minmax(0, 1fr));
+
     }
 
 }
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
 
 @media screen and (max-width: 650px) {
 
     .Services {
-        padding: 70px 0;
-    }
 
+        padding: 70px 0;
+
+    }
 
     .Services .sectionHeader {
+
         margin-bottom: 38px;
+
     }
 
-
     .servicesGrid {
+
         grid-template-columns: 1fr;
 
         gap: 18px;
+
     }
 
-
     .serviceCard {
+
         min-height: auto;
 
         padding: 22px;
-    }
 
+    }
 
     .serviceCardTop {
+
         margin-bottom: 22px;
+
     }
 
-
     .serviceCard h3 {
+
         font-size: 1.15rem;
+
     }
 
 }
 
-/* =========================================================
-  9. SKILLS
-   ========================================================= */
-
 .Skills {
+
     width: 100%;
 
     padding: 100px 0;
 
     background: #ffffff;
+
 }
 
 .Skills .sectionHeader p,
-.skillGroup p {
-    color: var(--text-secondary);
-}
 
+.skillGroup p {
+
+    color: var(--text-secondary);
+
+}
 
 .skillGroup {
-    border-color: var(--border-color);
-}
 
+    border-color: var(--border-color);
+
+}
 
 .skillGroup h3 {
-    color: var(--text-main);
-}
 
+    color: var(--text-main);
+
+}
 
 .skillsExpertise {
+
     border-color: var(--border-color);
+
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
-
 .Skills .sectionHeader {
+
     max-width: 760px;
 
     margin-bottom: 55px;
+
 }
 
-
 .Skills .sectionHeader p {
+
     max-width: 680px;
 
     color: #4b5563;
@@ -1404,65 +1503,69 @@ p {
     font-size: 1.05rem;
 
     line-height: 1.7;
+
 }
 
-
-/* =========================================================
-   LAYOUT
-   ========================================================= */
-
 .skillsLayout {
+
     display: grid;
 
     grid-template-columns:
+
         minmax(0, 1.25fr) minmax(300px, 0.75fr);
 
     gap: 60px;
 
     align-items: start;
+
 }
 
-
-/* =========================================================
-   LEFT — EXPERTISE
-   ========================================================= */
-
 .skillsExpertise {
+
     display: flex;
 
     flex-direction: column;
 
     border-top:
+
         1px solid #e5e7eb;
+
 }
 
-
 .skillGroup {
+
     display: grid;
 
     grid-template-columns:
+
         48px minmax(0, 1fr);
 
     gap: 20px;
 
     padding:
+
         24px 0;
 
     border-bottom:
+
         1px solid #e5e7eb;
 
     transition:
-        padding-left 0.25s ease,
-        background 0.25s ease;
-}
 
+        padding-left 0.25s ease,
+
+        background 0.25s ease;
+
+}
 
 .skillGroup:hover {
+
     padding-left: 10px;
+
 }
 
-
 .skillNumber {
+
     padding-top: 4px;
 
     color: #2563eb;
@@ -1472,10 +1575,11 @@ p {
     font-weight: 700;
 
     letter-spacing: 0.08em;
+
 }
 
-
 .skillGroup h3 {
+
     margin-bottom: 7px;
 
     color: #111827;
@@ -1483,10 +1587,11 @@ p {
     font-size: 1.18rem;
 
     line-height: 1.3;
+
 }
 
-
 .skillGroup p {
+
     margin: 0;
 
     color: #6b7280;
@@ -1494,14 +1599,11 @@ p {
     font-size: 0.95rem;
 
     line-height: 1.65;
+
 }
 
-
-/* =========================================================
-   RIGHT — STACK PANEL
-   ========================================================= */
-
 .skillsStack {
+
     padding: 34px;
 
     background: #07111f;
@@ -1509,11 +1611,13 @@ p {
     border-radius: 14px;
 
     box-shadow:
+
         0 18px 45px rgba(7, 17, 31, 0.14);
+
 }
 
-
 .skillsStackLabel {
+
     display: block;
 
     margin-bottom: 10px;
@@ -1527,19 +1631,21 @@ p {
     letter-spacing: 0.1em;
 
     text-transform: uppercase;
+
 }
 
-
 .skillsStack h3 {
+
     margin-bottom: 12px;
 
     color: #ffffff;
 
     font-size: 1.5rem;
+
 }
 
-
 .skillsStackIntro {
+
     margin-bottom: 28px;
 
     color: #cbd5e1;
@@ -1547,24 +1653,23 @@ p {
     font-size: 0.95rem;
 
     line-height: 1.65;
+
 }
 
-
-/* =========================================================
-   TECHNOLOGY GRID
-   ========================================================= */
-
 .technologyGrid {
+
     display: grid;
 
     grid-template-columns:
+
         repeat(2, minmax(0, 1fr));
 
     gap: 10px;
+
 }
 
-
 .technologyGrid span {
+
     display: flex;
 
     align-items: center;
@@ -1574,14 +1679,17 @@ p {
     min-height: 44px;
 
     padding:
+
         9px 12px;
 
     color: #e5e7eb;
 
     background:
+
         rgba(255, 255, 255, 0.06);
 
     border:
+
         1px solid rgba(255, 255, 255, 0.1);
 
     border-radius: 6px;
@@ -1591,63 +1699,71 @@ p {
     font-weight: 600;
 
     transition:
+
         background 0.25s ease,
+
         transform 0.25s ease,
+
         border-color 0.25s ease;
+
 }
 
-
 .technologyGrid span:hover {
+
     background:
+
         rgba(37, 99, 235, 0.2);
 
     border-color:
+
         rgba(147, 197, 253, 0.35);
 
     transform:
+
         translateY(-2px);
+
 }
 
-
-/* =========================================================
-   DIVIDER
-   ========================================================= */
-
 .skillsStackDivider {
+
     width: 100%;
+
     height: 1px;
 
     margin:
+
         30px 0;
 
     background:
+
         rgba(255, 255, 255, 0.12);
+
 }
 
-
-/* =========================================================
-   FOCUS TAGS
-   ========================================================= */
-
 .focusTags {
+
     display: flex;
 
     flex-wrap: wrap;
 
     gap: 8px;
+
 }
 
-
 .focusTags span {
+
     padding:
+
         6px 10px;
 
     color: #dbeafe;
 
     background:
+
         rgba(37, 99, 235, 0.13);
 
     border:
+
         1px solid rgba(96, 165, 250, 0.22);
 
     border-radius: 5px;
@@ -1655,124 +1771,125 @@ p {
     font-size: 0.78rem;
 
     font-weight: 600;
+
 }
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
 
 @media screen and (max-width: 900px) {
 
     .skillsLayout {
+
         grid-template-columns: 1fr;
 
         gap: 45px;
+
     }
 
-
     .skillsStack {
+
         max-width: 650px;
+
     }
 
 }
 
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
 @media screen and (max-width: 600px) {
 
     .Skills {
-        padding: 70px 0;
-    }
 
+        padding: 70px 0;
+
+    }
 
     .Skills .sectionHeader {
+
         margin-bottom: 38px;
+
     }
 
-
     .skillGroup {
+
         grid-template-columns:
+
             38px minmax(0, 1fr);
 
         gap: 12px;
 
         padding:
-            20px 0;
-    }
 
+            20px 0;
+
+    }
 
     .skillGroup:hover {
-        padding-left: 0;
-    }
 
+        padding-left: 0;
+
+    }
 
     .skillsStack {
+
         padding: 26px 22px;
+
     }
 
-
     .technologyGrid {
+
         grid-template-columns: 1fr 1fr;
+
     }
 
 }
-
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
 
 @media screen and (max-width: 390px) {
 
     .technologyGrid {
+
         grid-template-columns: 1fr;
+
     }
 
 }
 
-/* =========================================================
-   10. PORTFOLIO
-   ========================================================= */
-
 .Portfolio {
+
     width: 100%;
 
     padding: 100px 0;
 
     background: #f3f4f6;
+
 }
 
 .Portfolio .sectionHeader p,
-.projectContent p {
-    color: var(--text-secondary);
-}
 
+.projectContent p {
+
+    color: var(--text-secondary);
+
+}
 
 .projectContent h3 {
-    color: var(--text-main);
-}
 
+    color: var(--text-main);
+
+}
 
 .projectMeta {
+
     color: var(--text-muted);
+
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
-
 .Portfolio .sectionHeader {
+
     max-width: 760px;
 
     margin-bottom: 55px;
+
 }
 
-
 .Portfolio .sectionHeader p {
+
     max-width: 680px;
 
     color: #4b5563;
@@ -1780,38 +1897,35 @@ p {
     font-size: 1.05rem;
 
     line-height: 1.7;
+
 }
 
-
-/* =========================================================
-   GRID
-   ========================================================= */
-
 .portfolioGrid {
+
     display: grid;
 
     grid-template-columns:
+
         repeat(2, minmax(0, 1fr));
 
     gap: 26px;
+
 }
 
-
-/* =========================================================
-   CARD
-   ========================================================= */
-
 .projectCard {
+
     min-width: 0;
 
     display: grid;
 
     grid-template-columns:
+
         minmax(180px, 0.8fr) minmax(0, 1.2fr);
 
     background: #ffffff;
 
     border:
+
         1px solid #e5e7eb;
 
     border-radius: 14px;
@@ -1819,42 +1933,43 @@ p {
     overflow: hidden;
 
     box-shadow:
+
         0 8px 30px rgba(15, 23, 42, 0.06);
 
     transition:
+
         transform 0.25s ease,
+
         box-shadow 0.25s ease;
+
 }
 
-
 .projectCard:hover {
+
     transform:
+
         translateY(-5px);
 
     box-shadow:
+
         0 20px 45px rgba(15, 23, 42, 0.11);
+
 }
 
-
-/* =========================================================
-   FEATURED PROJECT
-   ========================================================= */
-
 .projectFeatured {
+
     grid-column: 1 / -1;
 
     grid-template-columns:
+
         minmax(300px, 0.95fr) minmax(0, 1.05fr);
 
     min-height: 390px;
+
 }
 
-
-/* =========================================================
-   VISUAL
-   ========================================================= */
-
 .projectVisual {
+
     position: relative;
 
     min-height: 270px;
@@ -1868,82 +1983,131 @@ p {
     color: #ffffff;
 
     background:
+
         linear-gradient(135deg,
+
             #07111f 0%,
+
             #12315c 55%,
+
             #2563eb 100%);
 
     overflow: hidden;
+
 }
 
-
 .projectVisual::before {
+
     content: "";
 
     position: absolute;
 
     width: 220px;
+
     height: 220px;
 
     top: -80px;
+
     right: -70px;
 
     border:
+
         1px solid rgba(255, 255, 255, 0.16);
 
     border-radius: 50%;
+
 }
 
-
 .projectVisual::after {
+
     content: "";
 
     position: absolute;
 
     width: 150px;
+
     height: 150px;
 
     bottom: -60px;
+
     left: -40px;
 
     border:
+
         1px solid rgba(255, 255, 255, 0.12);
 
     border-radius: 50%;
-}
 
+}
 
 .projectVisualPerformance {
+
     background:
+
         linear-gradient(135deg,
+
             #111827 0%,
+
             #164e63 55%,
+
             #0e7490 100%);
+
 }
 
-
 .projectVisualWeb {
+
+    background:
+
+        linear-gradient(135deg,
+
+            #07111f 0%,
+
+            #312e81 55%,
+
+            #4338ca 100%);
+
+}
+
+.projectVisualBenchmark {
+    background:
+        linear-gradient(135deg,
+            #0f172a 0%,
+            #1e3a5f 55%,
+            #2563eb 100%);
+}
+
+.projectVisualVision {
     background:
         linear-gradient(135deg,
             #07111f 0%,
-            #312e81 55%,
-            #4338ca 100%);
+            #0f4c5c 55%,
+            #0e7490 100%);
 }
 
+.projectVisualMLOps {
+    background:
+        linear-gradient(135deg,
+            #111827 0%,
+            #3730a3 55%,
+            #2563eb 100%);
+}
 
 .projectVisualContent {
+
     position: relative;
 
     z-index: 1;
+
 }
 
-
 .projectVisualLabel {
+
     display: block;
 
     margin-bottom: 10px;
 
     color:
+
         rgba(255, 255, 255, 0.7);
 
     font-size: 0.76rem;
@@ -1953,10 +2117,11 @@ p {
     letter-spacing: 0.1em;
 
     text-transform: uppercase;
+
 }
 
-
 .projectVisual strong {
+
     display: block;
 
     color: #ffffff;
@@ -1964,23 +2129,21 @@ p {
     font-size: clamp(1.8rem, 3vw, 2.8rem);
 
     line-height: 1.05;
+
 }
 
-
-/* =========================================================
-   CONTENT
-   ========================================================= */
-
 .projectContent {
+
     display: flex;
 
     flex-direction: column;
 
     padding: 30px;
+
 }
 
-
 .projectMeta {
+
     display: flex;
 
     justify-content: space-between;
@@ -1998,10 +2161,11 @@ p {
     letter-spacing: 0.05em;
 
     text-transform: uppercase;
+
 }
 
-
 .projectContent h3 {
+
     margin-bottom: 14px;
 
     color: #111827;
@@ -2009,10 +2173,11 @@ p {
     font-size: 1.4rem;
 
     line-height: 1.25;
+
 }
 
-
 .projectContent p {
+
     margin-bottom: 22px;
 
     color: #4b5563;
@@ -2020,22 +2185,21 @@ p {
     font-size: 0.96rem;
 
     line-height: 1.7;
+
 }
 
 .projectStatusCompleted {
+
     color: #17477d;
 
     background: #eff6ff;
 
     border-color: #bfdbfe;
+
 }
 
-
-/* =========================================================
-   TAGS
-   ========================================================= */
-
 .projectTags {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -2043,11 +2207,13 @@ p {
     gap: 7px;
 
     margin-bottom: 24px;
+
 }
 
-
 .projectTags span {
+
     padding:
+
         5px 9px;
 
     color: #374151;
@@ -2055,6 +2221,7 @@ p {
     background: #f8fafc;
 
     border:
+
         1px solid #e5e7eb;
 
     border-radius: 5px;
@@ -2062,14 +2229,11 @@ p {
     font-size: 0.75rem;
 
     font-weight: 600;
+
 }
 
-
-/* =========================================================
-   LINK / STATUS
-   ========================================================= */
-
 .projectLink {
+
     width: fit-content;
 
     display: inline-flex;
@@ -2087,24 +2251,29 @@ p {
     text-decoration: none;
 
     transition:
+
         gap 0.2s ease,
+
         color 0.2s ease;
+
 }
 
-
 .projectLink:hover {
+
     gap: 11px;
 
     color: #2563eb;
+
 }
 
-
 .projectStatus {
+
     width: fit-content;
 
     margin-top: auto;
 
     padding:
+
         6px 10px;
 
     color: #475569;
@@ -2112,6 +2281,7 @@ p {
     background: #f8fafc;
 
     border:
+
         1px solid #e5e7eb;
 
     border-radius: 5px;
@@ -2119,143 +2289,151 @@ p {
     font-size: 0.77rem;
 
     font-weight: 700;
+
 }
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
 
 @media screen and (max-width: 950px) {
 
     .portfolioGrid {
-        grid-template-columns: 1fr;
-    }
 
+        grid-template-columns: 1fr;
+
+    }
 
     .projectFeatured {
-        grid-column: auto;
-    }
 
+        grid-column: auto;
+
+    }
 
     .projectCard,
+
     .projectFeatured {
+
         grid-template-columns:
+
             minmax(230px, 0.85fr) minmax(0, 1.15fr);
+
     }
 
 }
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
 
 @media screen and (max-width: 700px) {
 
     .Portfolio {
-        padding: 70px 0;
-    }
 
+        padding: 70px 0;
+
+    }
 
     .Portfolio .sectionHeader {
-        margin-bottom: 38px;
-    }
 
+        margin-bottom: 38px;
+
+    }
 
     .projectCard,
-    .projectFeatured {
-        grid-template-columns: 1fr;
-    }
 
+    .projectFeatured {
+
+        grid-template-columns: 1fr;
+
+    }
 
     .projectVisual {
+
         min-height: 230px;
+
     }
 
-
     .projectContent {
+
         padding: 24px;
+
     }
 
 }
 
-
-/* =========================================================
-  11. CONTACT
-   ========================================================= */
-
 .Contact {
+
     width: 100%;
+
     padding: 100px 0;
+
     background: #ffffff;
+
 }
 
 .contactLead {
+
     color: var(--text-secondary);
+
 }
 
-
 .contactForm {
+
     background: var(--surface-soft);
 
     border-color: var(--border-color);
-}
 
+}
 
 .formGroup label {
+
     color: var(--text-main);
+
 }
 
-
 .formGroup input,
+
 .formGroup textarea {
+
     color: var(--text-main);
 
     background: var(--surface);
 
     border-color: var(--border-color);
-}
 
+}
 
 .formGroup input::placeholder,
+
 .formGroup textarea::placeholder {
+
     color: var(--text-muted);
+
 }
 
-/* =========================================================
-   CONTACT LAYOUT
-   ========================================================= */
-
 .contactLayout {
+
     display: grid;
 
     grid-template-columns:
+
         minmax(0, 0.85fr) minmax(0, 1.15fr);
 
     gap: 80px;
 
     align-items: start;
+
 }
-
-
-/* =========================================================
-   LEFT SIDE
-   ========================================================= */
 
 .contactIntro {
+
     max-width: 520px;
+
 }
 
-
 .Contact .sectionTitle {
+
     margin-bottom: 22px;
 
     color: #111827;
+
 }
 
-
 .contactLead {
+
     margin-bottom: 32px;
 
     color: #4b5563;
@@ -2263,14 +2441,11 @@ p {
     font-size: 1.05rem;
 
     line-height: 1.75;
+
 }
 
-
-/* =========================================================
-   AVAILABILITY
-   ========================================================= */
-
 .contactAvailability {
+
     display: flex;
 
     align-items: flex-start;
@@ -2292,11 +2467,13 @@ p {
     font-size: 0.92rem;
 
     line-height: 1.5;
+
 }
 
-
 .availabilityDot {
+
     width: 9px;
+
     height: 9px;
 
     margin-top: 5px;
@@ -2306,23 +2483,21 @@ p {
     background: #2563eb;
 
     border-radius: 50%;
+
 }
 
-
-/* =========================================================
-   CONTACT LINKS
-   ========================================================= */
-
 .contactLinks {
+
     display: flex;
 
     flex-wrap: wrap;
 
     gap: 20px;
+
 }
 
-
 .contactLinks a {
+
     display: inline-flex;
 
     align-items: center;
@@ -2336,23 +2511,23 @@ p {
     text-decoration: none;
 
     transition:
+
         color 0.2s ease,
+
         gap 0.2s ease;
+
 }
 
-
 .contactLinks a:hover {
+
     gap: 10px;
 
     color: #2563eb;
+
 }
 
-
-/* =========================================================
-   FORM
-   ========================================================= */
-
 .contactForm {
+
     padding: 34px;
 
     background: #f8fafc;
@@ -2362,29 +2537,25 @@ p {
     border-radius: 14px;
 
     box-shadow:
+
         0 10px 35px rgba(15, 23, 42, 0.06);
+
 }
 
-
-/* =========================================================
-   FORM ROW
-   ========================================================= */
-
 .formRow {
+
     display: grid;
 
     grid-template-columns:
+
         repeat(2, minmax(0, 1fr));
 
     gap: 18px;
+
 }
 
-
-/* =========================================================
-   FORM GROUPS
-   ========================================================= */
-
 .formGroup {
+
     display: flex;
 
     flex-direction: column;
@@ -2392,24 +2563,23 @@ p {
     gap: 8px;
 
     margin-bottom: 20px;
+
 }
 
-
 .formGroup label {
+
     color: #111827;
 
     font-size: 0.9rem;
 
     font-weight: 700;
+
 }
 
-
-/* =========================================================
-   INPUTS
-   ========================================================= */
-
 .formGroup input,
+
 .formGroup textarea {
+
     width: 100%;
 
     padding: 13px 14px;
@@ -2423,8 +2593,11 @@ p {
     border-radius: 6px;
 
     font-family:
+
         "Times New Roman",
+
         Times,
+
         serif;
 
     font-size: 0.97rem;
@@ -2432,45 +2605,47 @@ p {
     outline: none;
 
     transition:
+
         border-color 0.2s ease,
+
         box-shadow 0.2s ease,
+
         background 0.2s ease;
+
 }
 
-
 .formGroup textarea {
+
     min-height: 170px;
 
     resize: vertical;
-}
 
+}
 
 .formGroup input::placeholder,
+
 .formGroup textarea::placeholder {
+
     color: #9ca3af;
+
 }
 
-
-/* =========================================================
-   INPUT FOCUS
-   ========================================================= */
-
 .formGroup input:focus,
+
 .formGroup textarea:focus {
+
     border-color: #2563eb;
 
     background: #ffffff;
 
     box-shadow:
+
         0 0 0 3px rgba(37, 99, 235, 0.09);
+
 }
 
-
-/* =========================================================
-   SUBMIT BUTTON
-   ========================================================= */
-
 .contactSubmit {
+
     display: inline-flex;
 
     align-items: center;
@@ -2492,8 +2667,11 @@ p {
     border-radius: 6px;
 
     font-family:
+
         "Times New Roman",
+
         Times,
+
         serif;
 
     font-size: 0.96rem;
@@ -2503,14 +2681,19 @@ p {
     cursor: pointer;
 
     transition:
+
         background 0.2s ease,
+
         transform 0.2s ease,
+
         gap 0.2s ease,
+
         box-shadow 0.2s ease;
+
 }
 
-
 .contactSubmit:hover {
+
     gap: 14px;
 
     background: #17477d;
@@ -2518,121 +2701,119 @@ p {
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 20px rgba(23, 71, 125, 0.18);
-}
 
+        0 8px 20px rgba(23, 71, 125, 0.18);
+
+}
 
 .contactSubmit:active {
+
     transform: translateY(0);
+
 }
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
 
 @media screen and (max-width: 900px) {
 
     .contactLayout {
+
         grid-template-columns: 1fr;
 
         gap: 50px;
-    }
 
+    }
 
     .contactIntro {
+
         max-width: 650px;
+
     }
 
-
     .contactForm {
+
         max-width: 700px;
+
     }
 
 }
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
 
 @media screen and (max-width: 600px) {
 
     .Contact {
-        padding: 70px 0;
-    }
 
+        padding: 70px 0;
+
+    }
 
     .contactLayout {
+
         gap: 38px;
+
     }
 
-
     .formRow {
+
         grid-template-columns: 1fr;
 
         gap: 0;
-    }
 
+    }
 
     .contactForm {
-        padding: 24px 20px;
-    }
 
+        padding: 24px 20px;
+
+    }
 
     .contactSubmit {
+
         width: 100%;
+
     }
 
-
     .contactLinks {
+
         gap: 16px;
+
     }
 
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
 .footer {
+
     width: 100%;
 
     padding:
+
         70px 0 28px;
 
     background: #000000;
 
     color: #ffffff;
+
 }
 
-
-/* =========================================================
-   FOOTER GRID
-   ========================================================= */
-
 .footerGrid {
+
     display: grid;
 
     grid-template-columns:
+
         minmax(0, 1.5fr) minmax(150px, 0.7fr) minmax(150px, 0.7fr);
 
     gap: 70px;
 
     padding-bottom: 50px;
+
 }
-
-
-/* =========================================================
-   BRAND
-   ========================================================= */
 
 .footerBrand {
+
     max-width: 430px;
+
 }
 
-
 .footerLogo {
+
     display: flex;
 
     align-items: center;
@@ -2646,20 +2827,23 @@ p {
     font-size: 1.25rem;
 
     font-weight: 700;
+
 }
 
-
 .footerLogo img {
+
     width: 36px;
+
     height: 36px;
 
     object-fit: cover;
 
     border-radius: 50%;
+
 }
 
-
 .footerBrand p {
+
     max-width: 390px;
 
     margin: 0;
@@ -2669,14 +2853,11 @@ p {
     font-size: 0.95rem;
 
     line-height: 1.7;
+
 }
 
-
-/* =========================================================
-   FOOTER COLUMNS
-   ========================================================= */
-
 .footerColumn h3 {
+
     margin-bottom: 18px;
 
     color: #ffffff;
@@ -2684,15 +2865,13 @@ p {
     font-size: 0.95rem;
 
     font-weight: 700;
+
 }
 
-
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
-
 .footerNav,
+
 .footerSocial {
+
     display: flex;
 
     flex-direction: column;
@@ -2700,11 +2879,13 @@ p {
     align-items: flex-start;
 
     gap: 11px;
+
 }
 
-
 .footerNav a,
+
 .footerSocial a {
+
     display: inline-flex;
 
     align-items: center;
@@ -2718,29 +2899,29 @@ p {
     text-decoration: none;
 
     transition:
-        color 0.2s ease,
-        gap 0.2s ease;
-}
 
+        color 0.2s ease,
+
+        gap 0.2s ease;
+
+}
 
 .footerNav a:hover,
+
 .footerSocial a:hover {
+
     color: #ffffff;
+
 }
-
-
-/* social arrow animation */
 
 .footerSocial a:hover {
+
     gap: 9px;
+
 }
-
-
-/* =========================================================
-   BOTTOM
-   ========================================================= */
 
 .footerBottom {
+
     display: flex;
 
     align-items: center;
@@ -2752,24 +2933,23 @@ p {
     padding-top: 25px;
 
     border-top:
+
         1px solid rgba(255, 255, 255, 0.12);
+
 }
 
-
 .footerBottom p {
+
     margin: 0;
 
     color: #6b7280;
 
     font-size: 0.85rem;
+
 }
 
-
-/* =========================================================
-   BACK TO TOP
-   ========================================================= */
-
 .backToTop {
+
     display: inline-flex;
 
     align-items: center;
@@ -2785,134 +2965,139 @@ p {
     text-decoration: none;
 
     transition:
+
         color 0.2s ease,
+
         gap 0.2s ease;
+
 }
 
-
 .backToTop:hover {
+
     gap: 10px;
 
     color: #ffffff;
+
 }
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
 
 @media screen and (max-width: 850px) {
 
     .footerGrid {
+
         grid-template-columns:
+
             1.4fr 1fr;
 
         gap: 45px;
+
     }
 
-
     .footerBrand {
+
         grid-column: 1 / -1;
+
     }
 
 }
 
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
 @media screen and (max-width: 600px) {
 
     .footer {
+
         padding:
+
             55px 0 24px;
+
     }
 
-
     .footerGrid {
+
         grid-template-columns: 1fr;
 
         gap: 35px;
 
         padding-bottom: 40px;
-    }
 
+    }
 
     .footerBrand {
+
         grid-column: auto;
+
     }
 
-
     .footerBottom {
+
         flex-direction: column;
 
         align-items: flex-start;
 
         gap: 15px;
+
     }
 
 }
 
-/* =========================================================
-   13. SCROLLBAR
-   ========================================================= */
-
 ::selection {
-    background:
-        rgba(37, 99, 235, 0.25);
-}
 
+    background:
+
+        rgba(37, 99, 235, 0.25);
+
+}
 
 ::-webkit-scrollbar {
-    width: 9px;
-}
 
+    width: 9px;
+
+}
 
 ::-webkit-scrollbar-track {
+
     background: #f3f4f6;
+
 }
 
-
 ::-webkit-scrollbar-thumb {
+
     background: #9ca3af;
 
     border-radius: 20px;
-}
 
+}
 
 ::-webkit-scrollbar-thumb:hover {
+
     background: #6b7280;
+
 }
-
-
-/* =========================================================
-   14. TABLET
-   ========================================================= */
 
 @media screen and (max-width: 1050px) {
 
     .header .social {
-        display: none;
-    }
 
+        display: none;
+
+    }
 
     .navbar .menu {
-        gap: 16px;
-    }
 
+        gap: 16px;
+
+    }
 
     .navbar a {
+
         font-size: 0.86rem;
+
     }
 
-
-    /* Hero */
-
     .hero {
+
         min-height: 720px;
 
         background-position:
+
             58% center;
 
         background-image:
@@ -2928,57 +3113,59 @@ p {
                 rgba(255, 255, 255, 0.06) 78%),
 
             url("../img/hero-pascal.png");
-    }
 
+    }
 
     .hero_item.left {
+
         width: 58%;
+
     }
-
-
-    /* Portfolio */
 
     .Portfolio>.container>.grid:not(.portfolio-filters) {
 
         grid-template-columns:
+
             repeat(2, minmax(0, 1fr));
+
     }
 
 }
 
-
-/* =========================================================
-   15. TABLET / MOBILE NAVIGATION
-   ========================================================= */
-
 @media screen and (max-width: 850px) {
 
     :root {
-        --header-height: 70px;
-    }
 
+        --header-height: 70px;
+
+    }
 
     section {
-        padding: 80px 0;
-    }
 
+        padding: 80px 0;
+
+    }
 
     .header {
-        height: var(--header-height);
-    }
 
+        height: var(--header-height);
+
+    }
 
     .burguer {
-        display: flex;
-    }
 
+        display: flex;
+
+    }
 
     .header .right {
+
         gap: 8px;
+
     }
 
-
     .navbar {
+
         position: absolute;
 
         top: 100%;
@@ -2994,6 +3181,7 @@ p {
         background: var(--color-header);
 
         border-top:
+
             1px solid rgba(255, 255, 255, 0.06);
 
         opacity: 0;
@@ -3001,26 +3189,25 @@ p {
         visibility: hidden;
 
         transition:
+
             max-height 0.3s ease,
+
             opacity 0.2s ease;
+
     }
 
-
-    /*
-       JS later adds .is-menu-open
-       to the header
-    */
-
     .header.is-menu-open .navbar {
+
         max-height: 500px;
 
         opacity: 1;
 
         visibility: visible;
+
     }
 
-
     .navbar .menu {
+
         width: min(92%, var(--container-width));
 
         margin-inline: auto;
@@ -3032,71 +3219,69 @@ p {
         align-items: flex-start;
 
         gap: 0;
-    }
 
+    }
 
     .navbar .menu li {
+
         width: 100%;
+
     }
 
-
     .navbar .menu a {
+
         display: block;
 
         width: 100%;
 
         padding: 10px 0;
+
     }
 
-
-    /* About */
-
     .about .grid {
+
         grid-template-columns: 1fr;
 
         gap: 50px;
-    }
 
+    }
 
     .about .gridItem:first-child {
+
         justify-self: center;
+
     }
-
-
-    /* Services */
 
     .Services>.container>.grid {
 
         grid-template-columns: 1fr;
+
     }
 
-
-    /* Skills */
-
     .sectionGrid {
+
         grid-template-columns: 1fr;
 
         gap: 50px;
+
     }
 
 }
 
-
-/* =========================================================
-   16. MOBILE HERO
-   ========================================================= */
-
 @media screen and (max-width: 768px) {
 
     .hero {
+
         min-height: 760px;
 
         align-items: flex-end;
 
         padding:
+
             350px 0 65px;
 
         background-position:
+
             68% center;
 
         background-image:
@@ -3114,107 +3299,115 @@ p {
                 rgba(255, 255, 255, 1) 100%),
 
             url("../img/hero-pascal.png");
+
     }
 
-
     .hero_item.left {
+
         width: 100%;
 
         max-width: 600px;
-    }
 
+    }
 
     .hero .title {
+
         font-size:
+
             clamp(2.6rem, 10vw, 3.8rem);
+
     }
 
-
     .hero p {
+
         max-width: 100%;
+
     }
 
 }
 
-
-/* =========================================================
-   17. PHONE
-   ========================================================= */
-
 @media screen and (max-width: 600px) {
 
     :root {
-        --section-padding: 70px;
-    }
 
+        --section-padding: 70px;
+
+    }
 
     .container,
+
     .contain {
+
         width: 90%;
+
     }
 
-
-    /* Hero */
-
     .hero {
+
         min-height: 720px;
 
         padding:
+
             330px 0 55px;
 
         background-position:
+
             70% center;
+
     }
 
-
     .hero_item.left>span {
+
         margin-bottom: 16px;
 
         padding:
+
             7px 11px;
 
         font-size: 0.78rem;
+
     }
 
-
     .hero .title {
+
         margin-bottom: 18px;
 
         font-size:
+
             clamp(2.3rem, 11vw, 3.2rem);
+
     }
 
-
     .hero p {
+
         font-size: 0.97rem;
 
         line-height: 1.65;
+
     }
-
-
-    /* About */
 
     .about ul {
+
         grid-template-columns: 1fr;
+
     }
-
-
-    /* Services */
 
     .Services>.container>.grid {
 
         gap: 18px;
-    }
 
+    }
 
     .Services>.container>.grid>.gridItem {
 
         gap: 18px;
+
     }
 
-
     .Services .services {
+
         grid-template-columns:
+
             46px minmax(0, 1fr);
 
         gap: 14px;
@@ -3222,359 +3415,399 @@ p {
         padding: 19px;
 
         border-radius: 14px;
-    }
 
+    }
 
     .serviceIcon {
-        width: 44px;
-        height: 44px;
-    }
 
+        width: 44px;
+
+        height: 44px;
+
+    }
 
     .serviceIcon svg {
-        width: 24px;
-        height: 24px;
-    }
 
+        width: 24px;
+
+        height: 24px;
+
+    }
 
     .serviceContent h3 {
+
         font-size: 1rem;
+
     }
 
-
     .serviceContent p {
+
         font-size: 0.93rem;
 
         line-height: 1.55;
+
     }
-
-
-    /* Portfolio */
 
     .Portfolio>.container>.grid:not(.portfolio-filters) {
 
         grid-template-columns: 1fr;
+
     }
 
-
-    /* Contact */
-
     .form {
+
         grid-template-columns: 1fr;
 
         padding: 22px;
-    }
 
+    }
 
     .form label {
+
         grid-column: 1 / -1;
+
     }
 
-
-    /* Footer */
-
     footer .grid {
+
         grid-template-columns: 1fr;
 
         text-align: center;
+
     }
 
-
     footer .grid_item,
+
     footer .grid_item:nth-child(2),
+
     footer .grid_item:last-child {
+
         justify-self: center;
+
     }
 
 }
 
-
-/* =========================================================
-   18. VERY SMALL PHONES
-   ========================================================= */
-
 @media screen and (max-width: 390px) {
 
     .hero {
+
         min-height: 690px;
 
         padding-top: 310px;
 
         background-position:
+
             71% center;
+
     }
 
-
     .Services .services {
+
         grid-template-columns: 1fr;
 
         gap: 12px;
+
     }
 
-
     .serviceIcon {
+
         width: 42px;
+
         height: 42px;
+
     }
 
 }
-
-
-/* =========================================================
-   19. ACCESSIBILITY
-   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
     html {
+
         scroll-behavior: auto;
+
     }
 
-
     *,
+
     *::before,
+
     *::after {
+
         animation-duration:
+
             0.01ms !important;
 
         animation-iteration-count:
+
             1 !important;
 
         transition-duration:
+
             0.01ms !important;
+
     }
 
 }
 
-/* =========================================================
-   DARK MODE — FINAL OVERRIDES
-   Must remain at the end of global.css
-   ========================================================= */
-
 html[data-theme="dark"] body {
+
     background: var(--bg-page);
+
     color: var(--text-main);
+
 }
-
-
-/* Sections */
 
 html[data-theme="dark"] .about,
-html[data-theme="dark"] .Skills,
-html[data-theme="dark"] .Contact {
-    background: var(--bg-section);
-}
 
+html[data-theme="dark"] .Skills,
+
+html[data-theme="dark"] .Contact {
+
+    background: var(--bg-section);
+
+}
 
 html[data-theme="dark"] .Services,
+
 html[data-theme="dark"] .Portfolio {
+
     background: var(--bg-section-alt);
+
 }
-
-
-/* General text */
 
 html[data-theme="dark"] h1,
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3,
-html[data-theme="dark"] h4,
-html[data-theme="dark"] h5,
-html[data-theme="dark"] h6 {
-    color: var(--text-main);
-}
 
+html[data-theme="dark"] h2,
+
+html[data-theme="dark"] h3,
+
+html[data-theme="dark"] h4,
+
+html[data-theme="dark"] h5,
+
+html[data-theme="dark"] h6 {
+
+    color: var(--text-main);
+
+}
 
 html[data-theme="dark"] p {
+
     color: var(--text-secondary);
+
 }
-
-
-/* About */
 
 html[data-theme="dark"] .aboutContent p {
-    color: var(--text-secondary);
-}
 
+    color: var(--text-secondary);
+
+}
 
 html[data-theme="dark"] .aboutProfile,
-html[data-theme="dark"] .aboutProfileItem {
-    border-color: var(--border-color);
-}
 
+html[data-theme="dark"] .aboutProfileItem {
+
+    border-color: var(--border-color);
+
+}
 
 html[data-theme="dark"] .aboutLabel {
-    color: var(--text-muted);
-}
 
+    color: var(--text-muted);
+
+}
 
 html[data-theme="dark"] .aboutProfileItem strong {
+
     color: var(--text-main);
+
 }
-
-
-/* Services */
 
 html[data-theme="dark"] .Services .sectionTitle,
-html[data-theme="dark"] .serviceCard h3 {
-    color: var(--text-main);
-}
 
+html[data-theme="dark"] .serviceCard h3 {
+
+    color: var(--text-main);
+
+}
 
 html[data-theme="dark"] .Services .sectionHeader p,
-html[data-theme="dark"] .serviceCard p {
-    color: var(--text-secondary);
-}
 
+html[data-theme="dark"] .serviceCard p {
+
+    color: var(--text-secondary);
+
+}
 
 html[data-theme="dark"] .serviceCard {
-    background: var(--surface);
-    border-color: var(--border-color);
-}
 
+    background: var(--surface);
+
+    border-color: var(--border-color);
+
+}
 
 html[data-theme="dark"] .serviceNumber {
+
     color: var(--text-muted);
+
 }
 
-
 html[data-theme="dark"] .serviceTags span {
+
     color: var(--text-secondary);
 
     background: var(--surface-soft);
 
     border-color: var(--border-color);
+
 }
 
-
 html[data-theme="dark"] .serviceIcon {
+
     color: #93c5fd;
 
     background: #172554;
 
     border-color: #263244;
+
 }
-
-
-/* Skills */
 
 html[data-theme="dark"] .Skills .sectionHeader p,
-html[data-theme="dark"] .skillGroup p {
-    color: var(--text-secondary);
-}
 
+html[data-theme="dark"] .skillGroup p {
+
+    color: var(--text-secondary);
+
+}
 
 html[data-theme="dark"] .skillGroup h3 {
-    color: var(--text-main);
-}
 
+    color: var(--text-main);
+
+}
 
 html[data-theme="dark"] .skillsExpertise,
+
 html[data-theme="dark"] .skillGroup {
+
     border-color: var(--border-color);
+
 }
-
-
-/* Portfolio */
 
 html[data-theme="dark"] .projectCard {
+
     background: var(--surface);
 
     border-color: var(--border-color);
-}
 
+}
 
 html[data-theme="dark"] .Portfolio .sectionHeader p,
-html[data-theme="dark"] .projectContent p {
-    color: var(--text-secondary);
-}
 
+html[data-theme="dark"] .projectContent p {
+
+    color: var(--text-secondary);
+
+}
 
 html[data-theme="dark"] .projectContent h3 {
-    color: var(--text-main);
-}
 
+    color: var(--text-main);
+
+}
 
 html[data-theme="dark"] .projectMeta {
-    color: var(--text-muted);
-}
 
+    color: var(--text-muted);
+
+}
 
 html[data-theme="dark"] .projectTags span,
+
 html[data-theme="dark"] .projectStatus {
+
     color: var(--text-secondary);
 
     background: var(--surface-soft);
 
     border-color: var(--border-color);
+
 }
-
-
-/* Contact */
 
 html[data-theme="dark"] .Contact .sectionTitle {
-    color: var(--text-main);
-}
 
+    color: var(--text-main);
+
+}
 
 html[data-theme="dark"] .contactLead {
-    color: var(--text-secondary);
-}
 
+    color: var(--text-secondary);
+
+}
 
 html[data-theme="dark"] .contactAvailability {
+
     color: var(--text-secondary);
 
     background: var(--surface-soft);
 
     border-color: var(--border-color);
+
 }
 
-
 html[data-theme="dark"] .contactForm {
+
     background: var(--surface-soft);
 
     border-color: var(--border-color);
-}
 
+}
 
 html[data-theme="dark"] .formGroup label {
+
     color: var(--text-main);
+
 }
 
-
 html[data-theme="dark"] .formGroup input,
+
 html[data-theme="dark"] .formGroup textarea {
+
     color: var(--text-main);
 
     background: var(--surface);
 
     border-color: var(--border-color);
-}
 
+}
 
 html[data-theme="dark"] .formGroup input:focus,
+
 html[data-theme="dark"] .formGroup textarea:focus {
+
     background: var(--surface);
+
 }
-
-
-/* Header */
 
 html[data-theme="dark"] .header {
+
     background: var(--header-bg);
+
 }
 
-/* =========================================================
-   THEME TOGGLE
-   ========================================================= */
-
 .themeToggle {
+
     width: 36px;
+
     height: 36px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     padding: 0;
@@ -3590,23 +3823,54 @@ html[data-theme="dark"] .header {
     cursor: pointer;
 
     transition:
+
         color 0.2s ease,
+
         background 0.2s ease,
+
         transform 0.2s ease;
+
 }
 
-
 .themeToggle:hover {
+
     color: #ffffff;
 
     background: rgba(255, 255, 255, 0.12);
 
     transform: translateY(-2px);
+
 }
 
-
 .themeIcon {
+
     font-size: 1.15rem;
 
     line-height: 1;
+
+}
+
+/* Accessibility: visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
