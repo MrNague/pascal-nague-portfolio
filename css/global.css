@@ -449,6 +449,55 @@ p {
     box-shadow: var(--shadow-header);
 
 }
+/* =========================================================
+   LANGUAGE SWITCHER
+   ========================================================= */
+
+.languageSwitcher {
+    display: flex;
+    align-items: center;
+
+    padding: 3px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 6px;
+}
+
+.languageButton {
+    min-width: 32px;
+    height: 28px;
+
+    padding: 0 7px;
+
+    border: 0;
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+.languageButton:hover {
+    color: #ffffff;
+}
+
+.languageButton.active {
+    background: #2563eb;
+    color: #ffffff;
+}
 
 .header .container {
 
@@ -1788,6 +1837,20 @@ p {
 
         max-width: 650px;
 
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .languageSwitcher {
+        margin-left: auto;
+    }
+
+    .languageButton {
+        min-width: 29px;
+        padding: 0 5px;
+        font-size: 0.68rem;
     }
 
 }
