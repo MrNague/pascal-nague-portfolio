@@ -224,3 +224,152 @@ window.addEventListener(
     "load",
     setActiveLink
 );
+
+/* =========================================================
+   LANGUAGE / I18N
+   ========================================================= */
+
+const languageButtons =
+    document.querySelectorAll(".languageButton");
+
+
+function getTranslation(object, path) {
+
+    return path
+        .split(".")
+        .reduce(
+            (current, key) =>
+                current && current[key] !== undefined
+                    ? current[key]
+                    : null,
+            object
+        );
+
+}
+
+
+function applyLanguage(language) {
+
+    if (!translations[language]) {
+        language = "en";
+    }
+
+
+    document.documentElement.lang = language;
+
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach((element) => {
+
+            const key =
+                element.dataset.i18n;
+
+            const value =
+                getTranslation(
+                    translations[language],
+                    key
+                );
+
+            if (value !== null) {
+                element.textContent = value;
+            }
+
+        });
+
+
+    document
+        .querySelectorAll("[data-i18n-placeholder]")
+        .forEach((element) => {
+
+            const key =
+                element.dataset.i18nPlaceholder;
+
+            const value =
+                getTranslation(
+                    translations[language],
+                    key
+                );
+
+            if (value !== null) {
+                element.placeholder = value;
+            }
+
+        });
+
+
+    languageButtons.forEach((button) => {
+
+        const active =
+            button.dataset.lang === language;
+
+        button.classList.toggle(
+            "active",
+            active
+        );
+
+        button.setAttribute(
+            "aria-pressed",
+            active.toString()
+        );
+
+    });
+
+
+    localStorage.setItem(
+        "language",
+        language
+    );
+
+}
+
+
+function getInitialLanguage() {
+
+    const savedLanguage =
+        localStorage.getItem("language");
+
+
+    if (
+        savedLanguage &&
+        translations[savedLanguage]
+    ) {
+        return savedLanguage;
+    }
+
+
+    const browserLanguage =
+        navigator.language
+            .slice(0, 2)
+            .toLowerCase();
+
+
+    if (translations[browserLanguage]) {
+        return browserLanguage;
+    }
+
+
+    return "en";
+
+}
+
+
+languageButtons.forEach((button) => {
+
+    button.addEventListener(
+        "click",
+        () => {
+
+            applyLanguage(
+                button.dataset.lang
+            );
+
+        }
+    );
+
+});
+
+
+applyLanguage(
+    getInitialLanguage()
+);
