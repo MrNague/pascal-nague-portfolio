@@ -3918,3 +3918,24 @@ textarea:focus-visible {
         scroll-behavior: auto !important;
     }
 }
+
+
+.experienceBlock {
+    margin-top: 70px;
+}
+
+.experienceTitle {
+    margin-bottom: 24px;
+
+    font-size: 1.5rem;
+}
+
+.experienceDescription {
+    margin-top: 8px;
+
+    max-width: 760px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.65;
+}
