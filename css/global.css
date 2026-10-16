@@ -449,12 +449,15 @@ p {
     box-shadow: var(--shadow-header);
 
 }
+
 /* =========================================================
    LANGUAGE SWITCHER
    ========================================================= */
 
 .languageSwitcher {
+
     display: flex;
+
     align-items: center;
 
     padding: 3px;
@@ -464,15 +467,19 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.1);
 
     border-radius: 6px;
+
 }
 
 .languageButton {
+
     min-width: 32px;
+
     height: 28px;
 
     padding: 0 7px;
 
     border: 0;
+
     border-radius: 4px;
 
     background: transparent;
@@ -480,23 +487,33 @@ p {
     color: #9ca3af;
 
     font-size: 0.72rem;
+
     font-weight: 700;
+
     letter-spacing: 0.04em;
 
     cursor: pointer;
 
     transition:
+
         background var(--transition),
+
         color var(--transition);
+
 }
 
 .languageButton:hover {
+
     color: #ffffff;
+
 }
 
 .languageButton.active {
+
     background: #2563eb;
+
     color: #ffffff;
+
 }
 
 .header .container {
@@ -602,11 +619,15 @@ p {
 }
 
 .navbar a.active {
+
     color: #ffffff;
+
 }
 
 .navbar a.active::after {
+
     width: 100%;
+
 }
 
 .navbar a::after {
@@ -1844,13 +1865,19 @@ p {
 @media screen and (max-width: 850px) {
 
     .languageSwitcher {
+
         margin-left: auto;
+
     }
 
     .languageButton {
+
         min-width: 29px;
+
         padding: 0 5px;
+
         font-size: 0.68rem;
+
     }
 
 }
@@ -2132,27 +2159,45 @@ p {
 }
 
 .projectVisualBenchmark {
+
     background:
+
         linear-gradient(135deg,
+
             #0f172a 0%,
+
             #1e3a5f 55%,
+
             #2563eb 100%);
+
 }
 
 .projectVisualVision {
+
     background:
+
         linear-gradient(135deg,
+
             #07111f 0%,
+
             #0f4c5c 55%,
+
             #0e7490 100%);
+
 }
 
 .projectVisualMLOps {
+
     background:
+
         linear-gradient(135deg,
+
             #111827 0%,
+
             #3730a3 55%,
+
             #2563eb 100%);
+
 }
 
 .projectVisualContent {
@@ -2590,17 +2635,23 @@ p {
 }
 
 .contactDirect {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: flex-start;
 
     gap: 8px;
 
     margin-top: 22px;
+
 }
 
 .contactDirect a {
+
     display: flex;
+
     align-items: baseline;
 
     gap: 12px;
@@ -2610,28 +2661,36 @@ p {
     font-size: 0.95rem;
 
     transition:
+
         color var(--transition),
+
         transform var(--transition);
+
 }
 
 .contactDirect a:hover {
+
     color: var(--accent);
 
     transform: translateX(3px);
+
 }
 
 .contactDirectLabel {
+
     min-width: 52px;
 
     color: var(--text-muted);
 
     font-size: 0.78rem;
+
     font-weight: 700;
 
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
 
+    text-transform: uppercase;
+
+}
 
 .contactForm {
 
@@ -3958,42 +4017,65 @@ html[data-theme="dark"] .header {
 }
 
 /* Accessibility: visible keyboard focus */
+
 a:focus-visible,
+
 button:focus-visible,
+
 input:focus-visible,
+
 textarea:focus-visible {
+
     outline: 2px solid #60a5fa;
+
     outline-offset: 3px;
+
 }
 
 /* Respect reduced-motion preferences */
+
 @media (prefers-reduced-motion: reduce) {
+
     html {
+
         scroll-behavior: auto;
+
     }
 
     *,
+
     *::before,
+
     *::after {
+
         animation-duration: 0.01ms !important;
+
         animation-iteration-count: 1 !important;
+
         transition-duration: 0.01ms !important;
+
         scroll-behavior: auto !important;
+
     }
+
 }
 
-
 .experienceBlock {
+
     margin-top: 70px;
+
 }
 
 .experienceTitle {
+
     margin-bottom: 24px;
 
     font-size: 1.5rem;
+
 }
 
 .experienceDescription {
+
     margin-top: 8px;
 
     max-width: 760px;
@@ -4001,4 +4083,28 @@ textarea:focus-visible {
     color: var(--text-secondary);
 
     line-height: 1.65;
+
+}
+
+/* =========================================================
+   EXPERIENCE HIGHLIGHTS
+   ========================================================= */
+
+.experienceHighlights {
+    margin-top: 14px;
+    padding-left: 20px;
+    color: var(--text-secondary);
+}
+
+.experienceHighlights li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.experienceHighlights li::marker {
+    color: var(--accent);
+}
+
+.experienceHighlights li:last-child {
+    margin-bottom: 0;
 }
