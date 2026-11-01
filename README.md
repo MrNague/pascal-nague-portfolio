@@ -25,6 +25,7 @@ with vanilla HTML, CSS and JavaScript to strengthen my frontend fundamentals.
 
 ## Features
 
+
 - Responsive design
 - Light and dark themes
 - Persistent theme preference
