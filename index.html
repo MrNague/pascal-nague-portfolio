@@ -118,31 +118,14 @@
     }
     </script>
 
-    <script>
-        (() => {
-            try {
-                const savedTheme = localStorage.getItem("theme");
-
-                const prefersDark =
-                    window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-                document.documentElement.dataset.theme =
-                    savedTheme ||
-                    (prefersDark ? "dark" : "light");
-
-            } catch (_) {
-
-                document.documentElement.dataset.theme = "light";
-
-            }
-        })();
-    </script>
+    <script>document.documentElement.dataset.theme = "dark";</script>
 
     <link rel="stylesheet" href="./css/global.css">
 </head>
 
 
 <body>
+    <div class="ambientHologram" aria-hidden="true"><span class="ambientRing ambientRingOne"></span><span class="ambientRing ambientRingTwo"></span><span class="ambientCore"></span><span class="ambientMesh"></span></div>
 
     <!-- =====================================================
          SVG ICON SPRITE
@@ -403,22 +386,7 @@
                 </div>
 
 
-                <button
-                    class="themeToggle"
-                    id="themeToggle"
-                    type="button"
-                    aria-label="Switch to dark mode"
-                    title="Change theme"
-                    data-i18n-aria-label="accessibility.themeDark"
-                    data-i18n-title="accessibility.changeTheme"
-                >
-                    <span
-                        class="themeIcon"
-                        aria-hidden="true"
-                    >
-                        ☾
-                    </span>
-                </button>
+                
 
 
                 <button
@@ -1340,7 +1308,7 @@
 
                 <article class="projectCard projectFeatured">
 
-                    <div class="projectVisual projectVisualMLOps">
+                    <div class="projectVisual projectVisualMLOps" style="--project-art: url('./img/projects/immolens-hologram.svg')">
 
                         <div class="projectVisualContent">
 
@@ -1417,7 +1385,7 @@
 
                 <article class="projectCard">
 
-                    <div class="projectVisual projectVisualPerformance">
+                    <div class="projectVisual projectVisualPerformance" style="--project-art: url('./img/projects/dataset-hologram.svg')">
 
                         <div class="projectVisualContent">
 
@@ -1507,7 +1475,7 @@
 
                 <article class="projectCard">
 
-                    <div class="projectVisual">
+                    <div class="projectVisual" style="--project-art: url('./img/projects/speech-hologram.svg')">
 
                         <div class="projectVisualContent">
 
@@ -1590,7 +1558,7 @@
 
                 <article class="projectCard">
 
-                    <div class="projectVisual projectVisualVision">
+                    <div class="projectVisual projectVisualVision" style="--project-art: url('./img/projects/vision-hologram.svg')">
 
                         <div class="projectVisualContent">
 
@@ -1672,7 +1640,7 @@
 
                 <article class="projectCard">
 
-                    <div class="projectVisual projectVisualBenchmark">
+                    <div class="projectVisual projectVisualBenchmark" style="--project-art: url('./img/projects/benchmark-hologram.svg')">
 
                         <div class="projectVisualContent">
 
