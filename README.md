@@ -1,42 +1,44 @@
-# Pascal Nague — Personal Portfolio
+# Pascal Nague — AI Engineering Portfolio
 
-Personal portfolio website showcasing my work, skills and projects in
-Computer Science, Machine Learning, Data and AI.
+Personal portfolio showcasing my work in **AI Engineering, Machine Learning, ML systems, AI evaluation, and software development**.
 
-## About
+**Live website:** https://portfolio.naguepc.de/
 
-I am a Computer Science student at RPTU Kaiserslautern with a focus on
-Machine Learning, Data Engineering and AI systems.
+## Selected work
 
-This portfolio presents some of my current work, including machine learning
-experiments, data pipelines, model evaluation and performance benchmarking.
+- **[ImmoLens](https://github.com/MrNague/ImmoLens)** — an end-to-end ML application with scikit-learn, MLflow, FastAPI and a React/TypeScript frontend.
+- **[Minimal Dataset for PyTorch](https://github.com/MrNague/minimal-dataset-pytorch)** — a PyTorch data-loading library developed during my completed Bachelor Project at DFKI.
+- **[Speech & LLM Quality Lab](https://github.com/MrNague/speech-llm-quality-lab)** — quality-evaluation tools for ASR and LLM workflows.
+- **[YOLO Webcam Detection](https://github.com/MrNague/yolo-webcam-detection)** — a modular real-time computer vision application.
+- **[Food-101 DataLoader Benchmark](https://github.com/MrNague/food101-dataloader-benchmark)** — external performance validation for the data-loading library.
 
-## Technologies
+**Project status:** ImmoLens currently uses **synthetic training data**. Its outputs are a technical demonstration, not validated property valuations.
 
-The website is built with:
+## Website
 
-- HTML5
-- CSS3
-- JavaScript
-- Git & GitHub
+This portfolio is built using **HTML5, CSS3 and vanilla JavaScript**, without a frontend framework or build step.
 
-No frontend framework is currently used. The project was intentionally built
-with vanilla HTML, CSS and JavaScript to strengthen my frontend fundamentals.
+Features:
+- Responsive layout and mobile navigation
+- Existing light and dark themes with persisted preference
+- English, German and French translations
+- Subtle CSS holographic hero effects that respect `prefers-reduced-motion`
+- Project descriptions and links to source code
+- Contact form powered by Netlify Forms
 
-## Features
+The hero photograph, site typography and both theme palettes remain unchanged by the holographic refresh.
 
+## Local preview
 
-- Responsive design
-- Light and dark themes
-- Persistent theme preference
-- Mobile navigation
-- Active navigation while scrolling
-- Project portfolio
-- Skills and services sections
-- Contact form
-- Links to GitHub, LinkedIn and other professional profiles
+Use a simple local HTTP server:
 
-## Project Structure
+```bash
+python -m http.server 8000
+```
+
+Then open http://localhost:8000/. Netlify Forms requires a proper Netlify deployment to process submissions.
+
+## File structure
 
 ```text
 .
@@ -44,6 +46,14 @@ with vanilla HTML, CSS and JavaScript to strengthen my frontend fundamentals.
 ├── css/
 │   └── global.css
 ├── js/
-│   └── main.js
+│   ├── main.js
+│   └── translations.js
 ├── img/
 └── docs/
+```
+
+## About
+
+I am a Computer Science student at RPTU Kaiserslautern-Landau, focused on building and evaluating reliable AI applications and ML systems.
+
+[Portfolio](https://portfolio.naguepc.de/) · [GitHub profile](https://github.com/MrNague) · [LinkedIn](https://www.linkedin.com/in/pascal-nague/)
