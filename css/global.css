@@ -3178,3 +3178,98 @@ html[data-theme="dark"] .heroHologram {
             0.01ms !important;
     }
 }
+
+/* ==========================================================
+   V2 — ONE IMMERSIVE THEME / PERSISTENT HOLOGRAPHIC STAGE
+   ========================================================== */
+:root, html[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-page: #030c1d; --bg-section: transparent; --bg-section-alt: transparent;
+    --surface: rgba(8, 24, 48, .86); --surface-soft: rgba(11, 29, 57, .9);
+    --text-main: #eef8ff; --text-secondary: #c2d6eb; --text-muted: #8fa9c8;
+    --border-color: rgba(67, 193, 255, .25);
+    --accent: #51d9ff; --accent-soft: rgba(16, 123, 225, .19);
+    --header-bg: rgba(3, 12, 29, .94);
+    --color-text: #eef8ff; --color-text-secondary: #c2d6eb; --color-text-muted: #8fa9c8;
+    --color-primary: #51d9ff; --color-primary-light: rgba(16, 123, 225, .2);
+    --color-border: rgba(67, 193, 255, .25);
+}
+html, body { background-color: #030c1d; }
+body { isolation: isolate; }
+body::before {
+    content:""; position:fixed; inset:0; z-index:-3; pointer-events:none;
+    background: radial-gradient(ellipse 70% 64% at 77% 43%,rgba(11,93,174,.27),transparent 75%),
+    radial-gradient(ellipse 44% 54% at 10% 78%,rgba(88,31,163,.23),transparent 80%),
+    linear-gradient(135deg,#020817 0%,#06172e 52%,#030b1b 100%);
+}
+.ambientHologram { position:fixed; inset:0; z-index:-2; pointer-events:none; overflow:hidden; opacity:.78; }
+.ambientMesh {position:absolute; inset:-30%; background-image:
+    linear-gradient(rgba(58,191,245,.11) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(58,191,245,.11) 1px, transparent 1px);
+    background-size:66px 66px; transform:perspective(700px) rotateX(63deg) scale(1.5);
+    -webkit-mask-image:radial-gradient(ellipse,black 0%,transparent 64%);
+    mask-image:radial-gradient(ellipse,black 0%,transparent 64%);
+    animation:ambientDrift 35s linear infinite;
+}
+.ambientRing {position:absolute; width:min(72vw,820px); aspect-ratio:1; right:-17%; top:10%;
+    border:2px solid rgba(58,205,255,.31); border-radius:50%;
+    box-shadow:inset 0 0 60px rgba(25,146,255,.14),0 0 75px rgba(57,181,250,.13);
+    animation:ambientTurn 28s linear infinite;
+}
+.ambientRing::before,.ambientRing::after {content:"";position:absolute;inset:13%;border:1px dashed rgba(77,218,255,.3);border-radius:50%;}
+.ambientRing::after {inset:28%;border-style:solid;border-color:rgba(158,77,255,.34);}
+.ambientRingTwo {width:min(42vw,500px);top:45%;right:57%;opacity:.55;animation-direction:reverse;animation-duration:38s;}
+.ambientCore {position:absolute; width:12px;height:12px;right:22%;top:42%; border-radius:50%;
+    background:#4bdfff;box-shadow:0 0 35px 16px rgba(45,190,255,.33);
+    animation:ambientBreathe 6s ease-in-out infinite;
+}
+@keyframes ambientDrift { to {background-position:132px 66px;} }
+@keyframes ambientTurn {to {transform:rotate(360deg) translateY(-15px);}}
+@keyframes ambientBreathe {50% {transform:scale(1.65);opacity:.5;}}
+html[data-theme="dark"] .about, html[data-theme="dark"] .Skills,
+html[data-theme="dark"] .Contact,html[data-theme="dark"] .Services,
+html[data-theme="dark"] .Portfolio {background:transparent;}
+.hero {background-image:linear-gradient(90deg,rgba(3,12,29,.96) 0%,rgba(3,12,29,.83) 36%,rgba(3,12,29,.22) 100%),url("../img/hero-pascal.png");}
+html[data-theme="dark"] .hero {background-color:transparent;background-image:linear-gradient(90deg,rgba(3,12,29,.96) 0%,rgba(3,12,29,.82) 36%,rgba(3,12,29,.18) 100%),url("../img/hero-pascal.png");}
+.heroHologram {opacity:.8;}
+html[data-theme="dark"] .heroHologram {--holo-line:rgba(58,216,255,.65);--holo-glow:rgba(76,85,238,.28);}
+.hero .title,html[data-theme="dark"] .hero .title {color:#fff;text-shadow:0 0 25px rgba(71,164,255,.15);}
+.hero p,html[data-theme="dark"] .hero p {color:#dcecff;}
+html[data-theme="dark"] .hero_item.left > span {color:#a5eaff;background:rgba(3,30,65,.88);border-color:rgba(74,208,255,.47);}
+.themeToggle {display:none!important;}
+.serviceCard,.projectCard,.contactForm,.skillsStack,.contactAvailability {backdrop-filter:blur(14px);}
+html[data-theme="dark"] .serviceCard,html[data-theme="dark"] .projectCard {
+    background:rgba(5,19,43,.85);border-color:rgba(71,189,255,.33);
+    box-shadow:0 0 24px rgba(0,121,225,.1), inset 0 0 25px rgba(20,80,158,.06);
+}
+html[data-theme="dark"] .serviceCard:hover,html[data-theme="dark"] .projectCard:hover {
+    border-color:rgba(93,221,255,.8);box-shadow:0 0 30px rgba(4,185,255,.23);
+}
+html[data-theme="dark"] .skillsStack,html[data-theme="dark"] .contactForm {
+    background:rgba(7,25,51,.91);border-color:rgba(71,189,255,.32);
+}
+html[data-theme="dark"] .technologyGrid span,html[data-theme="dark"] .focusTags span,
+html[data-theme="dark"] .serviceTags span,html[data-theme="dark"] .projectTags span,
+html[data-theme="dark"] .contactAvailability {background:rgba(9,39,78,.8);border-color:rgba(52,153,231,.3);color:#d8f2ff;}
+.projectVisual {min-height:280px;background:#031633!important;isolation:isolate;}
+.projectVisual::before {inset:0;width:auto;height:auto;border:0;border-radius:0;
+    background:var(--project-art) center/cover no-repeat;
+    opacity:.92;transform:scale(1.025);animation:projectArtFloat 12s ease-in-out infinite;
+}
+.projectVisual::after {inset:0;width:auto;height:auto;border:0;border-radius:0;
+    background:linear-gradient(0deg,rgba(2,11,33,.92) 0%,rgba(4,20,49,.15) 64%,transparent 100%);
+}
+.projectVisualContent {z-index:2;text-shadow:0 2px 15px rgba(0,0,0,.8);}
+.projectVisual strong {font-size:clamp(1.6rem,2.7vw,2.5rem);}
+.projectVisualLabel {color:#8df1ff;}
+.projectCard:hover .projectVisual::before {animation-duration:6s;filter:saturate(1.22) brightness(1.12);}
+.projectVisual .projectVisualContent::after {content:"";position:absolute;inset:auto -8px -13px -8px;height:1px;
+    background:linear-gradient(90deg,transparent,#55e4ff,transparent);box-shadow:0 0 9px #39d8ff;}
+@keyframes projectArtFloat {0%,100% {transform:scale(1.03) translateY(0);}50%{transform:scale(1.09) translateY(-8px);}}
+.header {background:rgba(2,10,26,.94)!important;backdrop-filter:blur(12px);}
+.footer {background:rgba(1,8,22,.94);}
+.heroActionPrimary {background:linear-gradient(105deg,#077cdb,#6928e8);border-color:#3dcfff;}
+.heroActionSecondary {color:#dcf8ff;background:rgba(3,25,54,.8);border-color:#43cfff;}
+.heroActionSecondary:hover {color:#fff;background:#103762;}
+@media (max-width:700px){.ambientHologram{opacity:.44}.ambientRingTwo{display:none}.projectVisual{min-height:250px}}
+@media(prefers-reduced-motion:reduce){.ambientMesh,.ambientRing,.ambientCore,.projectVisual::before{animation:none!important;}}

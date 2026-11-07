@@ -43,32 +43,7 @@ function saveTheme(theme) {
 
 
 function getInitialTheme() {
-
-    const savedTheme =
-        getStoredTheme();
-
-
-    if (
-        savedTheme === "light" ||
-        savedTheme === "dark"
-    ) {
-
-        return savedTheme;
-
-    }
-
-
-    const systemPrefersDark =
-        window.matchMedia &&
-        window.matchMedia(
-            "(prefers-color-scheme: dark)"
-        ).matches;
-
-
-    return systemPrefersDark
-        ? "dark"
-        : "light";
-
+    return "dark";
 }
 
 
