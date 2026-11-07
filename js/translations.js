@@ -5,9 +5,9 @@ const translations = {
     en: {
 
         meta: {
-            title: "Pascal Nague | Machine Learning, Data & AI Portfolio",
+            title: "Pascal Nague | AI Engineering, ML & Software Systems",
             description:
-                "Portfolio of Pascal Nague, Computer Science student in Germany focused on Machine Learning, Data Engineering, AI evaluation, computer vision and PyTorch systems.",
+                "Portfolio of Pascal Nague, an RPTU computer science student building AI applications, ML pipelines and reliable software systems.",
             locale: "en_US"
         },
 
@@ -77,13 +77,16 @@ const translations = {
         hero: {
 
             badge:
-                "AI, Machine Learning & Data",
+                "AI Engineering · Machine Learning · Software Systems",
 
             title:
                 "Hello, I'm Pascal Nague",
 
+            projectsLink: "Explore projects",
+            githubLink: "GitHub profile ↗",
+
             description:
-                "Computer Science student specializing in Machine Learning and Data. I develop practical AI solutions, analyze data, evaluate models and optimize machine learning pipelines with Python and PyTorch."
+                "Computer Science student at RPTU Kaiserslautern-Landau focused on AI Engineering. I build and evaluate end-to-end ML applications, data pipelines and reliable software systems with Python and PyTorch."
         },
 
         about: {
@@ -95,7 +98,7 @@ const translations = {
                 "Who I am",
 
             p1:
-                "I’m Pascal Nague, a Computer Science student at RPTU Kaiserslautern-Landau with a strong focus on Machine Learning, Data and AI systems.",
+                "I’m Pascal Nague, a Computer Science student at RPTU Kaiserslautern-Landau focused on AI Engineering, Machine Learning and reliable software systems.",
 
             p2:
                 "I enjoy understanding how intelligent systems work — from the data they consume to the way their performance, reliability and efficiency are measured.",
@@ -110,7 +113,7 @@ const translations = {
                 "Current focus",
 
             currentFocusValue:
-                "Machine Learning · Data Engineering · AI Systems",
+                "AI Engineering · ML Systems · Software Engineering",
 
             bachelorProject:
                 "Bachelor Project",
@@ -122,13 +125,13 @@ const translations = {
                 "Core technologies",
 
             coreTechnologiesValue:
-                "Python · PyTorch · SQL · Git · Linux · Docker",
+                "Python · PyTorch · FastAPI · SQL · Git · Docker",
 
             interests:
                 "Interests",
 
             interestsValue:
-                "ML Systems · LLM Evaluation · Computer Vision · Data Pipelines",
+                "End-to-End AI Applications · ML Systems · LLM Evaluation",
 
             teachingCommunity:
                 "Teaching & Community",
@@ -228,13 +231,13 @@ const translations = {
                 "Skills & Technologies",
 
             intro:
-                "My technical background combines software development, data analysis, machine learning and performance-oriented ML systems.",
+                "My technical background combines AI application development, machine learning, software engineering, data pipelines and performance-oriented ML systems.",
 
             programming:
                 "Programming",
 
             programmingDetails:
-                "Python · Java · SQL · HTML · CSS · JavaScript",
+                "Python · Java · SQL · JavaScript · TypeScript · HTML · CSS",
 
             dataAnalysis:
                 "Data Analysis",
@@ -366,7 +369,7 @@ const translations = {
                 "Portfolio",
 
             intro:
-                "Selected engineering projects across ML systems, AI evaluation, computer vision, end-to-end ML applications and performance benchmarking.",
+                "Practical AI engineering projects spanning end-to-end applications, ML systems, model evaluation and reproducible benchmarking.",
 
             view:
                 "View project",
@@ -446,10 +449,10 @@ const translations = {
             estate: {
 
                 title:
-                    "Real Estate Price Prediction",
+                    "ImmoLens",
 
                 visual:
-                    "Real Estate<br>Price Prediction",
+                    "ImmoLens<br>ML Application",
 
                 category:
                     "End-to-End ML",
@@ -458,7 +461,7 @@ const translations = {
                     "ML Application",
 
                 description:
-                    "An end-to-end machine-learning application covering data generation and feature engineering, Random Forest modelling, MLflow experiment tracking, a FastAPI prediction API, a Streamlit interface and Docker-based packaging.",
+                    "End-to-end real-estate ML prototype combining scikit-learn, MLflow, FastAPI and a React/TypeScript frontend. Currently trained on synthetic data; predictions are not validated real-market valuations.",
 
                 private:
                     "Private repository"
@@ -540,7 +543,7 @@ const translations = {
         footer: {
 
             description:
-                "Computer Science student focused on Machine Learning, Data and AI systems.",
+                "Computer Science student focused on AI Engineering, ML systems and reliable software.",
 
             navigation:
                 "Navigation",
@@ -562,10 +565,10 @@ const translations = {
         meta: {
 
             title:
-                "Pascal Nague | Machine Learning, Data & KI Portfolio",
+                "Pascal Nague | AI Engineering, ML & Software-Systeme",
 
             description:
-                "Portfolio von Pascal Nague, Informatikstudent in Deutschland mit Schwerpunkt Machine Learning, Data Engineering, KI-Evaluation, Computer Vision und PyTorch-Systeme.",
+                "Portfolio von Pascal Nague, Informatikstudent an der RPTU mit Fokus auf AI Engineering, ML-Anwendungen und zuverlässige Software.",
 
             locale:
                 "de_DE"
@@ -637,13 +640,16 @@ const translations = {
         hero: {
 
             badge:
-                "KI, Machine Learning & Data",
+                "AI Engineering · Machine Learning · Softwaresysteme",
 
             title:
                 "Hallo, ich bin Pascal Nague",
 
+            projectsLink: "Projekte ansehen",
+            githubLink: "GitHub-Profil ↗",
+
             description:
-                "Informatikstudent mit Schwerpunkt Machine Learning und Data. Ich entwickle praxisnahe KI-Lösungen, analysiere Daten, evaluiere Modelle und optimiere Machine-Learning-Pipelines mit Python und PyTorch."
+                "Informatikstudent an der RPTU Kaiserslautern-Landau mit Schwerpunkt AI Engineering. Ich entwickle und evaluiere vollständige ML-Anwendungen, Datenpipelines und zuverlässige Softwaresysteme mit Python und PyTorch."
         },
 
         about: {
@@ -655,7 +661,7 @@ const translations = {
                 "Wer ich bin",
 
             p1:
-                "Ich bin Pascal Nague, Informatikstudent an der RPTU Kaiserslautern-Landau mit einem starken Schwerpunkt auf Machine Learning, Data und KI-Systemen.",
+                "Ich bin Pascal Nague, Informatikstudent an der RPTU Kaiserslautern-Landau mit Schwerpunkt AI Engineering, Machine Learning und zuverlässige Softwaresysteme.",
 
             p2:
                 "Mich interessiert, wie intelligente Systeme tatsächlich funktionieren — von den Daten, die sie verarbeiten, bis hin zur Messung ihrer Leistung, Zuverlässigkeit und Effizienz.",
@@ -670,7 +676,7 @@ const translations = {
                 "Aktueller Schwerpunkt",
 
             currentFocusValue:
-                "Machine Learning · Data Engineering · KI-Systeme",
+                "AI Engineering · ML-Systeme · Software Engineering",
 
             bachelorProject:
                 "Bachelorprojekt",
@@ -682,13 +688,13 @@ const translations = {
                 "Kerntechnologien",
 
             coreTechnologiesValue:
-                "Python · PyTorch · SQL · Git · Linux · Docker",
+                "Python · PyTorch · FastAPI · SQL · Git · Docker",
 
             interests:
                 "Interessengebiete",
 
             interestsValue:
-                "ML-Systeme · LLM-Evaluation · Computer Vision · Datenpipelines",
+                "KI-Anwendungen · ML-Systeme · LLM-Evaluation",
 
             teachingCommunity:
                 "Lehre & Engagement",
@@ -788,13 +794,13 @@ const translations = {
                 "Kompetenzen & Technologien",
 
             intro:
-                "Mein technischer Hintergrund verbindet Softwareentwicklung, Datenanalyse, Machine Learning und performanceorientierte ML-Systeme.",
+                "Mein technischer Hintergrund verbindet die Entwicklung von KI-Anwendungen, Machine Learning, Software Engineering, Datenpipelines und performanceorientierte ML-Systeme.",
 
             programming:
                 "Programmierung",
 
             programmingDetails:
-                "Python · Java · SQL · HTML · CSS · JavaScript",
+                "Python · Java · SQL · JavaScript · TypeScript · HTML · CSS",
 
             dataAnalysis:
                 "Datenanalyse",
@@ -1006,10 +1012,10 @@ const translations = {
             estate: {
 
                 title:
-                    "Immobilienpreis-Prognose",
+                    "ImmoLens",
 
                 visual:
-                    "Immobilienpreis-<br>Prognose",
+                    "ImmoLens<br>ML-Anwendung",
 
                 category:
                     "End-to-End ML",
@@ -1018,7 +1024,7 @@ const translations = {
                     "ML-Anwendung",
 
                 description:
-                    "Eine End-to-End-Machine-Learning-Anwendung mit Datengenerierung und Feature Engineering, Random-Forest-Modellierung, MLflow Experiment Tracking, einer FastAPI Prediction API, Streamlit-Oberfläche und Docker-basierter Paketierung.",
+                    "End-to-End-Prototyp für Immobilienpreisprognosen mit scikit-learn, MLflow, FastAPI und einem React/TypeScript-Frontend. Das Modell nutzt derzeit synthetische Daten; die Prognosen sind nicht am realen Markt validiert.",
 
                 private:
                     "Privates Repository"
@@ -1100,7 +1106,7 @@ const translations = {
         footer: {
 
             description:
-                "Informatikstudent mit Schwerpunkt Machine Learning, Data und KI-Systeme.",
+                "Informatikstudent mit Schwerpunkt AI Engineering, ML-Systeme und zuverlässige Software.",
 
             navigation:
                 "Navigation",
@@ -1122,10 +1128,10 @@ const translations = {
         meta: {
 
             title:
-                "Pascal Nague | Portfolio Machine Learning, Data & IA",
+                "Pascal Nague | Portfolio AI Engineering & Machine Learning",
 
             description:
-                "Portfolio de Pascal Nague, étudiant en informatique en Allemagne spécialisé en Machine Learning, Data Engineering, évaluation IA, vision par ordinateur et systèmes PyTorch.",
+                "Portfolio de Pascal Nague, étudiant en informatique à la RPTU orienté AI Engineering, applications ML et systèmes logiciels fiables.",
 
             locale:
                 "fr_FR"
@@ -1197,13 +1203,16 @@ const translations = {
         hero: {
 
             badge:
-                "IA, Machine Learning & Data",
+                "AI Engineering · Machine Learning · Systèmes logiciels",
 
             title:
                 "Bonjour, je suis Pascal Nague",
 
+            projectsLink: "Découvrir mes projets",
+            githubLink: "Profil GitHub ↗",
+
             description:
-                "Étudiant en informatique spécialisé en Machine Learning et Data. Je développe des solutions d'IA pratiques, analyse des données, évalue des modèles et optimise des pipelines de Machine Learning avec Python et PyTorch."
+                "Étudiant en informatique à la RPTU Kaiserslautern-Landau, orienté AI Engineering. Je développe et évalue des applications ML de bout en bout, des pipelines de données et des systèmes logiciels fiables avec Python et PyTorch."
         },
 
         about: {
@@ -1215,7 +1224,7 @@ const translations = {
                 "Qui je suis",
 
             p1:
-                "Je suis Pascal Nague, étudiant en informatique à la RPTU Kaiserslautern-Landau, avec un intérêt particulier pour le Machine Learning, la Data et les systèmes d'IA.",
+                "Je suis Pascal Nague, étudiant en informatique à la RPTU Kaiserslautern-Landau, orienté AI Engineering, Machine Learning et développement de systèmes logiciels fiables.",
 
             p2:
                 "J'aime comprendre le fonctionnement réel des systèmes intelligents — depuis les données qu'ils consomment jusqu'à la manière dont leurs performances, leur fiabilité et leur efficacité sont mesurées.",
@@ -1230,7 +1239,7 @@ const translations = {
                 "Focus actuel",
 
             currentFocusValue:
-                "Machine Learning · Data Engineering · Systèmes IA",
+                "AI Engineering · Systèmes ML · Génie logiciel",
 
             bachelorProject:
                 "Projet de Bachelor",
@@ -1242,13 +1251,13 @@ const translations = {
                 "Technologies principales",
 
             coreTechnologiesValue:
-                "Python · PyTorch · SQL · Git · Linux · Docker",
+                "Python · PyTorch · FastAPI · SQL · Git · Docker",
 
             interests:
                 "Centres d'intérêt",
 
             interestsValue:
-                "Systèmes ML · Évaluation LLM · Vision par ordinateur · Pipelines de données",
+                "Applications IA · Systèmes ML · Évaluation LLM",
 
             teachingCommunity:
                 "Enseignement & Engagement",
@@ -1348,13 +1357,13 @@ const translations = {
                 "Compétences & Technologies",
 
             intro:
-                "Mon profil technique combine développement logiciel, analyse de données, Machine Learning et systèmes ML orientés performance.",
+                "Mon profil technique associe développement d'applications IA, Machine Learning, génie logiciel, pipelines de données et systèmes ML performants.",
 
             programming:
                 "Programmation",
 
             programmingDetails:
-                "Python · Java · SQL · HTML · CSS · JavaScript",
+                "Python · Java · SQL · JavaScript · TypeScript · HTML · CSS",
 
             dataAnalysis:
                 "Analyse de données",
@@ -1566,10 +1575,10 @@ const translations = {
             estate: {
 
                 title:
-                    "Prédiction des prix immobiliers",
+                    "ImmoLens",
 
                 visual:
-                    "Prédiction des prix<br>immobiliers",
+                    "ImmoLens<br>Application ML",
 
                 category:
                     "ML End-to-End",
@@ -1578,7 +1587,7 @@ const translations = {
                     "Application ML",
 
                 description:
-                    "Une application Machine Learning end-to-end couvrant la génération de données et le feature engineering, un modèle Random Forest, le suivi d'expériences avec MLflow, une API FastAPI, une interface Streamlit et le packaging avec Docker.",
+                    "Prototype ML de bout en bout pour l'estimation immobilière avec scikit-learn, MLflow, FastAPI et une interface React/TypeScript. Le modèle utilise actuellement des données synthétiques ; ses prédictions ne sont pas validées sur le marché réel.",
 
                 private:
                     "Dépôt privé"
@@ -1660,7 +1669,7 @@ const translations = {
         footer: {
 
             description:
-                "Étudiant en informatique spécialisé en Machine Learning, Data et systèmes d'IA.",
+                "Étudiant en informatique orienté AI Engineering, systèmes ML et logiciels fiables.",
 
             navigation:
                 "Navigation",
