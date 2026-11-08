@@ -1108,3 +1108,24 @@ restoreHomeAfterReload();
 
 
 updateThemeButton();
+/* Show persistent content hologram only between the About and footer sections.
+   The existing home artwork and animations are not modified. */
+(() => {
+  const about = document.getElementById("About");
+  const footer = document.querySelector(".footer");
+  if (!about || !footer) return;
+  let queued = false;
+  const update = () => {
+    queued = false;
+    const from = about.getBoundingClientRect().top;
+    const to = footer.getBoundingClientRect().top;
+    document.body.classList.toggle("robot-section-visible",
+      from < window.innerHeight * 0.62 && to > window.innerHeight * 0.48);
+  };
+  const onScroll = () => {
+    if (!queued) { queued = true; window.requestAnimationFrame(update); }
+  };
+  window.addEventListener("scroll",onScroll,{passive:true});
+  window.addEventListener("resize",onScroll);
+  update();
+})();
