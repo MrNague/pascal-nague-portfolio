@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1300" fill="none" aria-label="Holographic artificial intelligence robot">
+<defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#89f7ff" stop-opacity=".8"/><stop offset=".34" stop-color="#1169aa" stop-opacity=".45"/><stop offset=".75" stop-color="#263b98" stop-opacity=".55"/><stop offset="1" stop-color="#28e4ff" stop-opacity=".65"/></linearGradient>
+<linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6feaff" stop-opacity=".5"/><stop offset=".52" stop-color="#123d79" stop-opacity=".38"/><stop offset="1" stop-color="#020c38" stop-opacity=".72"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#6df8ff"/><stop offset=".55" stop-color="#489aff"/><stop offset="1" stop-color="#ab67ff"/></linearGradient>
+<radialGradient id="aura"><stop stop-color="#4ce9ff" stop-opacity=".3"/><stop offset="1" stop-color="#4ce9ff" stop-opacity="0"/></radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<ellipse cx="515" cy="650" rx="485" ry="600" fill="url(#aura)"/>
+<g stroke="#50dfff" stroke-opacity=".38" fill="none" stroke-width="3">
+<ellipse cx="515" cy="598" rx="445" ry="492" stroke-dasharray="17 23"/>
+<ellipse cx="515" cy="598" rx="350" ry="420" stroke="#8c8cff" stroke-dasharray="7 18"/>
+<path d="M91 607 H210 M820 607 H937 M515 40 V180 M515 1050 V1200"/>
+</g>
+<g filter="url(#glow)" stroke="url(#edge)" stroke-linejoin="round">
+<!-- shoulders and torso -->
+<path d="M358 850 L288 886 Q181 910 130 1010 L72 1230 H958 L890 1010 Q845 919 726 888 L651 848 Z" fill="url(#metal)" fill-opacity=".38" stroke-width="8"/>
+<path d="M286 894 Q327 985 512 1006 Q697 977 727 896" stroke-width="8"/>
+<path d="M298 915 L376 1062 L514 1114 L654 1063 L721 912" stroke-width="5" stroke-opacity=".8"/>
+<path d="M510 1008 V1227 M155 1055 L342 1145 L380 1225 M856 1055 L666 1145 L630 1225" stroke-opacity=".8" stroke-width="5"/>
+<path d="M392 856 L400 970 L511 1017 L620 970 L631 853" fill="#103979" fill-opacity=".4" stroke-width="6"/>
+<path d="M440 942 L515 982 L585 942 L573 1070 L510 1103 L447 1069 Z" fill="#08c4ed" fill-opacity=".25" stroke-width="4"/>
+<!-- neck -->
+<path d="M424 711 L424 852 Q506 900 608 849 L606 704" fill="url(#metal)" fill-opacity=".53" stroke-width="7"/>
+<path d="M453 758 H577 M452 800 H576 M468 840 H561" stroke-width="5"/>
+<!-- head shell -->
+<path d="M333 342 Q345 215 476 192 Q640 161 706 316 L714 500 Q705 642 632 732 Q583 790 513 800 Q436 798 389 729 Q315 621 314 490 Z" fill="url(#face)" stroke-width="9"/>
+<path d="M353 347 Q370 257 478 231 Q606 215 668 333 L673 496 Q676 611 603 702 Q562 746 511 753 Q460 746 425 696 Q360 605 351 495 Z" stroke="#a0faff" stroke-width="4" stroke-opacity=".68"/>
+<!-- forehead panels -->
+<path d="M386 348 Q493 310 641 349 M399 308 Q505 253 631 306 M441 282 L451 350 M576 280 L568 354" stroke-width="4"/>
+<!-- eyes and cheek geometry -->
+<path d="M391 452 Q439 429 482 444 L488 469 Q444 487 394 471 Z" fill="#37dfff" fill-opacity=".72" stroke-width="4"/>
+<path d="M536 444 Q582 430 630 455 L630 474 Q585 487 536 466 Z" fill="#37dfff" fill-opacity=".72" stroke-width="4"/>
+<path d="M398 509 L444 543 L477 532 M625 507 L579 544 L546 532" stroke-width="3"/>
+<path d="M515 467 L500 586 L533 586 M449 634 Q514 659 577 631" stroke-width="5"/>
+<!-- jaw and side circuits -->
+<path d="M374 528 L395 660 L446 721 M649 528 L631 659 L578 719" stroke-width="5"/>
+<path d="M354 566 L322 545 L296 475 L305 410 L332 409 M680 558 L714 538 L730 472 L719 413 L691 405" stroke-width="6"/>
+</g>
+<!-- ear-cups -->
+<g filter="url(#glow)">
+<circle cx="301" cy="478" r="83" fill="#031e56" fill-opacity=".83" stroke="#4edcff" stroke-width="9"/>
+<circle cx="301" cy="478" r="56" stroke="#7c8aff" stroke-width="8"/>
+<circle cx="301" cy="478" r="27" fill="#23c8f6" fill-opacity=".38" stroke="#a5faff" stroke-width="4"/>
+<circle cx="713" cy="478" r="83" fill="#031e56" fill-opacity=".83" stroke="#4edcff" stroke-width="9"/>
+<circle cx="713" cy="478" r="56" stroke="#7c8aff" stroke-width="8"/>
+<circle cx="713" cy="478" r="27" fill="#23c8f6" fill-opacity=".38" stroke="#a5faff" stroke-width="4"/>
+</g>
+<g stroke="#57e4fa" stroke-width="3" fill="#72eaff" fill-opacity=".4">
+<circle cx="173" cy="313" r="6"/><circle cx="838" cy="263" r="6"/><circle cx="810" cy="832" r="6"/>
+<path d="M173 313 H260 L330 350 M838 263 H740 L680 310 M810 832 H726 L667 780"/>
+</g>
+<g fill="#5ee6ff" opacity=".57"><circle cx="125" cy="550" r="5"/><circle cx="865" cy="504" r="4"/><circle cx="503" cy="140" r="5"/><circle cx="255" cy="791" r="4"/></g>
+</svg>
