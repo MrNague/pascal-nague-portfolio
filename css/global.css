@@ -3372,3 +3372,26 @@ body.robot-section-visible .sectionRobotHologram {opacity:.72;visibility:visible
     will-change: auto;
   }
 }
+
+/* Match the approved in-card hologram motion for the three remaining projects. */
+.projectCard:has(.projectVisual[style*="speech-hologram.svg"]) .projectIconHologram,
+.projectCard:has(.projectVisual[style*="vision-hologram.svg"]) .projectIconHologram,
+.projectCard:has(.projectVisual[style*="benchmark-hologram.svg"]) .projectIconHologram {
+  right: -6%;
+  width: 92%;
+  height: 94%;
+  opacity: .93;
+  background-position: center;
+  background-size: contain;
+  transform-origin: center center;
+  animation: projectHologramOrbit 16s ease-in-out infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .projectCard:has(.projectVisual[style*="speech-hologram.svg"]) .projectIconHologram,
+  .projectCard:has(.projectVisual[style*="vision-hologram.svg"]) .projectIconHologram,
+  .projectCard:has(.projectVisual[style*="benchmark-hologram.svg"]) .projectIconHologram {
+    animation: none !important;
+    will-change: auto;
+  }
+}
