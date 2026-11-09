@@ -3335,3 +3335,40 @@ body.robot-section-visible .sectionRobotHologram {opacity:.72;visibility:visible
   }
 }
 /* End V3 */
+
+/* Preview: local holographic animation on ImmoLens and PyTorch dataset cards only.
+   The artwork travels naturally with its card when the visitor scrolls. */
+.projectCard.projectFeatured .projectIconHologram,
+.projectCard:has(.projectVisual[style*="dataset-hologram.svg"]) .projectIconHologram {
+  right: -6%;
+  width: 92%;
+  height: 94%;
+  opacity: .93;
+  background-position: center;
+  background-size: contain;
+  transform-origin: center center;
+  animation: projectHologramOrbit 16s ease-in-out infinite;
+  will-change: transform;
+}
+.projectCard.projectFeatured .projectVisual,
+.projectCard:has(.projectVisual[style*="dataset-hologram.svg"]) .projectVisual {
+  isolation: isolate;
+}
+.projectCard.projectFeatured .projectVisualContent,
+.projectCard:has(.projectVisual[style*="dataset-hologram.svg"]) .projectVisualContent {
+  z-index: 3;
+  text-shadow: 0 2px 16px #020819;
+}
+@keyframes projectHologramOrbit {
+  0%,100% { transform: translateY(-50%) perspective(900px) rotateY(-20deg) rotateZ(-2deg) scale(.98); }
+  25% { transform: translateY(calc(-50% - 9px)) perspective(900px) rotateY(0deg) rotateZ(1deg) scale(1.02); }
+  50% { transform: translateY(-50%) perspective(900px) rotateY(20deg) rotateZ(3deg) scale(.98); }
+  75% { transform: translateY(calc(-50% + 8px)) perspective(900px) rotateY(0deg) rotateZ(-1deg) scale(1.02); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .projectCard.projectFeatured .projectIconHologram,
+  .projectCard:has(.projectVisual[style*="dataset-hologram.svg"]) .projectIconHologram {
+    animation: none !important;
+    will-change: auto;
+  }
+}
