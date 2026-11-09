@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="BENCHMARK holographic illustration"><defs><radialGradient id="bg"><stop stop-color="#10458a"/><stop offset="1" stop-color="#020b23"/></radialGradient><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#2ab8ed" stroke-opacity=".2"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1120" height="740" fill="url(#bg)"/><rect width="1120" height="740" fill="url(#grid)"/><g filter="url(#glow)"><g stroke="#62cfff" stroke-width="3" fill="#0f3869" fill-opacity=".5"><rect x="215" y="360" width="110" height="260" rx="7"/><rect x="380" y="260" width="110" height="360" rx="7"/><rect x="545" y="175" width="110" height="445" rx="7"/><rect x="710" y="310" width="110" height="310" rx="7"/></g><path d="M130 470 Q340 410 470 300 T885 160" stroke="#b681ff" stroke-width="9" fill="none"/><g fill="#91f4ff"><circle cx="280" cy="425" r="12"/><circle cx="470" cy="300" r="12"/><circle cx="670" cy="215" r="12"/><circle cx="885" cy="160" r="12"/></g></g><path d="M0 700 Q560 600 1120 705" stroke="#788bff" opacity=".5" stroke-width="3" fill="none"/><g fill="#62dffe" opacity=".7"><circle cx="120" cy="85" r="3"/><circle cx="900" cy="70" r="4"/><circle cx="1010" cy="610" r="3"/><circle cx="170" cy="640" r="4"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="Food image classification hologram with plated meal and evaluation charts"><defs>
+<radialGradient id="back"><stop stop-color="#164774" stop-opacity=".40"/><stop offset="1" stop-color="#040d23" stop-opacity="0"/></radialGradient>
+<linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#92f4ff"/><stop offset=".5" stop-color="#26baff"/><stop offset="1" stop-color="#5c72f6"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6de4ff"/><stop offset=".55" stop-color="#b78bff"/><stop offset="1" stop-color="#7049e9"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#4bbcff" stroke-opacity=".08"/></pattern>
+</defs><rect width="1120" height="740" fill="url(#back)"/><rect width="1120" height="740" fill="url(#grid)"/>
+<g fill="none" stroke="#bc8cff" stroke-width="2" opacity=".65"><ellipse cx="570" cy="393" rx="335" ry="260" stroke-dasharray="11 14"/><path d="M190 395H938" stroke-dasharray="5 14"/></g>
+<g stroke="url(#cyan)" filter="url(#glow)">
+<ellipse cx="532" cy="405" rx="239" ry="173" stroke-width="7" fill="#0b376a" fill-opacity=".3"/>
+<ellipse cx="532" cy="405" rx="197" ry="142" stroke-width="4" fill="#164b80" fill-opacity=".26"/>
+<ellipse cx="532" cy="405" rx="149" ry="105" stroke-width="2" fill="none" opacity=".5"/>
+</g>
+<g stroke="#6af5d7" stroke-width="4" fill="#176b6b" fill-opacity=".5" filter="url(#glow)">
+<path d="M454 367C438 325 477 290 519 314C559 325 568 379 525 398C488 421 451 409 454 367Z"/>
+<path d="M537 430C564 385 643 377 672 420C691 467 620 493 571 472Z"/>
+<path d="M416 445C400 407 435 385 462 398C502 412 496 463 461 477C444 486 426 469 416 445Z"/>
+</g>
+<g stroke="#ffad8b" stroke-width="4" fill="#f18485" fill-opacity=".35"><circle cx="571" cy="359" r="23"/><circle cx="496" cy="454" r="18"/><circle cx="625" cy="434" r="17"/></g>
+<g stroke="#a0edff" stroke-width="2" fill="#0e2b58" fill-opacity=".7"><rect x="774" y="175" width="241" height="250" rx="18"/><rect x="120" y="495" width="260" height="100" rx="15"/></g>
+<g fill="#d7edff" font-family="sans-serif" font-size="21" font-weight="bold"><text x="800" y="215">FOOD-101</text><text x="800" y="253" font-size="17">IMAGE CLASSIFIER</text><text x="145" y="531" font-size="19">TOP-1 ACCURACY</text><text x="145" y="560" font-size="16">BENCHMARK</text></g>
+<g stroke="#b68cff" stroke-width="4" fill="none"><path d="M804 379H839V317H869V379H888V293H916V379H942V341H971V379"/><path d="M806 394H976" stroke-opacity=".4"/></g>
+<g stroke="#7cecff" stroke-width="2" fill="none"><path d="M765 303L686 342M388 530L413 471"/></g>
+<g fill="#7cecff"><circle cx="195" cy="257" r="4"/><circle cx="956" cy="512" r="4"/></g>
+</svg>
