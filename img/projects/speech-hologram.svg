@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="SPEECH & LLM holographic illustration"><defs><radialGradient id="bg"><stop stop-color="#10458a"/><stop offset="1" stop-color="#020b23"/></radialGradient><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#2ab8ed" stroke-opacity=".2"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1120" height="740" fill="url(#bg)"/><rect width="1120" height="740" fill="url(#grid)"/><g filter="url(#glow)"><g fill="none" stroke="#61dfff" stroke-width="8" stroke-linecap="round"><rect x="475" y="180" width="130" height="300" rx="65" fill="#16407c" fill-opacity=".55"/><path d="M420 378 A120 120 0 0 0 660 378 M540 500 V600 M460 600 H620"/></g><g fill="none" stroke="#a775ff" stroke-width="5"><path d="M80 370 H220 l28 -72 40 150 40 -210 42 132 H455 M650 370 h100 l26 -80 42 170 43 -125 35 35 h150"/></g><g stroke="#72edff" fill="#0c285d" fill-opacity=".65"><rect x="760" y="140" width="275" height="120" rx="14"/><rect x="70" y="505" width="235" height="110" rx="14"/></g></g><path d="M0 700 Q560 600 1120 705" stroke="#b38aff" opacity=".5" stroke-width="3" fill="none"/><g fill="#62dffe" opacity=".7"><circle cx="120" cy="85" r="3"/><circle cx="900" cy="70" r="4"/><circle cx="1010" cy="610" r="3"/><circle cx="170" cy="640" r="4"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="Holographic microphone with glowing speech waveform and AI neural network"><defs>
+<radialGradient id="back"><stop stop-color="#164774" stop-opacity=".40"/><stop offset="1" stop-color="#040d23" stop-opacity="0"/></radialGradient>
+<linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#92f4ff"/><stop offset=".5" stop-color="#26baff"/><stop offset="1" stop-color="#5c72f6"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6de4ff"/><stop offset=".55" stop-color="#b78bff"/><stop offset="1" stop-color="#7049e9"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#4bbcff" stroke-opacity=".08"/></pattern>
+</defs><rect width="1120" height="740" fill="url(#back)"/><rect width="1120" height="740" fill="url(#grid)"/>
+<g opacity=".75" fill="none" stroke="url(#purple)" stroke-width="2"><ellipse cx="575" cy="380" rx="310" ry="270" stroke-dasharray="12 15"/><ellipse cx="575" cy="380" rx="370" ry="300" stroke-dasharray="4 20" opacity=".5"/><path d="M205 380H955" stroke-dasharray="7 14"/></g>
+<g filter="url(#glow)" stroke="url(#cyan)" fill="none" stroke-linejoin="round">
+<rect x="500" y="190" width="140" height="270" rx="70" stroke-width="6" fill="#123a69" fill-opacity=".55"/>
+<rect x="523" y="215" width="94" height="214" rx="47" stroke-width="2" opacity=".8"/>
+<path d="M452 365V399A118 118 0 0 0 688 399V365M570 519V607M489 608H651" stroke-width="8" stroke-linecap="round"/>
+<path d="M523 276H617M523 314H617M523 352H617" stroke-width="3" opacity=".55"/>
+</g>
+<g fill="none" stroke="url(#purple)" stroke-width="5" stroke-linecap="round" filter="url(#glow)">
+<path d="M70 391H180L204 352L225 435L248 320L278 455L307 371L335 391H428"/>
+<path d="M703 391H742L770 355L797 431L827 308L855 465L885 362L911 391H1046"/>
+</g>
+<g stroke="#79dfff" stroke-width="2" fill="#0e2d55" fill-opacity=".65" opacity=".9"><rect x="785" y="160" width="210" height="102" rx="14"/><rect x="105" y="515" width="250" height="105" rx="14"/></g>
+<g stroke="#bca2ff" stroke-width="2" fill="none"><path d="M805 192H928M805 213H959M805 235H887"/><path d="M127 545H322M127 567H282M127 588H310"/></g>
+<g fill="#a4eeff"><circle cx="295" cy="192" r="5"/><circle cx="879" cy="512" r="5"/><circle cx="945" cy="340" r="3"/></g>
+</svg>
