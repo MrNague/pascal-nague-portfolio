@@ -3395,3 +3395,26 @@ body.robot-section-visible .sectionRobotHologram {opacity:.72;visibility:visible
     will-change: auto;
   }
 }
+
+/* Fix V6: use real image elements with document-relative URLs.
+   CSS background URL resolution otherwise targets /css/img/projects/ and hides the art. */
+.projectVisual > img.projectIconHologram {
+  display:block;
+  position:absolute;
+  right:-6%; top:50%;
+  width:92%; height:94%;
+  object-fit:contain;
+  object-position:center;
+  background:none !important;
+  opacity:.96;
+  z-index:1;
+  pointer-events:none;
+  transform-origin:50% 50%;
+  animation:projectHologramOrbit 16s ease-in-out infinite;
+  filter:drop-shadow(0 0 15px rgba(55,204,255,.35));
+}
+.projectVisual > img.projectIconHologram:hover {pointer-events:none;}
+.projectCard:hover .projectVisual > img.projectIconHologram {animation-duration:9s;}
+@media(prefers-reduced-motion:reduce) {
+  .projectVisual > img.projectIconHologram {animation:none!important;}
+}
