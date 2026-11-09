@@ -3459,3 +3459,35 @@ html[data-theme="dark"] .hero .hero_item.left > span {
 html[data-theme="dark"] .hero .hero_item.left > span i {
   color: #ffffff;
 }
+
+
+/* Readable, even paragraph edges across the portfolio. */
+.hero p,
+.aboutContent p,
+.sectionHeader p,
+.serviceCard p,
+.skillGroup p,
+.skillsStackIntro,
+.projectContent p,
+.contactLead,
+.footerBrand p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+@media (max-width: 600px) {
+  .hero p,
+  .aboutContent p,
+  .sectionHeader p,
+  .serviceCard p,
+  .skillGroup p,
+  .skillsStackIntro,
+  .projectContent p,
+  .contactLead,
+  .footerBrand p {
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+}
