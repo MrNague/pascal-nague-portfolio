@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="IMMO LENS holographic illustration"><defs><radialGradient id="bg"><stop stop-color="#10458a"/><stop offset="1" stop-color="#020b23"/></radialGradient><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#2ab8ed" stroke-opacity=".2"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1120" height="740" fill="url(#bg)"/><rect width="1120" height="740" fill="url(#grid)"/><g filter="url(#glow)"><g stroke="#46e4ff" fill="none" stroke-width="4"><path d="M260 390 L520 180 L790 390 L790 645 L260 645 Z" fill="#0e4d86" fill-opacity=".3"/><path d="M220 397 L520 150 L820 397"/><path d="M360 640 V450 H490 V640 M565 438 H690 V555 H565 Z"/><path d="M270 400 H788 M520 180 V150"/></g><g opacity=".85"><rect x="760" y="140" width="290" height="185" rx="12" fill="#09294c" stroke="#56caff" stroke-width="2"/><path d="M800 260 L844 227 L887 241 L925 180 L982 200" fill="none" stroke="#be7dff" stroke-width="6"/><path d="M790 280 H1005 M790 238 H1005" stroke="#35b5e8" opacity=".25"/></g></g><path d="M0 700 Q560 600 1120 705" stroke="#48d6ff" opacity=".5" stroke-width="3" fill="none"/><g fill="#62dffe" opacity=".7"><circle cx="120" cy="85" r="3"/><circle cx="900" cy="70" r="4"/><circle cx="1010" cy="610" r="3"/><circle cx="170" cy="640" r="4"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="Modern residence in an electric-blue holographic projection">
+<defs>
+<radialGradient id="a"><stop stop-color="#134576" stop-opacity=".48"/><stop offset="1" stop-color="#02091e" stop-opacity="0"/></radialGradient>
+<linearGradient id="wall" x2=".8" y2="1"><stop stop-color="#2379a6" stop-opacity=".26"/><stop offset="1" stop-color="#041a38" stop-opacity=".65"/></linearGradient>
+<linearGradient id="glass" x2="0" y2="1"><stop stop-color="#68dfff" stop-opacity=".37"/><stop offset=".55" stop-color="#11244e" stop-opacity=".55"/><stop offset="1" stop-color="#a9dbf8" stop-opacity=".12"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="grid" width="39" height="39" patternUnits="userSpaceOnUse"><path d="M39 0H0V39" fill="none" stroke="#39caff" stroke-opacity=".095"/></pattern>
+</defs>
+<rect width="1120" height="740" fill="url(#a)"/><ellipse cx="600" cy="630" rx="430" ry="77" fill="#0a8dd6" opacity=".12"/>
+<g fill="none" stroke="#28bdfc" stroke-width="3" opacity=".7"><ellipse cx="610" cy="614" rx="403" ry="88"/><ellipse cx="610" cy="614" rx="310" ry="60" stroke-dasharray="12 10"/><path d="M610 523V702M196 614H1020" stroke-opacity=".2"/><path d="M255 256C370 125 806 112 934 275" stroke-dasharray="8 16" stroke-opacity=".55"/></g>
+<g filter="url(#glow)">
+<path d="M308 370L565 254L879 359L618 480Z" fill="#0e3763" stroke="#64ddff" stroke-width="5"/>
+<path d="M315 368V574L615 672V480Z" fill="url(#wall)" stroke="#54d9ff" stroke-width="4"/>
+<path d="M615 480L877 359V574L615 672Z" fill="#0a2f56" fill-opacity=".55" stroke="#49cfff" stroke-width="4"/>
+<path d="M355 334V225L552 139L833 234V351L615 442Z" fill="url(#wall)" stroke="#60dfff" stroke-width="4"/>
+<path d="M552 139L833 234L615 318L355 225Z" fill="#0e3d70" stroke="#64deff" stroke-width="5"/>
+<path d="M615 318V442M552 139V253" stroke="#60dfff" stroke-width="3"/>
+<path d="M391 242L553 187L553 290L391 346Z" fill="url(#glass)" stroke="#7ee6ff" stroke-width="3"/>
+<path d="M576 190L790 255V327L576 265Z" fill="url(#glass)" stroke="#7ee6ff" stroke-width="3"/>
+<path d="M430 228V327M476 211V312M657 218V289M719 241V313M391 293L553 239M576 236L790 295" stroke="#4dc7f4" stroke-width="2" opacity=".66"/>
+<path d="M342 389L587 477V635L342 547Z" fill="url(#glass)" stroke="#5ad9fc" stroke-width="3"/>
+<path d="M638 489L849 397V555L638 638Z" fill="url(#glass)" stroke="#5ad9fc" stroke-width="3"/>
+<path d="M400 414V566M475 445V591M543 464V617M697 465V611M766 433V582M342 480L587 558M638 565L849 479" stroke="#4ccdfc" stroke-width="2" opacity=".6"/>
+<path d="M299 360L609 475L895 356M301 583L615 684L884 579" stroke="#7ce7ff" stroke-width="7"/>
+<path d="M346 551L589 634M648 634L843 551" stroke="#9aefff" stroke-opacity=".45" stroke-width="7"/>
+</g>
+<g fill="#6be2ff" opacity=".9"><circle cx="240" cy="248" r="3"/><circle cx="896" cy="173" r="4"/><circle cx="943" cy="541" r="3"/><circle cx="177" cy="557" r="3"/></g>
+<g stroke="#64dfff" fill="none" opacity=".6"><path d="M235 341V268H310M885 244H969V323"/><circle cx="308" cy="268" r="5"/><circle cx="884" cy="244" r="5"/></g>
+</svg>
