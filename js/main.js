@@ -1117,10 +1117,13 @@ updateThemeButton();
   let queued = false;
   const update = () => {
     queued = false;
-    const from = about.getBoundingClientRect().top;
-    const to = footer.getBoundingClientRect().top;
+    const home = document.getElementById("hero");
+    if (!home) return;
+    const homeFullyExited = home.getBoundingClientRect().bottom <= 0;
+    const aboutReached = about.getBoundingClientRect().top < window.innerHeight;
+    const footerNotVisible = footer.getBoundingClientRect().top >= window.innerHeight;
     document.body.classList.toggle("robot-section-visible",
-      from < window.innerHeight * 0.62 && to > window.innerHeight * 0.48);
+      homeFullyExited && aboutReached && footerNotVisible);
   };
   const onScroll = () => {
     if (!queued) { queued = true; window.requestAnimationFrame(update); }
