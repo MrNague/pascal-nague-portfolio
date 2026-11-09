@@ -3418,3 +3418,28 @@ body.robot-section-visible .sectionRobotHologram {opacity:.72;visibility:visible
 @media(prefers-reduced-motion:reduce) {
   .projectVisual > img.projectIconHologram {animation:none!important;}
 }
+
+
+/* Glossy black chrome — header and footer only. Keep Home and cards unchanged. */
+:root, html[data-theme="dark"] {
+  --header-bg: #050505;
+}
+.header, html[data-theme="dark"] .header {
+  background: linear-gradient(180deg, #232323 0%, #101010 27%, #050505 67%, #000000 100%) !important;
+  border-bottom: 1px solid rgba(255,255,255,.19);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18),
+              inset 0 -1px 0 rgba(255,255,255,.035),
+              0 8px 28px rgba(0,0,0,.44);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+.footer, html[data-theme="dark"] .footer {
+  background: linear-gradient(180deg, #090909 0%, #141414 22%, #080808 65%, #010101 100%) !important;
+  border-top: 1px solid rgba(255,255,255,.14);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.085), 0 -10px 35px rgba(0,0,0,.25);
+}
+@media (max-width: 900px) {
+  .header.is-menu-open .navbar {
+    background: #090909;
+  }
+}
