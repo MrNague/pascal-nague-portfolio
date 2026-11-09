@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="COMPUTER VISION holographic illustration"><defs><radialGradient id="bg"><stop stop-color="#10458a"/><stop offset="1" stop-color="#020b23"/></radialGradient><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#2ab8ed" stroke-opacity=".2"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="7" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1120" height="740" fill="url(#bg)"/><rect width="1120" height="740" fill="url(#grid)"/><g filter="url(#glow)"><g fill="none" stroke-width="5"><rect x="258" y="150" width="550" height="520" rx="23" stroke="#4ce4ff" fill="#103662" fill-opacity=".22"/><path d="M258 260 H808 M258 560 H808 M400 150 V670 M670 150 V670" stroke="#6366ff" opacity=".33"/><circle cx="534" cy="400" r="132" stroke="#9c81ff" stroke-dasharray="20 18"/><circle cx="534" cy="400" r="54" stroke="#57edfa"/><path d="M160 320 H245 M820 460 H950" stroke="#5ae8ff"/></g></g><path d="M0 700 Q560 600 1120 705" stroke="#47dfff" opacity=".5" stroke-width="3" fill="none"/><g fill="#62dffe" opacity=".7"><circle cx="120" cy="85" r="3"/><circle cx="900" cy="70" r="4"/><circle cx="1010" cy="610" r="3"/><circle cx="170" cy="640" r="4"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-label="Computer vision camera with holographic object detection boxes"><defs>
+<radialGradient id="back"><stop stop-color="#164774" stop-opacity=".40"/><stop offset="1" stop-color="#040d23" stop-opacity="0"/></radialGradient>
+<linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#92f4ff"/><stop offset=".5" stop-color="#26baff"/><stop offset="1" stop-color="#5c72f6"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6de4ff"/><stop offset=".55" stop-color="#b78bff"/><stop offset="1" stop-color="#7049e9"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#4bbcff" stroke-opacity=".08"/></pattern>
+</defs><rect width="1120" height="740" fill="url(#back)"/><rect width="1120" height="740" fill="url(#grid)"/>
+<g stroke="url(#cyan)" stroke-width="3" fill="none" opacity=".8"><path d="M230 170H160V240M890 170H970V240M230 615H160V545M890 615H970V545"/><ellipse cx="565" cy="387" rx="385" ry="270" stroke-dasharray="11 17" opacity=".55"/></g>
+<g filter="url(#glow)" stroke="#70e7ff" fill="#0c2b57" fill-opacity=".62">
+<rect x="307" y="237" width="492" height="320" rx="34" stroke-width="6"/>
+<path d="M385 237L425 188H576L620 237" stroke-width="5"/>
+<circle cx="552" cy="397" r="119" stroke-width="7" fill="#153b75" fill-opacity=".4"/>
+<circle cx="552" cy="397" r="84" stroke-width="5" fill="#192c67" fill-opacity=".48"/>
+<circle cx="552" cy="397" r="42" stroke-width="5" fill="#11bcff" fill-opacity=".15"/>
+<path d="M705 278H756V320H705Z" stroke-width="3"/>
+</g>
+<g stroke="#bb91ff" stroke-width="3" fill="none"><rect x="398" y="288" width="314" height="221" rx="10" stroke-dasharray="10 10"/><rect x="478" y="324" width="164" height="150" rx="8"/><path d="M397 314H442M668 508H716"/></g>
+<g stroke="#55f1e8" stroke-width="4" fill="none" filter="url(#glow)"><path d="M440 292H394V339M665 292H716V342M394 459V506H449M666 506H716V458"/></g>
+<g stroke="#75d9ff" fill="#102c55" fill-opacity=".75" stroke-width="2"><rect x="784" y="320" width="207" height="62" rx="10"/><rect x="115" y="477" width="210" height="65" rx="10"/></g>
+<g fill="#b9eafa" font-family="sans-serif" font-size="20" font-weight="bold"><text x="802" y="360">OBJECT · 98%</text><text x="132" y="518">TRACKING · ON</text></g>
+<g fill="#7ceaff"><circle cx="215" cy="340" r="4"/><circle cx="899" cy="475" r="4"/></g>
+</svg>
