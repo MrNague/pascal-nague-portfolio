@@ -3491,3 +3491,58 @@ html[data-theme="dark"] .hero .hero_item.left > span i {
     -webkit-hyphens: none;
   }
 }
+
+
+/* Full-body central 360° android; existing cyan/violet stage remains. */
+.sectionRobotHologram {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .45s ease, visibility 0s linear .45s;
+}
+body.robot-section-visible .sectionRobotHologram {
+  opacity: .68;
+  visibility: visible;
+  transition: opacity .45s ease, visibility 0s;
+}
+.sectionRobotHologram .robotImage {
+  left: 50%;
+  right: auto;
+  top: 50%;
+  width: min(44vw, 590px);
+  height: min(83vh, 900px);
+  background-image: url("../img/robot-section-hologram.svg");
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  animation: androidFullTurn 20s linear infinite;
+  opacity: .88;
+  filter: drop-shadow(0 0 22px rgba(42,198,255,.36));
+}
+.sectionRobotHologram .robotAura {
+  right: auto; left: 16%; width: 68vw;
+}
+.sectionRobotHologram .robotOrbit {
+  right: auto; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .48;
+}
+.sectionRobotHologram .robotOrbitB {left:50%;top:50%;}
+@keyframes androidFullTurn {
+  0% {transform: translate(-50%, -50%) perspective(1100px) rotateY(0deg) translateY(0);}
+  25% {transform: translate(-50%, -50%) perspective(1100px) rotateY(90deg) translateY(-8px);}
+  50% {transform: translate(-50%, -50%) perspective(1100px) rotateY(180deg) translateY(0);}
+  75% {transform: translate(-50%, -50%) perspective(1100px) rotateY(270deg) translateY(-8px);}
+  100% {transform: translate(-50%, -50%) perspective(1100px) rotateY(360deg) translateY(0);}
+}
+@media (max-width: 800px) {
+  body.robot-section-visible .sectionRobotHologram {opacity:.32;}
+  .sectionRobotHologram .robotImage {
+    left:50%;right:auto;width:min(80vw,440px);height:min(67vh,660px);
+  }
+  .sectionRobotHologram .robotOrbit {left:50%;right:auto;width:75vw;}
+  .sectionRobotHologram .robotAura {left:0;width:100vw;}
+}
+@media (prefers-reduced-motion: reduce) {
+  .sectionRobotHologram .robotImage {animation:none!important;transform:translate(-50%,-50%)!important;}
+  .sectionRobotHologram {transition:none!important;}
+}
