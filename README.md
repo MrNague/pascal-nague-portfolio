@@ -1,59 +1,32 @@
-# Pascal Nague — AI Engineering Portfolio
+# Pascal Nague — Portfolio
 
-Personal portfolio showcasing my work in **AI Engineering, Machine Learning, ML systems, AI evaluation, and software development**.
+Personal website: https://portfolio.naguepc.de/
 
-**Live website:** https://portfolio.naguepc.de/
+I'm a computer science student at RPTU Kaiserslautern-Landau, interested in AI consulting and the assessment of practical AI use cases. This site presents my technical work, university experience and current interests.
 
-## Selected work
+## Projects
 
-- **[ImmoLens](https://github.com/MrNague/ImmoLens)** — an end-to-end ML application with scikit-learn, MLflow, FastAPI and a React/TypeScript frontend.
-- **[Minimal Dataset for PyTorch](https://github.com/MrNague/minimal-dataset-pytorch)** — a PyTorch data-loading library developed during my completed Bachelor Project at DFKI.
-- **[Speech & LLM Quality Lab](https://github.com/MrNague/speech-llm-quality-lab)** — quality-evaluation tools for ASR and LLM workflows.
-- **[YOLO Webcam Detection](https://github.com/MrNague/yolo-webcam-detection)** — a modular real-time computer vision application.
-- **[Food-101 DataLoader Benchmark](https://github.com/MrNague/food101-dataloader-benchmark)** — external performance validation for the data-loading library.
-
-**Project status:** ImmoLens currently uses **synthetic training data**. Its outputs are a technical demonstration, not validated property valuations.
+- [Minimal Dependency Dataset Library for PyTorch](https://github.com/MrNague/minimal-dataset-pytorch): completed DFKI Bachelor Project on Parquet-backed image loading and benchmarks. A follow-up [Food-101 study](https://github.com/MrNague/food101-dataloader-benchmark) showed that PyTorch scaled better under a different workload.
+- [Speech & LLM Quality Lab](https://github.com/MrNague/speech-llm-quality-lab): ongoing ASR data validation and evaluation tooling; further features are in development.
+- [ImmoLens](https://github.com/MrNague/ImmoLens): real-estate prediction prototype using synthetic data. Predictions are not validated market valuations.
+- [YOLO Webcam Detection](https://github.com/MrNague/yolo-webcam-detection): webcam object detection and alert logic with YOLOv8 and OpenCV.
 
 ## Website
 
-This portfolio is built using **HTML5, CSS3 and vanilla JavaScript**, without a frontend framework or build step.
+The site uses HTML, CSS and vanilla JavaScript, without a build step. It includes English, German and French translations, responsive navigation, light and dark themes, and a Netlify contact form.
 
-Features:
-- Responsive layout and mobile navigation
-- Existing light and dark themes with persisted preference
-- English, German and French translations
-- Subtle CSS holographic hero effects that respect `prefers-reduced-motion`
-- Project descriptions and links to source code
-- Contact form powered by Netlify Forms
-
-The hero photograph, site typography and both theme palettes remain unchanged by the holographic refresh.
+The homepage content describes my **career direction**, not prior client consulting experience. The six cards under *Areas of Interest* are subjects I study and practice, not commercial services.
 
 ## Local preview
 
-Use a simple local HTTP server:
+Run `python -m http.server 8000`, then open http://localhost:8000/. Netlify Forms requires a deployment on Netlify to process submissions.
 
-```bash
-python -m http.server 8000
-```
+## Files
 
-Then open http://localhost:8000/. Netlify Forms requires a proper Netlify deployment to process submissions.
+- `index.html`: HTML sections and metadata
+- `css/global.css`: responsive layout and themes
+- `js/main.js`: navigation, language switching and theme controls
+- `js/translations.js`: English, German and French text
+- `img/`: local assets
 
-## File structure
-
-```text
-.
-├── index.html
-├── css/
-│   └── global.css
-├── js/
-│   ├── main.js
-│   └── translations.js
-├── img/
-└── docs/
-```
-
-## About
-
-I am a Computer Science student at RPTU Kaiserslautern-Landau, focused on building and evaluating reliable AI applications and ML systems.
-
-[Portfolio](https://portfolio.naguepc.de/) · [GitHub profile](https://github.com/MrNague) · [LinkedIn](https://www.linkedin.com/in/pascal-nague/)
+[LinkedIn](https://www.linkedin.com/in/pascal-nague/) · [GitHub](https://github.com/MrNague)

@@ -5,9 +5,9 @@ const translations = {
     en: {
 
         meta: {
-            title: "Pascal Nague | AI Engineering, ML & Software Systems",
+            title: "Pascal Nague | AI Consulting & Applied AI",
             description:
-                "Portfolio of Pascal Nague, an RPTU computer science student building AI applications, ML pipelines and reliable software systems.",
+                "Computer science student at RPTU Kaiserslautern-Landau interested in AI consulting, generative AI and AI evaluation.",
             locale: "en_US"
         },
 
@@ -68,7 +68,7 @@ const translations = {
         nav: {
             home: "Home",
             about: "About",
-            services: "Services",
+            services: "Areas of Interest",
             skills: "Skills",
             portfolio: "Portfolio",
             contact: "Contact"
@@ -77,7 +77,7 @@ const translations = {
         hero: {
 
             badge:
-                "AI Engineering · Machine Learning · Software Systems",
+                "Computer Science · AI Consulting · Generative AI",
 
             title:
                 "Hello, I'm Pascal Nague",
@@ -86,7 +86,7 @@ const translations = {
             githubLink: "GitHub profile ↗",
 
             description:
-                "Computer Science student at RPTU Kaiserslautern-Landau focused on AI Engineering. I build and evaluate end-to-end ML applications, data pipelines and reliable software systems with Python and PyTorch."
+                "I study Computer Science at RPTU Kaiserslautern-Landau. My projects cover machine learning systems, AI evaluation and software applications. I'm interested in assessing AI use cases, comparing technical options and working toward practical solutions."
         },
 
         about: {
@@ -98,22 +98,22 @@ const translations = {
                 "Who I am",
 
             p1:
-                "I’m Pascal Nague, a Computer Science student at RPTU Kaiserslautern-Landau focused on AI Engineering, Machine Learning and reliable software systems.",
+                "I'm a Computer Science student at RPTU Kaiserslautern-Landau, working toward a career in AI consulting.",
 
             p2:
-                "I enjoy understanding how intelligent systems work — from the data they consume to the way their performance, reliability and efficiency are measured.",
+                "My completed Bachelor Project at DFKI examined Parquet-backed image loading for PyTorch. I compared its performance with PyTorch's DataLoader and ran a follow-up benchmark on Food-101.",
 
             p3:
-                "My work combines Python, PyTorch, data analysis, machine learning experimentation and performance benchmarking. My completed Bachelor Project at DFKI focused on efficient PyTorch data loading, concurrent pipelines and reproducible performance measurement, followed by external validation on Food-101.",
+                "In my independent projects, including Speech & LLM Quality Lab and ImmoLens, I work with model evaluation, data validation, APIs and automated tests.",
 
             p4:
-                "I am especially interested in building practical systems that are measurable, understandable and useful in real-world environments.",
+                "I'm interested in how organizations identify useful AI applications, compare technical approaches and make decisions based on evidence.",
 
             currentFocus:
                 "Current focus",
 
             currentFocusValue:
-                "AI Engineering · ML Systems · Software Engineering",
+                "AI Consulting · Generative AI · AI Evaluation",
 
             bachelorProject:
                 "Bachelor Project",
@@ -131,7 +131,7 @@ const translations = {
                 "Interests",
 
             interestsValue:
-                "End-to-End AI Applications · ML Systems · LLM Evaluation",
+                "AI Use Cases · LLM Applications · Solution Assessment",
 
             teachingCommunity:
                 "Teaching & Community",
@@ -149,66 +149,66 @@ const translations = {
         services: {
 
             eyebrow:
-                "What I can do",
+                "What I'm exploring",
 
             title:
-                "Services",
+                "Areas of Interest",
 
             intro:
-                "I work on practical problems across data, machine learning and AI evaluation. My focus is on building measurable solutions, understanding model behaviour, automating data workflows and improving the performance of ML pipelines.",
+                "These topics connect my technical projects with the questions I want to address in AI consulting.",
 
             data: {
 
                 title:
-                    "Data Analysis & Preparation",
+                    "Understanding AI Use Cases",
 
                 description:
-                    "Cleaning, exploring and structuring datasets so that raw data becomes reliable, understandable and ready for analysis or machine learning."
+                    "Clarifying the problem, available data and success criteria before choosing an AI approach."
             },
 
             ml: {
 
                 title:
-                    "Machine Learning Prototyping",
+                    "AI Prototyping",
 
                 description:
-                    "Building initial classification, regression or clustering models, establishing baselines and evaluating whether an ML approach is useful."
+                    "Using small prototypes to test whether a proposed machine learning approach is feasible."
             },
 
             evaluation: {
 
                 title:
-                    "ML Model Evaluation",
+                    "Evaluating AI Systems",
 
                 description:
-                    "Measuring model performance using appropriate metrics, error analysis and structured comparisons to understand where a model succeeds or fails."
+                    "Comparing model outputs with suitable metrics and examining errors and limitations."
             },
 
             llm: {
 
                 title:
-                    "AI & LLM Quality Evaluation",
+                    "Generative AI & Document Retrieval",
 
                 description:
-                    "Designing test cases, evaluation criteria and error categories to assess chatbot and LLM behaviour across realistic prompts and edge cases."
+                    "Studying LLM-based retrieval from long documents and the methods used to assess retrieved evidence."
             },
 
             automation: {
 
                 title:
-                    "Data Workflow Automation",
+                    "Workflow Automation",
 
                 description:
-                    "Automating repetitive data tasks such as merging files, transforming exports, calculating metrics and generating repeatable reports."
+                    "Exploring where repetitive data-processing and reporting tasks can be automated and checked."
             },
 
             performance: {
 
                 title:
-                    "PyTorch Pipeline Performance Analysis",
+                    "Technical Trade-offs",
 
                 description:
-                    "Benchmarking data-loading pipelines, comparing DataLoader configurations and identifying bottlenecks that affect throughput and model training."
+                    "Benchmarking alternatives on different workloads before drawing conclusions about performance."
             },
 
             tags: {
@@ -231,7 +231,7 @@ const translations = {
                 "Skills & Technologies",
 
             intro:
-                "My technical background combines AI application development, machine learning, software engineering, data pipelines and performance-oriented ML systems.",
+                "My technical background comes from university coursework, a completed Bachelor Project at DFKI and independent applications.",
 
             programming:
                 "Programming",
@@ -369,7 +369,7 @@ const translations = {
                 "Portfolio",
 
             intro:
-                "Practical AI engineering projects spanning end-to-end applications, ML systems, model evaluation and reproducible benchmarking.",
+                "Selected projects with source code, measurable results and clear limits on what has been validated.",
 
             view:
                 "View project",
@@ -389,7 +389,7 @@ const translations = {
                     "Completed · DFKI",
 
                 description:
-                    "A lightweight experimental library for Parquet-backed image datasets with a custom multi-threaded DataLoader, throughput instrumentation and reproducible benchmarks. The optimized loader reached a measured peak of 3,245 samples/s on the project benchmark and was published as a PyPI package."
+                    "Parquet-backed image loading for PyTorch, developed during my completed DFKI Bachelor Project. An original benchmark reached approximately 3,245 samples/s with 16 workers. A follow-up Food-101 experiment found that PyTorch scaled better on the new workload."
             },
 
             speech: {
@@ -407,7 +407,7 @@ const translations = {
                     "Active development",
 
                 description:
-                    "An engineering and learning project for evaluating French speech-to-text outputs and reviewing language-model responses. The current foundation includes manifest validation, ASR pilot tooling, WER/CER metrics, reporting and automated tests."
+                    "An ongoing project for evaluating French speech recognition. Current components include audio manifest validation, ASR pilot tools, WER/CER metrics, reporting and automated tests. Further LLM evaluation features are in development."
             },
 
             food: {
@@ -489,13 +489,13 @@ const translations = {
                 "Get in touch",
 
             title:
-                "Let's work together",
+                "Get in touch",
 
             description:
-                "Whether you have a data problem, a machine learning project, an AI evaluation task or simply want to discuss a technical collaboration, feel free to contact me.",
+                "I'm looking for Werkstudent opportunities in AI consulting, AI solutions and related fields. You can contact me about a relevant role or project.",
 
             availability:
-                "Open to Werkstudent opportunities, projects and technical collaborations.",
+                "Seeking a Werkstudent role in AI Consulting or AI Solutions.",
 
             email:
                 "Email",
@@ -543,7 +543,7 @@ const translations = {
         footer: {
 
             description:
-                "Computer Science student focused on AI Engineering, ML systems and reliable software.",
+                "Computer science student interested in AI consulting, generative AI and AI evaluation.",
 
             navigation:
                 "Navigation",
@@ -565,10 +565,10 @@ const translations = {
         meta: {
 
             title:
-                "Pascal Nague | AI Engineering, ML & Software-Systeme",
+                "Pascal Nague | KI-Consulting & Angewandte KI",
 
             description:
-                "Portfolio von Pascal Nague, Informatikstudent an der RPTU mit Fokus auf AI Engineering, ML-Anwendungen und zuverlässige Software.",
+                "Informatikstudent an der RPTU Kaiserslautern-Landau mit Interesse an KI-Consulting, generativer KI und KI-Evaluation.",
 
             locale:
                 "de_DE"
@@ -631,7 +631,7 @@ const translations = {
         nav: {
             home: "Start",
             about: "Über mich",
-            services: "Leistungen",
+            services: "Interessengebiete",
             skills: "Kompetenzen",
             portfolio: "Projekte",
             contact: "Kontakt"
@@ -640,7 +640,7 @@ const translations = {
         hero: {
 
             badge:
-                "AI Engineering · Machine Learning · Softwaresysteme",
+                "Informatik · KI-Consulting · Generative KI",
 
             title:
                 "Hallo, ich bin Pascal Nague",
@@ -649,7 +649,7 @@ const translations = {
             githubLink: "GitHub-Profil ↗",
 
             description:
-                "Informatikstudent an der RPTU Kaiserslautern-Landau mit Schwerpunkt AI Engineering. Ich entwickle und evaluiere vollständige ML-Anwendungen, Datenpipelines und zuverlässige Softwaresysteme mit Python und PyTorch."
+                "Ich studiere Informatik an der RPTU Kaiserslautern-Landau. In meinen Projekten beschäftige ich mich mit ML-Systemen, KI-Evaluation und Softwareanwendungen. Mich interessiert, wie man KI-Anwendungsfälle beurteilt, technische Ansätze vergleicht und passende Lösungen entwickelt."
         },
 
         about: {
@@ -661,22 +661,22 @@ const translations = {
                 "Wer ich bin",
 
             p1:
-                "Ich bin Pascal Nague, Informatikstudent an der RPTU Kaiserslautern-Landau mit Schwerpunkt AI Engineering, Machine Learning und zuverlässige Softwaresysteme.",
+                "Ich studiere Informatik an der RPTU Kaiserslautern-Landau und möchte später im KI-Consulting arbeiten.",
 
             p2:
-                "Mich interessiert, wie intelligente Systeme tatsächlich funktionieren — von den Daten, die sie verarbeiten, bis hin zur Messung ihrer Leistung, Zuverlässigkeit und Effizienz.",
+                "In meinem abgeschlossenen Bachelorprojekt am DFKI habe ich eine Datenladebibliothek für Parquet-basierte Bilddaten entwickelt, mit dem PyTorch DataLoader verglichen und anschließend auf Food-101 getestet.",
 
             p3:
-                "Meine Arbeit verbindet Python, PyTorch, Datenanalyse, Machine-Learning-Experimente und Performance-Benchmarking. Mein abgeschlossenes Bachelorprojekt am DFKI beschäftigte sich mit effizientem PyTorch-Datenladen, parallelen Pipelines und reproduzierbaren Performance-Messungen sowie einer anschließenden externen Validierung mit Food-101.",
+                "In eigenen Projekten wie Speech & LLM Quality Lab und ImmoLens arbeite ich an Modellevaluation, Datenvalidierung, APIs und automatisierten Tests.",
 
             p4:
-                "Besonders interessieren mich praxisnahe Systeme, die messbar, nachvollziehbar und in realen Anwendungsszenarien nützlich sind.",
+                "Mich interessiert, wie Unternehmen sinnvolle KI-Anwendungsfälle finden, technische Alternativen abwägen und Entscheidungen anhand überprüfbarer Ergebnisse treffen.",
 
             currentFocus:
                 "Aktueller Schwerpunkt",
 
             currentFocusValue:
-                "AI Engineering · ML-Systeme · Software Engineering",
+                "KI-Consulting · Generative KI · KI-Evaluation",
 
             bachelorProject:
                 "Bachelorprojekt",
@@ -694,7 +694,7 @@ const translations = {
                 "Interessengebiete",
 
             interestsValue:
-                "KI-Anwendungen · ML-Systeme · LLM-Evaluation",
+                "KI-Anwendungsfälle · LLM-Anwendungen · Lösungsbewertung",
 
             teachingCommunity:
                 "Lehre & Engagement",
@@ -712,66 +712,66 @@ const translations = {
         services: {
 
             eyebrow:
-                "Was ich anbiete",
+                "Womit ich mich beschäftige",
 
             title:
-                "Leistungen",
+                "Interessengebiete",
 
             intro:
-                "Ich arbeite an praxisnahen Aufgaben in den Bereichen Daten, Machine Learning und KI-Evaluation. Mein Fokus liegt auf messbaren Lösungen, dem Verständnis von Modellverhalten, der Automatisierung von Datenworkflows und der Optimierung von ML-Pipelines.",
+                "Diese Themen verbinden meine technischen Projekte mit den Fragestellungen, an denen ich im KI-Consulting arbeiten möchte.",
 
             data: {
 
                 title:
-                    "Datenanalyse & Datenaufbereitung",
+                    "KI-Anwendungsfälle verstehen",
 
                 description:
-                    "Bereinigung, Exploration und Strukturierung von Datensätzen, damit Rohdaten zuverlässig, verständlich und für Analysen oder Machine Learning nutzbar werden."
+                    "Problem, Datenlage und Erfolgskriterien klären, bevor ein KI-Ansatz ausgewählt wird."
             },
 
             ml: {
 
                 title:
-                    "Machine-Learning-Prototyping",
+                    "KI-Prototyping",
 
                 description:
-                    "Entwicklung erster Klassifikations-, Regressions- oder Clustering-Modelle, Aufbau von Baselines und Bewertung, ob ein ML-Ansatz für das jeweilige Problem sinnvoll ist."
+                    "Mit kleinen Prototypen prüfen, ob ein ML-Ansatz für die jeweilige Aufgabe geeignet ist."
             },
 
             evaluation: {
 
                 title:
-                    "ML-Modell-Evaluation",
+                    "KI-Systeme evaluieren",
 
                 description:
-                    "Messung der Modellleistung mit geeigneten Metriken, Fehleranalysen und strukturierten Vergleichen, um Stärken und Schwächen eines Modells zu verstehen."
+                    "Modellergebnisse mit geeigneten Metriken vergleichen und Fehler sowie Grenzen untersuchen."
             },
 
             llm: {
 
                 title:
-                    "KI- & LLM-Qualitätsevaluation",
+                    "Generative KI & Dokumentenretrieval",
 
                 description:
-                    "Entwicklung von Testfällen, Bewertungskriterien und Fehlerkategorien zur systematischen Analyse von Chatbot- und LLM-Verhalten."
+                    "Forschung zur Informationssuche mit LLMs in langen Dokumenten lesen und Evaluationsmethoden vergleichen."
             },
 
             automation: {
 
                 title:
-                    "Automatisierung von Datenworkflows",
+                    "Workflow-Automatisierung",
 
                 description:
-                    "Automatisierung wiederkehrender Datenaufgaben wie Dateizusammenführung, Transformation von Exporten, Metrikberechnung und reproduzierbare Berichtserstellung."
+                    "Untersuchen, wie wiederkehrende Aufgaben der Datenverarbeitung und Berichterstellung automatisiert und geprüft werden können."
             },
 
             performance: {
 
                 title:
-                    "PyTorch-Pipeline-Performance-Analyse",
+                    "Technische Abwägungen",
 
                 description:
-                    "Benchmarking von Datenlade-Pipelines, Vergleich von DataLoader-Konfigurationen und Identifikation von Engpässen, die Durchsatz und Modelltraining beeinflussen."
+                    "Alternativen unter unterschiedlichen Lastprofilen messen, bevor Aussagen zur Leistung getroffen werden."
             },
 
             tags: {
@@ -794,7 +794,7 @@ const translations = {
                 "Kompetenzen & Technologien",
 
             intro:
-                "Mein technischer Hintergrund verbindet die Entwicklung von KI-Anwendungen, Machine Learning, Software Engineering, Datenpipelines und performanceorientierte ML-Systeme.",
+                "Meine technischen Grundlagen stammen aus dem Studium, einem abgeschlossenen Bachelorprojekt am DFKI und eigenen Anwendungen.",
 
             programming:
                 "Programmierung",
@@ -932,7 +932,7 @@ const translations = {
                 "Projekte",
 
             intro:
-                "Ausgewählte Engineering-Projekte aus ML-Systemen, KI-Evaluation, Computer Vision, End-to-End-ML-Anwendungen und Performance-Benchmarking.",
+                "Ausgewählte Projekte mit Quellcode, Messergebnissen und einer klaren Einordnung ihrer Grenzen.",
 
             view:
                 "Projekt ansehen",
@@ -952,7 +952,7 @@ const translations = {
                     "Abgeschlossen · DFKI",
 
                 description:
-                    "Eine leichtgewichtige experimentelle Bibliothek für Parquet-basierte Bilddatensätze mit einem eigenen Multi-Threaded DataLoader, Throughput-Instrumentierung und reproduzierbaren Benchmarks. Der optimierte Loader erreichte im Projektbenchmark einen gemessenen Spitzenwert von 3.245 Samples/s und wurde als PyPI-Paket veröffentlicht."
+                    "Parquet-basiertes Laden von Bilddaten für PyTorch aus meinem abgeschlossenen DFKI-Bachelorprojekt. Im ursprünglichen Benchmark wurden rund 3.245 Samples/s mit 16 Workern erreicht. Ein späterer Food-101-Test zeigte eine bessere Skalierung des PyTorch DataLoaders unter der neuen Last."
             },
 
             speech: {
@@ -970,7 +970,7 @@ const translations = {
                     "In aktiver Entwicklung",
 
                 description:
-                    "Ein Engineering- und Lernprojekt zur Evaluation französischer Speech-to-Text-Ausgaben und zur Bewertung von Sprachmodellantworten. Die aktuelle Grundlage umfasst Manifest-Validierung, ASR-Pilotwerkzeuge, WER/CER-Metriken, Reporting und automatisierte Tests."
+                    "Laufendes Projekt zur Evaluation französischer Spracherkennung. Vorhanden sind unter anderem Manifestvalidierung, ASR-Pilotwerkzeuge, WER/CER, Berichte und automatisierte Tests. Weitere LLM-Evaluationsfunktionen sind in Arbeit."
             },
 
             food: {
@@ -1052,13 +1052,13 @@ const translations = {
                 "Kontakt",
 
             title:
-                "Lass uns zusammenarbeiten",
+                "Kontakt",
 
             description:
-                "Ob Datenproblem, Machine-Learning-Projekt, KI-Evaluation oder technischer Austausch — ich freue mich über eine Nachricht.",
+                "Ich suche eine Werkstudentenstelle im KI-Consulting, im Bereich KI-Lösungen oder in verwandten Aufgabenfeldern. Über passende Stellen oder Projekte freue ich mich.",
 
             availability:
-                "Offen für Werkstudentenstellen, Projekte und technische Zusammenarbeit.",
+                "Auf der Suche nach einer Werkstudentenstelle im KI-Consulting oder im Bereich KI-Lösungen.",
 
             email:
                 "E-Mail",
@@ -1106,7 +1106,7 @@ const translations = {
         footer: {
 
             description:
-                "Informatikstudent mit Schwerpunkt AI Engineering, ML-Systeme und zuverlässige Software.",
+                "Informatikstudent mit Interesse an KI-Consulting, generativer KI und KI-Evaluation.",
 
             navigation:
                 "Navigation",
@@ -1128,10 +1128,10 @@ const translations = {
         meta: {
 
             title:
-                "Pascal Nague | Portfolio AI Engineering & Machine Learning",
+                "Pascal Nague | Conseil en IA et IA appliquée",
 
             description:
-                "Portfolio de Pascal Nague, étudiant en informatique à la RPTU orienté AI Engineering, applications ML et systèmes logiciels fiables.",
+                "Étudiant en informatique à la RPTU Kaiserslautern-Landau, intéressé par le conseil en IA, l'IA générative et l'évaluation des systèmes d'IA.",
 
             locale:
                 "fr_FR"
@@ -1194,7 +1194,7 @@ const translations = {
         nav: {
             home: "Accueil",
             about: "À propos",
-            services: "Services",
+            services: "Centres d'intérêt",
             skills: "Compétences",
             portfolio: "Projets",
             contact: "Contact"
@@ -1203,7 +1203,7 @@ const translations = {
         hero: {
 
             badge:
-                "AI Engineering · Machine Learning · Systèmes logiciels",
+                "Informatique · Conseil en IA · IA générative",
 
             title:
                 "Bonjour, je suis Pascal Nague",
@@ -1212,7 +1212,7 @@ const translations = {
             githubLink: "Profil GitHub ↗",
 
             description:
-                "Étudiant en informatique à la RPTU Kaiserslautern-Landau, orienté AI Engineering. Je développe et évalue des applications ML de bout en bout, des pipelines de données et des systèmes logiciels fiables avec Python et PyTorch."
+                "J'étudie l'informatique à la RPTU Kaiserslautern-Landau. Mes projets portent sur les systèmes de Machine Learning, l'évaluation de l'IA et les applications logicielles. Je souhaite apprendre à analyser des cas d'usage de l'IA et à comparer les solutions techniques possibles."
         },
 
         about: {
@@ -1224,22 +1224,22 @@ const translations = {
                 "Qui je suis",
 
             p1:
-                "Je suis Pascal Nague, étudiant en informatique à la RPTU Kaiserslautern-Landau, orienté AI Engineering, Machine Learning et développement de systèmes logiciels fiables.",
+                "Je suis étudiant en informatique à la RPTU Kaiserslautern-Landau et je souhaite m'orienter vers le conseil en intelligence artificielle.",
 
             p2:
-                "J'aime comprendre le fonctionnement réel des systèmes intelligents — depuis les données qu'ils consomment jusqu'à la manière dont leurs performances, leur fiabilité et leur efficacité sont mesurées.",
+                "Lors de mon projet de Bachelor au DFKI, j'ai développé une bibliothèque de chargement d'images stockées en Parquet, comparé ses performances à celles du DataLoader de PyTorch et effectué une seconde évaluation sur Food-101.",
 
             p3:
-                "Mon travail combine Python, PyTorch, analyse de données, expérimentation en Machine Learning et benchmarking de performances. Mon projet de Bachelor réalisé au DFKI portait sur le chargement efficace de données avec PyTorch, les pipelines concurrents et la mesure reproductible des performances, avec une validation externe sur Food-101.",
+                "Mes projets personnels, dont Speech & LLM Quality Lab et ImmoLens, me permettent de travailler sur l'évaluation de modèles, la validation des données, les API et les tests automatisés.",
 
             p4:
-                "Je m'intéresse particulièrement à la construction de systèmes pratiques, mesurables, compréhensibles et utiles dans des environnements réels.",
+                "Je m'intéresse à la façon dont une organisation identifie un besoin pertinent pour l'IA, compare plusieurs approches et prend des décisions à partir de résultats vérifiables.",
 
             currentFocus:
                 "Focus actuel",
 
             currentFocusValue:
-                "AI Engineering · Systèmes ML · Génie logiciel",
+                "Conseil en IA · IA générative · Évaluation de l'IA",
 
             bachelorProject:
                 "Projet de Bachelor",
@@ -1257,7 +1257,7 @@ const translations = {
                 "Centres d'intérêt",
 
             interestsValue:
-                "Applications IA · Systèmes ML · Évaluation LLM",
+                "Cas d'usage de l'IA · Applications LLM · Évaluation de solutions",
 
             teachingCommunity:
                 "Enseignement & Engagement",
@@ -1275,66 +1275,66 @@ const translations = {
         services: {
 
             eyebrow:
-                "Ce que je peux faire",
+                "Sujets que j'explore",
 
             title:
-                "Services",
+                "Centres d'intérêt",
 
             intro:
-                "Je travaille sur des problématiques concrètes liées aux données, au Machine Learning et à l'évaluation de systèmes d'IA. Je me concentre sur des solutions mesurables, l'analyse du comportement des modèles, l'automatisation des workflows de données et l'amélioration des performances des pipelines ML.",
+                "Ces sujets relient mes projets techniques aux questions que je souhaite traiter dans le conseil en IA.",
 
             data: {
 
                 title:
-                    "Analyse & préparation des données",
+                    "Comprendre les cas d'usage de l'IA",
 
                 description:
-                    "Nettoyage, exploration et structuration des jeux de données afin de transformer les données brutes en données fiables et exploitables pour l'analyse ou le Machine Learning."
+                    "Clarifier le problème, les données disponibles et les critères de réussite avant de choisir une approche IA."
             },
 
             ml: {
 
                 title:
-                    "Prototypage Machine Learning",
+                    "Prototypage en IA",
 
                 description:
-                    "Développement de premiers modèles de classification, régression ou clustering, création de baselines et évaluation de la pertinence d'une approche ML."
+                    "Utiliser des prototypes pour vérifier si une approche de Machine Learning convient au problème."
             },
 
             evaluation: {
 
                 title:
-                    "Évaluation de modèles ML",
+                    "Évaluer les systèmes d'IA",
 
                 description:
-                    "Mesure des performances avec des métriques adaptées, analyse des erreurs et comparaisons structurées afin d'identifier les points forts et les limites d'un modèle."
+                    "Comparer les résultats des modèles avec des métriques adaptées et examiner leurs erreurs et leurs limites."
             },
 
             llm: {
 
                 title:
-                    "Évaluation de la qualité IA & LLM",
+                    "IA générative et recherche documentaire",
 
                 description:
-                    "Conception de cas de test, de critères d'évaluation et de catégories d'erreurs pour analyser de manière structurée le comportement des chatbots et des LLM."
+                    "Étudier les méthodes de recherche d'informations dans de longs documents avec les LLM et leur évaluation."
             },
 
             automation: {
 
                 title:
-                    "Automatisation des workflows de données",
+                    "Automatisation des workflows",
 
                 description:
-                    "Automatisation de tâches répétitives telles que la fusion de fichiers, la transformation d'exports, le calcul de métriques et la génération de rapports reproductibles."
+                    "Examiner comment automatiser et vérifier des tâches répétitives de traitement de données et de reporting."
             },
 
             performance: {
 
                 title:
-                    "Analyse des performances des pipelines PyTorch",
+                    "Choix et compromis techniques",
 
                 description:
-                    "Benchmarking des pipelines de chargement de données, comparaison des configurations DataLoader et identification des goulots d'étranglement affectant le débit et l'entraînement."
+                    "Comparer les performances de plusieurs approches sur différentes charges de travail avant de conclure."
             },
 
             tags: {
@@ -1357,7 +1357,7 @@ const translations = {
                 "Compétences & Technologies",
 
             intro:
-                "Mon profil technique associe développement d'applications IA, Machine Learning, génie logiciel, pipelines de données et systèmes ML performants.",
+                "Mes bases techniques viennent de mes cours, de mon projet de Bachelor terminé au DFKI et de mes applications personnelles.",
 
             programming:
                 "Programmation",
@@ -1495,7 +1495,7 @@ const translations = {
                 "Projets",
 
             intro:
-                "Une sélection de projets d'ingénierie autour des systèmes ML, de l'évaluation IA, de la vision par ordinateur, des applications ML end-to-end et du benchmarking de performances.",
+                "Une sélection de projets avec leur code, leurs résultats mesurés et les limites des expériences.",
 
             view:
                 "Voir le projet",
@@ -1515,7 +1515,7 @@ const translations = {
                     "Terminé · DFKI",
 
                 description:
-                    "Une bibliothèque expérimentale légère pour des jeux de données d'images stockés en Parquet, avec un DataLoader multithread personnalisé, une instrumentation du débit et des benchmarks reproductibles. Le loader optimisé a atteint un pic mesuré de 3 245 échantillons/s sur le benchmark du projet et a été publié sur PyPI."
+                    "Bibliothèque de chargement d'images Parquet pour PyTorch, réalisée lors de mon projet de Bachelor au DFKI. Un premier benchmark a atteint environ 3 245 échantillons/s avec 16 workers. Une nouvelle évaluation sur Food-101 a montré que le DataLoader PyTorch passait mieux à l'échelle sur cette charge."
             },
 
             speech: {
@@ -1533,7 +1533,7 @@ const translations = {
                     "En développement",
 
                 description:
-                    "Un projet d'ingénierie et d'apprentissage consacré à l'évaluation de sorties Speech-to-Text en français et à l'analyse de réponses de modèles de langage. La base actuelle comprend la validation des manifests, des outils de pilotage ASR, les métriques WER/CER, le reporting et des tests automatisés."
+                    "Projet en cours pour évaluer la reconnaissance vocale en français. Il comprend la validation des manifests, des outils ASR pilotes, le calcul du WER/CER, des rapports et des tests automatisés. D'autres fonctions d'évaluation des LLM restent en développement."
             },
 
             food: {
@@ -1615,13 +1615,13 @@ const translations = {
                 "Me contacter",
 
             title:
-                "Travaillons ensemble",
+                "Me contacter",
 
             description:
-                "Que vous ayez un problème lié aux données, un projet Machine Learning, une tâche d'évaluation IA ou simplement envie d'échanger sur une collaboration technique, n'hésitez pas à me contacter.",
+                "Je recherche un poste de Werkstudent en conseil en IA, en conception de solutions IA ou dans un domaine proche. Vous pouvez me contacter pour une offre ou un projet pertinent.",
 
             availability:
-                "Ouvert aux postes Werkstudent, aux projets et aux collaborations techniques.",
+                "À la recherche d'un poste Werkstudent en conseil en IA ou solutions IA.",
 
             email:
                 "E-mail",
@@ -1669,7 +1669,7 @@ const translations = {
         footer: {
 
             description:
-                "Étudiant en informatique orienté AI Engineering, systèmes ML et logiciels fiables.",
+                "Étudiant en informatique intéressé par le conseil en IA, l'IA générative et l'évaluation des systèmes d'IA.",
 
             navigation:
                 "Navigation",
