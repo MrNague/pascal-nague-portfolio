@@ -105,6 +105,15 @@
   <script>
     if(new URLSearchParams(location.search).has("embed"))document.body.classList.add("embed");
   </script>
-  <script type="module" src="./js/ai-robot.js"></script>
+  <script type="module">
+    import("./js/ai-robot.js").catch(error => {
+      console.error("Unable to initialize AION-7", error);
+      const status = document.getElementById("robot-status");
+      if (status) {
+        status.hidden = false;
+        status.textContent = "3D preview unavailable. Please enable WebGL and allow the Three.js modules to load.";
+      }
+    });
+  </script>
 </body>
 </html>
