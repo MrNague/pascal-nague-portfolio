@@ -89,6 +89,15 @@ const translations = {
                 "I study Computer Science at RPTU Kaiserslautern-Landau. My projects cover machine learning systems, AI evaluation and software applications. I'm interested in assessing AI use cases, comparing technical options and working toward practical solutions."
         },
 
+        robot: {
+            eyebrow: "Interactive AI solutions concept",
+            title: "Explore AION-7 in 3D",
+            intro: "Rotate the humanoid and explore three stages of assessing and evaluating an AI solution. This is a visual concept, not an AI chatbot.",
+            open: "Open full 3D experience ↗",
+            frameTitle: "Interactive 3D robot with draggable orbit controls and AI consulting modes",
+            note: "Drag to rotate, pinch or scroll to zoom. If WebGL is unavailable, the text descriptions remain readable.",
+        },
+
         about: {
 
             title:
@@ -652,6 +661,15 @@ const translations = {
                 "Ich studiere Informatik an der RPTU Kaiserslautern-Landau. In meinen Projekten beschäftige ich mich mit ML-Systemen, KI-Evaluation und Softwareanwendungen. Mich interessiert, wie man KI-Anwendungsfälle beurteilt, technische Ansätze vergleicht und passende Lösungen entwickelt."
         },
 
+        robot: {
+            eyebrow: "Interaktives 3D-Konzept für KI-Lösungen",
+            title: "AION-7 in 3D erkunden",
+            intro: "Drehe den humanoiden Roboter und entdecke drei Schritte von der Bewertung eines KI-Anwendungsfalls bis zur Validierung. Dies ist ein visuelles Konzept, kein KI-Chatbot.",
+            open: "3D-Erlebnis vollständig öffnen ↗",
+            frameTitle: "Interaktiver 3D-Roboter mit drehbarer Ansicht und KI-Consulting-Modi",
+            note: "Ziehen zum Drehen, scrollen oder zwei Finger zum Zoomen. Ohne WebGL bleiben die Textbeschreibungen sichtbar.",
+        },
+
         about: {
 
             title:
@@ -1213,6 +1231,15 @@ const translations = {
 
             description:
                 "J'étudie l'informatique à la RPTU Kaiserslautern-Landau. Mes projets portent sur les systèmes de Machine Learning, l'évaluation de l'IA et les applications logicielles. Je souhaite apprendre à analyser des cas d'usage de l'IA et à comparer les solutions techniques possibles."
+        },
+
+        robot: {
+            eyebrow: "Concept 3D interactif pour les solutions IA",
+            title: "Explore AION-7 en 3D",
+            intro: "Fais pivoter le robot humanoïde et découvre trois étapes de l'analyse et de l'évaluation d'une solution IA. Il s'agit d'un concept visuel, pas d'un chatbot.",
+            open: "Ouvrir l'expérience 3D complète ↗",
+            frameTitle: "Robot 3D interactif avec rotation et modes liés au conseil en IA",
+            note: "Fais glisser pour tourner le robot et utilise le défilement ou le pincement pour zoomer. Les descriptions restent visibles sans WebGL.",
         },
 
         about: {
