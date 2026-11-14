@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AION-7 | Interactive AI Solutions Robot</title>
+  <meta name="description" content="Interact with AION-7, an original humanoid 3D concept exploring AI assessment, solution design and validation.">
+  <style>
+    :root{--robot-accent:#33dcff;color-scheme:dark;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:#050b15;color:#e7f2ff}
+    body{background:radial-gradient(ellipse at 51% 44%,#163653 0%,#081729 45%,#050b15 85%);min-height:100dvh}
+    .shell{width:min(100%,1510px);min-height:100dvh;padding:20px clamp(14px,3vw,45px) 12px;margin:auto;display:flex;flex-direction:column}
+    .topline,.lower{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-size:.78rem;letter-spacing:.16em;font-weight:700}
+    .brand strong{color:var(--robot-accent)}
+    a{color:#8cdcff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .back{padding:9px 12px;border:1px solid #31516b;border-radius:6px;font-size:.8rem}
+    .heading{position:relative;z-index:2;max-width:650px;margin:16px 0 0}
+    .eyebrow{font-weight:700;letter-spacing:.19em;color:#77ceef;font-size:.72rem;text-transform:uppercase}
+    h1{margin:8px 0;font-size:clamp(2rem,3.6vw,3.4rem);line-height:1.05;letter-spacing:-.045em}
+    .intro{color:#abbfd9;line-height:1.55;font-size:.92rem;max-width:60ch;margin:0}
+    .experience{position:relative;flex:1;min-height:490px}
+    #robot-canvas{position:absolute;inset:0}
+    #robot-canvas canvas{display:block;touch-action:none}
+    #robot-status{position:absolute;top:45%;width:100%;text-align:center;color:#bed7ed;pointer-events:none}
+    .controlpanel{position:absolute;left:0;bottom:15px;width:min(375px,45%);padding:17px;border:1px solid #31516b;border-radius:12px;background:rgba(8,24,40,.88);backdrop-filter:blur(14px)}
+    .control-eyebrow{color:var(--robot-accent);font-size:.68rem;font-weight:700;letter-spacing:.15em}
+    .controlpanel h2{font-size:.94rem;letter-spacing:.07em;margin:9px 0 6px}
+    .controlpanel p{font-size:.8rem;line-height:1.5;color:#b0c4d8;min-height:3.6em;margin:0 0 13px}
+    .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+    button{font:inherit;cursor:pointer}
+    .mode,.utility{border:1px solid #39546c;border-radius:6px;background:#10263b;color:#c4d8ea}
+    .mode{min-height:40px;font-size:.77rem;font-weight:700}
+    .mode.is-active{color:#04111b;background:var(--robot-accent);border-color:var(--robot-accent)}
+    .utilities{position:absolute;right:0;bottom:15px;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+    .utility{padding:10px 13px;background:rgba(8,25,44,.87);font-size:.77rem}
+    .mode:hover:not(.is-active),.utility:hover{border-color:var(--robot-accent);color:white}
+    .utility:disabled{opacity:.6;cursor:wait}
+    :focus-visible{outline:2px solid #6bddfa;outline-offset:3px}
+    .lower{font-size:.73rem;color:#8ba5bf}
+    .lower p{margin:2px 0}
+    body.embed .shell{height:100dvh;min-height:650px;max-height:950px;padding:10px 14px}
+    body.embed .topline,body.embed .lower{display:none}
+    body.embed .heading{margin:6px 0 0}
+    body.embed h1{font-size:clamp(1.65rem,2.7vw,2.5rem)}
+    body.embed .experience{min-height:420px}
+    @media(max-width:780px){
+      .shell{min-height:100svh;padding:13px}
+      .heading{margin:10px 0 0}
+      .experience{height:625px;min-height:625px;flex:auto}
+      .controlpanel{bottom:8px;left:0;right:0;width:100%;padding:13px}
+      .controlpanel h2{font-size:.82rem;margin:6px 0}
+      .controlpanel p{min-height:0;font-size:.74rem;margin-bottom:9px}
+      .utilities{top:8px;bottom:auto;right:4px;flex-direction:row}
+      .utility{font-size:.69rem;padding:8px}
+      body.embed .shell{min-height:720px;height:auto}
+      body.embed .experience{height:590px;min-height:590px}
+    }
+    @media(max-width:430px){h1{font-size:1.7rem}.intro{font-size:.82rem}.utility{font-size:.62rem;padding:7px 6px}}
+  </style>
+  <script type="importmap">
+  {"imports":{
+    "three":"https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+    "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+  }}
+  </script>
+</head>
+<body>
+  <main class="shell">
+    <div class="topline">
+      <a class="brand" href="./index.html#hero"><strong>AION-7</strong> / PASCAL NAGUE</a>
+      <a class="back" href="./index.html#portfolio">Back to portfolio</a>
+    </div>
+    <header class="heading">
+      <span class="eyebrow">Interactive 3D concept · AI solutions</span>
+      <h1>Meet AION-7.</h1>
+      <p class="intro">An original humanoid representing how I approach AI problems: assess the need, compare a solution and validate results.</p>
+    </header>
+    <div class="experience">
+      <div id="robot-canvas" role="img" aria-label="Articulated futuristic 3D robot, rotatable using drag gestures"></div>
+      <p id="robot-status" role="status">Loading interactive 3D model...</p>
+      <aside class="controlpanel" aria-label="AI approach modes">
+        <span class="control-eyebrow">AI / SOLUTIONS EXPLORER</span>
+        <h2 id="mode-title">USE-CASE ASSESSMENT</h2>
+        <p id="mode-description">Define the problem, available data, constraints and success criteria before choosing an AI approach.</p>
+        <div class="modes" role="group" aria-label="Choose an AI approach">
+          <button class="mode is-active" type="button" data-mode="assess" aria-pressed="true">Assess</button>
+          <button class="mode" type="button" data-mode="design" aria-pressed="false">Design</button>
+          <button class="mode" type="button" data-mode="validate" aria-pressed="false">Validate</button>
+        </div>
+      </aside>
+      <div class="utilities" aria-label="3D scene controls">
+        <button class="utility" id="reset-view" type="button">Reset view</button>
+        <button class="utility" id="toggle-motion" type="button" aria-pressed="false">Pause motion</button>
+        <button class="utility" id="export-glb" type="button">Download 3D model (.glb)</button>
+      </div>
+    </div>
+    <div class="lower">
+      <p>Drag to rotate · Pinch or scroll to zoom · Click a hologram to change mode</p>
+      <a href="https://github.com/MrNague/pascal-nague-portfolio" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+    </div>
+  </main>
+  <script>
+    if(new URLSearchParams(location.search).has("embed"))document.body.classList.add("embed");
+  </script>
+  <script type="module" src="./js/ai-robot.js"></script>
+</body>
+</html>
