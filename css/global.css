@@ -3546,3 +3546,89 @@ body.robot-section-visible .sectionRobotHologram {
   .sectionRobotHologram .robotImage {animation:none!important;transform:translate(-50%,-50%)!important;}
   .sectionRobotHologram {transition:none!important;}
 }
+
+
+/* AION-7 interactive 3D robot. The existing SVG robot is no longer used. */
+.robotShowcase {
+    padding: clamp(36px, 5vw, 80px) 0;
+    background: linear-gradient(145deg, #060f20 0%, #0b2037 65%, #091329 100%);
+    color: #e8f5ff;
+    overflow: hidden;
+}
+.robotShowcaseHeading {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 18px;
+}
+.robotShowcaseHeading > div { max-width: 700px; }
+.robotShowcaseEyebrow {
+    color: #62cfff;
+    font-size: .76rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 750;
+}
+.robotShowcaseHeading h2 {
+    font-size: clamp(1.8rem, 3.5vw, 3.1rem);
+    letter-spacing: -.035em;
+    line-height: 1.1;
+    margin: 11px 0;
+    color: #f0f8ff;
+}
+.robotShowcaseHeading p {
+    color: #b3cce0;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 65ch;
+}
+.robotShowcaseLink {
+    color: #b9eaff;
+    background: rgba(21, 52, 81, .5);
+    border: 1px solid #39759f;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: .88rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.robotShowcaseLink:hover, .robotShowcaseLink:focus-visible {
+    color: #fff;
+    border-color: #50cdf6;
+    background: #173b59;
+}
+.robotShowcaseFrame {
+    width: 100%;
+    height: clamp(680px, 74vh, 910px);
+    background: #050b15;
+    border: 1px solid #294d6d;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 85px rgba(0,0,0,.26);
+}
+.robotShowcaseFrame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.robotShowcaseNote {
+    font-size: .78rem;
+    line-height: 1.5;
+    color: #a1bcd4;
+    margin: 12px 0 0;
+}
+@media (max-width: 800px) {
+    .robotShowcaseHeading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .robotShowcaseFrame { height: 765px; border-radius: 9px; }
+    .robotShowcaseLink { white-space: normal; }
+}
+@media (max-width: 450px) {
+    .robotShowcaseFrame { height: 785px; }
+}
