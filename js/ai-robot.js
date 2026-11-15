@@ -5,6 +5,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 // This is a visual AI-solutions concept; it has no chatbot or model backend.
 const stage = document.getElementById("robot-canvas");
 const status = document.getElementById("robot-status");
+const backgroundMode = new URLSearchParams(window.location.search).has("background");
 const embedded = new URLSearchParams(window.location.search).has("embed");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let motion = !reducedMotion;
@@ -45,7 +46,7 @@ try {
   stage.classList.add("robot-canvas-error");
   throw error;
 }
-renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.7));
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, backgroundMode ? 1 : 1.7));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.45;
@@ -60,7 +61,11 @@ controls.minDistance = 5.7;
 controls.maxDistance = 16;
 controls.minPolarAngle = 0.25;
 controls.maxPolarAngle = Math.PI - 0.18;
-controls.target.set(0, 0.05, 0);
+controls.target.set(backgroundMode ? -1.5 : 0, 0.05, 0);
+if (backgroundMode) {
+  controls.enabled = false;
+  camera.position.set(4.7, 2.1, 12.7);
+}
 controls.update();
 controls.saveState();
 
@@ -354,6 +359,10 @@ function updateMode(mode) {
   });
 }
 updateMode(activeMode);
+if (backgroundMode) {
+  dashboards.forEach(dashboard => { dashboard.group.visible = false; });
+  grid.material.opacity = 0.13;
+}
 
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
@@ -425,6 +434,10 @@ function resize() {
 }
 new ResizeObserver(resize).observe(stage);
 resize();
+window.addEventListener("visibilitychange", () => {
+  if (document.hidden) clock.stop();
+  else clock.start();
+});
 status.hidden = true;
 
 const clock = new THREE.Clock();
@@ -443,7 +456,7 @@ renderer.setAnimationLoop(() => {
   ground.rotation.y = elapsed * 0.04;
   dashboards[0].group.position.y = 1.20 + Math.sin(elapsed * 0.9) * 0.035;
   dashboards[1].group.position.y = 0.64 + Math.cos(elapsed * 0.85) * 0.035;
-  controls.update();
+  if (!backgroundMode) controls.update();
   renderer.render(scene, camera);
 });
 renderer.domElement.addEventListener("webglcontextlost", () => {
