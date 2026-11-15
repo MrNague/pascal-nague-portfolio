@@ -3547,88 +3547,91 @@ body.robot-section-visible .sectionRobotHologram {
   .sectionRobotHologram {transition:none!important;}
 }
 
-
-/* AION-7 interactive 3D robot. The existing SVG robot is no longer used. */
-.robotShowcase {
-    padding: clamp(36px, 5vw, 80px) 0;
-    background: linear-gradient(145deg, #060f20 0%, #0b2037 65%, #091329 100%);
-    color: #e8f5ff;
-    overflow: hidden;
-}
-.robotShowcaseHeading {
-    display: flex;
-    justify-content: space-between;
-    gap: 28px;
-    align-items: end;
-    margin-bottom: 18px;
-}
-.robotShowcaseHeading > div { max-width: 700px; }
-.robotShowcaseEyebrow {
-    color: #62cfff;
-    font-size: .76rem;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    font-weight: 750;
-}
-.robotShowcaseHeading h2 {
-    font-size: clamp(1.8rem, 3.5vw, 3.1rem);
-    letter-spacing: -.035em;
-    line-height: 1.1;
-    margin: 11px 0;
-    color: #f0f8ff;
-}
-.robotShowcaseHeading p {
-    color: #b3cce0;
-    line-height: 1.6;
-    margin: 0;
-    max-width: 65ch;
-}
-.robotShowcaseLink {
-    color: #b9eaff;
-    background: rgba(21, 52, 81, .5);
-    border: 1px solid #39759f;
-    border-radius: 8px;
-    text-decoration: none;
-    padding: 12px 16px;
-    font-size: .88rem;
-    font-weight: 700;
-    white-space: nowrap;
-}
-.robotShowcaseLink:hover, .robotShowcaseLink:focus-visible {
-    color: #fff;
-    border-color: #50cdf6;
-    background: #173b59;
-}
-.robotShowcaseFrame {
-    width: 100%;
-    height: clamp(680px, 74vh, 910px);
-    background: #050b15;
-    border: 1px solid #294d6d;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 25px 85px rgba(0,0,0,.26);
-}
-.robotShowcaseFrame iframe {
+/* AION-7, persistent full-portfolio 3D background.
+   The entire page uses a single WebGL scene. The original portrait is
+   still used in the hero; no additional robot section is rendered. */
+.aionSiteBackground {
     display: block;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 0;
     border: 0;
+    opacity: .77;
+    pointer-events: none;
+    background: transparent;
+    contain: layout paint;
 }
-.robotShowcaseNote {
-    font-size: .78rem;
-    line-height: 1.5;
-    color: #a1bcd4;
-    margin: 12px 0 0;
+
+/* Keep all content and controls above the WebGL surface. */
+.header { z-index: 1000; }
+.hero, .about, .Services, .Skills, .Portfolio, .Contact {
+    position: relative;
+    z-index: 1;
 }
+
+/* Dark translucent section backdrops make the model visible without
+   reducing legibility. Darker on the text-heavy left side. */
+html[data-theme="dark"] .about,
+html[data-theme="dark"] .Services,
+html[data-theme="dark"] .Skills,
+html[data-theme="dark"] .Portfolio,
+html[data-theme="dark"] .Contact {
+    background: linear-gradient(
+        105deg,
+        rgba(3, 11, 26, .94) 0%,
+        rgba(3, 11, 26, .84) 36%,
+        rgba(4, 16, 34, .64) 66%,
+        rgba(3, 12, 28, .43) 100%
+    ) !important;
+}
+
+/* Preserve the existing hero photograph while permitting the robot
+   to remain faintly visible beneath the home screen too. */
+html[data-theme="dark"] .hero {
+    background: transparent !important;
+    isolation: isolate;
+}
+html[data-theme="dark"] .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 12, 29, .93) 0%,
+            rgba(3, 12, 29, .81) 36%,
+            rgba(3, 12, 29, .19) 100%
+        ),
+        url("../img/hero-pascal.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .91;
+}
+html[data-theme="dark"] .footer {
+    background: linear-gradient(
+        90deg,
+        rgba(1, 7, 18, .97),
+        rgba(1, 7, 18, .83)
+    ) !important;
+}
+
+/* The content remains accessible even if WebGL is unsupported. */
 @media (max-width: 800px) {
-    .robotShowcaseHeading {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 15px;
+    .aionSiteBackground { opacity: .29; }
+    html[data-theme="dark"] .about,
+    html[data-theme="dark"] .Services,
+    html[data-theme="dark"] .Skills,
+    html[data-theme="dark"] .Portfolio,
+    html[data-theme="dark"] .Contact {
+        background: rgba(3, 11, 26, .78) !important;
     }
-    .robotShowcaseFrame { height: 765px; border-radius: 9px; }
-    .robotShowcaseLink { white-space: normal; }
 }
-@media (max-width: 450px) {
-    .robotShowcaseFrame { height: 785px; }
+@media (prefers-reduced-motion: reduce) {
+    .aionSiteBackground { opacity: .28; }
 }
