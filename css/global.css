@@ -3635,3 +3635,248 @@ html[data-theme="dark"] .footer {
 @media (prefers-reduced-motion: reduce) {
     .aionSiteBackground { opacity: .28; }
 }
+
+
+/* AI Consulting interests — editorial introduction + four evidence-led cards.
+   Designed for the fixed AION-7 background; no new JS dependencies. */
+.interestsSection {
+    --interest-ice: #75ddff;
+    position: relative;
+    isolation: isolate;
+    padding: clamp(76px, 8vw, 128px) 0;
+    color: #eef7ff;
+}
+
+html[data-theme="dark"] .interestsSection,
+.interestsSection {
+    background:
+        radial-gradient(ellipse 56% 65% at 99% 7%, rgba(32, 114, 194, .13), transparent 75%),
+        linear-gradient(110deg, rgba(2, 9, 23, .94), rgba(3, 15, 34, .83) 47%, rgba(4, 17, 39, .65)) !important;
+}
+.interestsSection .interestsLayout {
+    display: grid;
+    grid-template-columns: minmax(0, .86fr) minmax(0, 1.34fr);
+    gap: clamp(28px, 5vw, 74px);
+    align-items: start;
+}
+
+.interestsSection .interestsLead {
+    position: sticky;
+    top: calc(var(--header-height) + 30px);
+    min-width: 0;
+}
+.interestsSection .interestsKicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--interest-ice);
+    font: 700 .73rem/1.4 system-ui, sans-serif;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.interestsSection .interestsKicker::before {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: currentColor;
+    opacity: .85;
+}
+.interestsSection .sectionTitle {
+    max-width: 530px;
+    margin: 18px 0 20px;
+    color: #f7fbff;
+    font-size: clamp(2.35rem, 4.1vw, 4rem);
+    font-weight: 700;
+    line-height: 1.09;
+    letter-spacing: -.04em;
+    text-wrap: balance;
+}
+.interestsSection .interestsIntro {
+    max-width: 49ch;
+    margin: 0;
+    color: #cee2f4;
+    font-size: clamp(1rem, 1.45vw, 1.14rem);
+    line-height: 1.72;
+    text-align: left;
+    hyphens: none;
+}
+.interestsSection .interestsDirection {
+    position: relative;
+    margin: 34px 0 24px;
+    padding: 20px 20px 21px 23px;
+    border: 1px solid rgba(97, 172, 230, .27);
+    border-left: 2px solid #7bdeff;
+    border-radius: 0 12px 12px 0;
+    background: linear-gradient(110deg, rgba(10, 38, 67, .90), rgba(7, 25, 50, .72));
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+.interestsSection .interestsDirectionLabel {
+    display: block;
+    margin-bottom: 9px;
+    color: #9fd8f1;
+    font: 700 .69rem/1.5 system-ui, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.interestsSection .interestsDirection h3 {
+    margin: 0 0 9px;
+    color: #f7fbff;
+    font-size: clamp(1.05rem, 1.7vw, 1.27rem);
+    line-height: 1.32;
+    font-weight: 700;
+}
+.interestsSection .interestsDirection p {
+    margin: 0;
+    color: #bcd1e7;
+    font-size: .95rem;
+    line-height: 1.62;
+    text-align: left;
+    hyphens: none;
+}
+.interestsSection .interestsProjectLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 44px;
+    padding: 9px 0;
+    color: #bceeff;
+    font-weight: 700;
+    font-size: .93rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(95, 213, 251, .54);
+    transition: color .2s ease, gap .2s ease;
+}
+.interestsSection .interestsProjectLink:hover,
+.interestsSection .interestsProjectLink:focus-visible {
+    color: #fff;
+    gap: 19px;
+    border-bottom-color: #e7f8ff;
+}
+.interestsSection .interestsCards {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+.interestsSection .interestCard {
+    --interest-card-accent: #6ce2ff;
+    position: relative;
+    isolation: isolate;
+    min-width: 0;
+    min-height: 302px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: clamp(20px, 2.1vw, 28px);
+    border: 1px solid rgba(111, 183, 231, .29);
+    border-radius: 16px;
+    background: linear-gradient(160deg, rgba(11, 34, 63, .94), rgba(5, 18, 39, .90));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .19), inset 0 1px 0 rgba(188, 230, 255, .05);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    transition: border-color .24s ease, transform .24s ease, box-shadow .24s ease;
+}
+.interestsSection .interestCard:nth-child(2) { --interest-card-accent: #b4a0ff; }
+.interestsSection .interestCard:nth-child(3) { --interest-card-accent: #8cdeb9; }
+.interestsSection .interestCard:nth-child(4) { --interest-card-accent: #89baff; }
+.interestsSection .interestCard::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 2px;
+    background: linear-gradient(90deg, var(--interest-card-accent), transparent 80%);
+    opacity: .8;
+}
+.interestsSection .interestCard::after {
+    content: "";
+    position: absolute;
+    right: -70px;
+    top: -90px;
+    width: 210px;
+    height: 210px;
+    background: radial-gradient(circle, color-mix(in srgb, var(--interest-card-accent) 13%, transparent), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+.interestsSection .interestCard:hover {
+    transform: translateY(-4px);
+    border-color: rgba(140, 223, 255, .61);
+    box-shadow: 0 20px 46px rgba(0, 0, 0, .30);
+}
+.interestsSection .interestCardTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 27px;
+}
+.interestsSection .interestStep {
+    color: var(--interest-card-accent);
+    font: 720 .7rem/1.5 system-ui, sans-serif;
+    letter-spacing: .12em;
+}
+.interestsSection .interestIcon {
+    flex: 0 0 42px;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid color-mix(in srgb, var(--interest-card-accent) 32%, transparent);
+    border-radius: 12px;
+    background: rgba(17, 54, 82, .68);
+    color: var(--interest-card-accent);
+}
+.interestsSection .interestIcon svg { width: 25px; height: 25px; }
+.interestsSection .interestCard h3 {
+    margin: 0 0 12px;
+    color: #f5faff;
+    font-size: clamp(1.15rem, 1.85vw, 1.36rem);
+    line-height: 1.26;
+    letter-spacing: -.013em;
+    text-wrap: balance;
+}
+.interestsSection .interestCard p {
+    margin: 0 0 22px;
+    max-width: 36ch;
+    color: #c4d8e9;
+    font-size: .94rem;
+    line-height: 1.63;
+    text-align: left;
+    hyphens: none;
+}
+.interestsSection .interestCardEvidence {
+    margin-top: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(100, 161, 209, .21);
+    color: #a8c8de;
+    font-size: .78rem;
+    line-height: 1.5;
+}
+.interestsSection .interestEvidenceGlyph {
+    flex: 0 0 auto;
+    color: var(--interest-card-accent);
+    font-size: 1.1rem;
+}
+@media (max-width: 1080px) {
+    .interestsSection .interestsLayout { grid-template-columns: 1fr; gap: 36px; }
+    .interestsSection .interestsLead { position: static; }
+    .interestsSection .interestsIntro { max-width: 68ch; }
+    .interestsSection .interestsDirection { max-width: 730px; }
+    .interestsSection .interestCard { min-height: 270px; }
+}
+@media (max-width: 650px) {
+    .interestsSection { padding: 72px 0; }
+    .interestsSection .interestsCards { grid-template-columns: 1fr; gap: 13px; }
+    .interestsSection .interestCard { min-height: 0; padding: 23px; }
+    .interestsSection .interestCardTop { margin-bottom: 19px; }
+    .interestsSection .interestsDirection { margin-top: 27px; padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .interestsSection .interestCard,
+    .interestsSection .interestsProjectLink { transition: none; }
+    .interestsSection .interestCard:hover { transform: none; }
+}

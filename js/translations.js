@@ -156,78 +156,37 @@ const translations = {
         },
 
         services: {
-
-            eyebrow:
-                "What I'm exploring",
-
-            title:
-                "Areas of Interest",
-
-            intro:
-                "These topics connect my technical projects with the questions I want to address in AI consulting.",
-
-            data: {
-
-                title:
-                    "Understanding AI Use Cases",
-
-                description:
-                    "Clarifying the problem, available data and success criteria before choosing an AI approach."
+            eyebrow: "Where I want to work",
+            title: "Areas of Interest",
+            intro: "I'm interested in the decisions around an AI prototype: which problem to tackle, what approach fits, and how to judge the result.",
+            directionLabel: "Career direction",
+            directionTitle: "AI Consulting & Solution Design",
+            directionBody: "I'm building my technical foundation through university work, a completed Bachelor Project at DFKI and independent applications. These are interests I am developing, not client services I already offer.",
+            projectsLink: "See the projects behind these interests",
+            cardsLabel: "Four areas related to AI consulting",
+            useCase: {
+                step: "01 / FRAME",
+                title: "AI use cases & feasibility",
+                description: "Understand the workflow, available data and constraints before deciding what an AI pilot should prove.",
+                evidence: "Problem framing · Data readiness"
             },
-
-            ml: {
-
-                title:
-                    "AI Prototyping",
-
-                description:
-                    "Using small prototypes to test whether a proposed machine learning approach is feasible."
+            genAI: {
+                step: "02 / EXPLORE",
+                title: "Generative AI & retrieval",
+                description: "Study how language models and document retrieval might help with information-heavy tasks, including their limitations.",
+                evidence: "Bachelor seminar · LLM research"
             },
-
-            evaluation: {
-
-                title:
-                    "Evaluating AI Systems",
-
-                description:
-                    "Comparing model outputs with suitable metrics and examining errors and limitations."
+            solution: {
+                step: "03 / DESIGN",
+                title: "Prototypes & integration",
+                description: "Test an idea in a small working application, connecting the data, model, API and user workflow.",
+                evidence: "ImmoLens · Python · FastAPI"
             },
-
-            llm: {
-
-                title:
-                    "Generative AI & Document Retrieval",
-
-                description:
-                    "Studying LLM-based retrieval from long documents and the methods used to assess retrieved evidence."
-            },
-
-            automation: {
-
-                title:
-                    "Workflow Automation",
-
-                description:
-                    "Exploring where repetitive data-processing and reporting tasks can be automated and checked."
-            },
-
-            performance: {
-
-                title:
-                    "Technical Trade-offs",
-
-                description:
-                    "Benchmarking alternatives on different workloads before drawing conclusions about performance."
-            },
-
-            tags: {
-                prototyping: "Prototyping",
-                precision: "Precision",
-                errorAnalysis: "Error Analysis",
-                evaluation: "Evaluation",
-                automation: "Automation",
-                workflows: "Workflows",
-                benchmarking: "Benchmarking"
+            validation: {
+                step: "04 / VALIDATE",
+                title: "Evaluation & technical trade-offs",
+                description: "Compare approaches using measurable results, examine errors and check whether conclusions hold on other workloads.",
+                evidence: "DFKI · Food-101 · ASR evaluation"
             }
         },
 
@@ -728,78 +687,37 @@ const translations = {
         },
 
         services: {
-
-            eyebrow:
-                "Womit ich mich beschäftige",
-
-            title:
-                "Interessengebiete",
-
-            intro:
-                "Diese Themen verbinden meine technischen Projekte mit den Fragestellungen, an denen ich im KI-Consulting arbeiten möchte.",
-
-            data: {
-
-                title:
-                    "KI-Anwendungsfälle verstehen",
-
-                description:
-                    "Problem, Datenlage und Erfolgskriterien klären, bevor ein KI-Ansatz ausgewählt wird."
+            eyebrow: "Wohin ich mich entwickeln möchte",
+            title: "Interessengebiete",
+            intro: "Mich interessieren die Entscheidungen rund um einen KI-Prototyp: Welches Problem lohnt sich? Welcher Ansatz passt? Und woran lässt sich erkennen, ob er funktioniert?",
+            directionLabel: "Berufliche Ausrichtung",
+            directionTitle: "KI-Consulting & Lösungsdesign",
+            directionBody: "Meine technischen Grundlagen vertiefe ich im Studium, durch mein abgeschlossenes Bachelorprojekt am DFKI und in eigenen Anwendungen. Diese Themen sind meine Interessengebiete, keine bereits angebotenen Beratungsleistungen.",
+            projectsLink: "Projekte zu diesen Themen ansehen",
+            cardsLabel: "Vier Interessengebiete rund um KI-Consulting",
+            useCase: {
+                step: "01 / EINORDNEN",
+                title: "KI-Anwendungsfälle & Machbarkeit",
+                description: "Abläufe, Datenlage und Rahmenbedingungen verstehen, bevor entschieden wird, was ein KI-Pilot nachweisen soll.",
+                evidence: "Problemverständnis · Datenlage"
             },
-
-            ml: {
-
-                title:
-                    "KI-Prototyping",
-
-                description:
-                    "Mit kleinen Prototypen prüfen, ob ein ML-Ansatz für die jeweilige Aufgabe geeignet ist."
+            genAI: {
+                step: "02 / ERKUNDEN",
+                title: "Generative KI & Retrieval",
+                description: "Untersuchen, wie Sprachmodelle und Dokumentenretrieval bei informationsintensiven Aufgaben helfen können und wo ihre Grenzen liegen.",
+                evidence: "Bachelorseminar · LLM-Forschung"
             },
-
-            evaluation: {
-
-                title:
-                    "KI-Systeme evaluieren",
-
-                description:
-                    "Modellergebnisse mit geeigneten Metriken vergleichen und Fehler sowie Grenzen untersuchen."
+            solution: {
+                step: "03 / ENTWERFEN",
+                title: "Prototypen & Integration",
+                description: "Eine Idee in einer kleinen Anwendung prüfen – von Daten und Modell bis zur API und zum Nutzungsablauf.",
+                evidence: "ImmoLens · Python · FastAPI"
             },
-
-            llm: {
-
-                title:
-                    "Generative KI & Dokumentenretrieval",
-
-                description:
-                    "Forschung zur Informationssuche mit LLMs in langen Dokumenten lesen und Evaluationsmethoden vergleichen."
-            },
-
-            automation: {
-
-                title:
-                    "Workflow-Automatisierung",
-
-                description:
-                    "Untersuchen, wie wiederkehrende Aufgaben der Datenverarbeitung und Berichterstellung automatisiert und geprüft werden können."
-            },
-
-            performance: {
-
-                title:
-                    "Technische Abwägungen",
-
-                description:
-                    "Alternativen unter unterschiedlichen Lastprofilen messen, bevor Aussagen zur Leistung getroffen werden."
-            },
-
-            tags: {
-                prototyping: "Prototyping",
-                precision: "Präzision",
-                errorAnalysis: "Fehleranalyse",
-                evaluation: "Evaluation",
-                automation: "Automatisierung",
-                workflows: "Workflows",
-                benchmarking: "Benchmarking"
+            validation: {
+                step: "04 / PRÜFEN",
+                title: "Evaluation & technische Abwägungen",
+                description: "Ansätze anhand von Messwerten vergleichen, Fehler untersuchen und prüfen, ob Ergebnisse auch unter anderen Bedingungen gelten.",
+                evidence: "DFKI · Food-101 · ASR-Evaluation"
             }
         },
 
@@ -1300,78 +1218,37 @@ const translations = {
         },
 
         services: {
-
-            eyebrow:
-                "Sujets que j'explore",
-
-            title:
-                "Centres d'intérêt",
-
-            intro:
-                "Ces sujets relient mes projets techniques aux questions que je souhaite traiter dans le conseil en IA.",
-
-            data: {
-
-                title:
-                    "Comprendre les cas d'usage de l'IA",
-
-                description:
-                    "Clarifier le problème, les données disponibles et les critères de réussite avant de choisir une approche IA."
+            eyebrow: "Mon orientation professionnelle",
+            title: "Centres d'intérêt",
+            intro: "Je m'intéresse aux décisions qui entourent un prototype d'IA : quel problème résoudre, quelle approche choisir et comment en évaluer le résultat.",
+            directionLabel: "Objectif professionnel",
+            directionTitle: "Conseil en IA & conception de solutions",
+            directionBody: "Je développe mes bases techniques à l'université, grâce à mon projet de Bachelor terminé au DFKI et à mes applications personnelles. Il s'agit de domaines que j'explore, et non de prestations de conseil déjà réalisées.",
+            projectsLink: "Voir les projets liés à ces domaines",
+            cardsLabel: "Quatre centres d'intérêt liés au conseil en IA",
+            useCase: {
+                step: "01 / CADRER",
+                title: "Cas d'usage IA & faisabilité",
+                description: "Comprendre le processus, les données disponibles et les contraintes avant de définir ce qu'un prototype doit démontrer.",
+                evidence: "Définition du besoin · Données"
             },
-
-            ml: {
-
-                title:
-                    "Prototypage en IA",
-
-                description:
-                    "Utiliser des prototypes pour vérifier si une approche de Machine Learning convient au problème."
+            genAI: {
+                step: "02 / EXPLORER",
+                title: "IA générative & recherche documentaire",
+                description: "Étudier comment les modèles de langage et le retrieval peuvent aider à exploiter des documents, sans ignorer leurs limites.",
+                evidence: "Séminaire Bachelor · Recherche LLM"
             },
-
-            evaluation: {
-
-                title:
-                    "Évaluer les systèmes d'IA",
-
-                description:
-                    "Comparer les résultats des modèles avec des métriques adaptées et examiner leurs erreurs et leurs limites."
+            solution: {
+                step: "03 / CONCEVOIR",
+                title: "Prototypes & intégration",
+                description: "Tester une idée dans une petite application reliant les données, le modèle, l'API et le parcours utilisateur.",
+                evidence: "ImmoLens · Python · FastAPI"
             },
-
-            llm: {
-
-                title:
-                    "IA générative et recherche documentaire",
-
-                description:
-                    "Étudier les méthodes de recherche d'informations dans de longs documents avec les LLM et leur évaluation."
-            },
-
-            automation: {
-
-                title:
-                    "Automatisation des workflows",
-
-                description:
-                    "Examiner comment automatiser et vérifier des tâches répétitives de traitement de données et de reporting."
-            },
-
-            performance: {
-
-                title:
-                    "Choix et compromis techniques",
-
-                description:
-                    "Comparer les performances de plusieurs approches sur différentes charges de travail avant de conclure."
-            },
-
-            tags: {
-                prototyping: "Prototypage",
-                precision: "Précision",
-                errorAnalysis: "Analyse d'erreurs",
-                evaluation: "Évaluation",
-                automation: "Automatisation",
-                workflows: "Workflows",
-                benchmarking: "Benchmarking"
+            validation: {
+                step: "04 / ÉVALUER",
+                title: "Évaluation & choix techniques",
+                description: "Comparer des approches à partir de mesures, analyser les erreurs et vérifier si les conclusions tiennent sur d'autres données.",
+                evidence: "DFKI · Food-101 · Évaluation ASR"
             }
         },
 
