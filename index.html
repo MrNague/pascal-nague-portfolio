@@ -1096,252 +1096,83 @@
          SERVICES
          ===================================================== -->
 
-    <section id="Services" class="Services">
-
+    <section id="Services" class="Services interestsSection" aria-labelledby="interests-heading">
         <div class="container">
+            <div class="interestsLayout">
 
-            <div class="sectionHeader">
+                <div class="interestsLead">
+                    <span class="interestsKicker" data-i18n="services.eyebrow">Where I want to work</span>
+                    <h2 id="interests-heading" class="sectionTitle" data-i18n="services.title">Areas of Interest</h2>
+                    <p class="interestsIntro" data-i18n="services.intro">I'm interested in the decisions around an AI prototype: which problem to tackle, what approach fits, and how to judge the result.</p>
 
-                <span
-                    class="sectionEyebrow"
-                    data-i18n="services.eyebrow"
-                >
-                    What I'm exploring
-                </span>
+                    <div class="interestsDirection">
+                        <span class="interestsDirectionLabel" data-i18n="services.directionLabel">Career direction</span>
+                        <h3 data-i18n="services.directionTitle">AI Consulting & Solution Design</h3>
+                        <p data-i18n="services.directionBody">I'm building my technical foundation through university work, a completed Bachelor Project at DFKI and independent applications. These are interests I am developing, not client services I already offer.</p>
+                    </div>
 
-                <h2
-                    class="sectionTitle"
-                    data-i18n="services.title"
-                >
-                    Services
-                </h2>
+                    <a class="interestsProjectLink" href="#portfolio">
+                        <span data-i18n="services.projectsLink">See the projects behind these interests</span>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
 
-                <p data-i18n="services.intro">
-                    These topics connect my technical projects with the questions I want
-                    to address in AI consulting.
-                </p>
+                <div class="interestsCards" aria-label="Four areas related to AI consulting" data-i18n-aria-label="services.cardsLabel">
+                <article class="interestCard">
+                    <div class="interestCardTop">
+                        <span class="interestStep" data-i18n="services.useCase.step">01 / FRAME</span>
+                        <span class="interestIcon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="9.5"/><circle cx="14" cy="14" r="4.5"/><path d="M14 2v4m0 16v4M2 14h4m16 0h4"/></svg></span>
+                    </div>
+                    <h3 data-i18n="services.useCase.title">AI use cases & feasibility</h3>
+                    <p data-i18n="services.useCase.description">Understand the workflow, available data and constraints before deciding what an AI pilot should prove.</p>
+                    <div class="interestCardEvidence">
+                        <span class="interestEvidenceGlyph" aria-hidden="true">↳</span>
+                        <span data-i18n="services.useCase.evidence">Problem framing · Data readiness</span>
+                    </div>
+                </article>
+
+                <article class="interestCard">
+                    <div class="interestCardTop">
+                        <span class="interestStep" data-i18n="services.genAI.step">02 / EXPLORE</span>
+                        <span class="interestIcon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="5" width="14" height="18" rx="3"/><path d="M11 10h6m-6 4h6m-6 4h3M3 9h4M3 17h4M21 9h4m-4 8h4"/></svg></span>
+                    </div>
+                    <h3 data-i18n="services.genAI.title">Generative AI & retrieval</h3>
+                    <p data-i18n="services.genAI.description">Study how language models and document retrieval might help with information-heavy tasks, including their limitations.</p>
+                    <div class="interestCardEvidence">
+                        <span class="interestEvidenceGlyph" aria-hidden="true">↳</span>
+                        <span data-i18n="services.genAI.evidence">Bachelor seminar · LLM research</span>
+                    </div>
+                </article>
+
+                <article class="interestCard">
+                    <div class="interestCardTop">
+                        <span class="interestStep" data-i18n="services.solution.step">03 / DESIGN</span>
+                        <span class="interestIcon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="9" height="8" rx="1.5"/><rect x="16.5" y="3.5" width="9" height="8" rx="1.5"/><rect x="9.5" y="18.5" width="9" height="7" rx="1.5"/><path d="M7 11.5v3.5h14v-3.5m-7 3.5v3.5"/></svg></span>
+                    </div>
+                    <h3 data-i18n="services.solution.title">Prototypes & integration</h3>
+                    <p data-i18n="services.solution.description">Test an idea in a small working application, connecting the data, model, API and user workflow.</p>
+                    <div class="interestCardEvidence">
+                        <span class="interestEvidenceGlyph" aria-hidden="true">↳</span>
+                        <span data-i18n="services.solution.evidence">ImmoLens · Python · FastAPI</span>
+                    </div>
+                </article>
+
+                <article class="interestCard">
+                    <div class="interestCardTop">
+                        <span class="interestStep" data-i18n="services.validation.step">04 / VALIDATE</span>
+                        <span class="interestIcon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 22.5V5.5m0 17h21"/><path d="m7 19 5-5 3 2 7-8"/><path d="M17.5 8h4.5v4.5"/><circle cx="12" cy="14" r="1.1"/></svg></span>
+                    </div>
+                    <h3 data-i18n="services.validation.title">Evaluation & technical trade-offs</h3>
+                    <p data-i18n="services.validation.description">Compare approaches using measurable results, examine errors and check whether conclusions hold on other workloads.</p>
+                    <div class="interestCardEvidence">
+                        <span class="interestEvidenceGlyph" aria-hidden="true">↳</span>
+                        <span data-i18n="services.validation.evidence">DFKI · Food-101 · ASR evaluation</span>
+                    </div>
+                </article>
+                </div>
 
             </div>
-
-
-            <div class="servicesGrid">
-
-                <article class="serviceCard">
-
-                    <div class="serviceCardTop">
-
-                        <span class="serviceNumber">
-                            01
-                        </span>
-
-                        <div class="serviceIcon">
-                            <span aria-hidden="true">⌁</span>
-                        </div>
-
-                    </div>
-
-                    <h3 data-i18n="services.data.title">
-                        Data Analysis & Preparation
-                    </h3>
-
-                    <p data-i18n="services.data.description">
-                        Cleaning, exploring and structuring datasets so that raw data becomes
-                        reliable, understandable and ready for analysis or machine learning.
-                    </p>
-
-                    <div class="serviceTags">
-                        <span>Python</span>
-                        <span>NumPy</span>
-                        <span>EDA</span>
-                    </div>
-
-                </article>
-
-
-                <article class="serviceCard">
-
-                    <div class="serviceCardTop">
-
-                        <span class="serviceNumber">
-                            02
-                        </span>
-
-                        <div class="serviceIcon">
-                            <span aria-hidden="true">⌘</span>
-                        </div>
-
-                    </div>
-
-                    <h3 data-i18n="services.ml.title">
-                        Machine Learning Prototyping
-                    </h3>
-
-                    <p data-i18n="services.ml.description">
-                        Building initial classification, regression or clustering models,
-                        establishing baselines and evaluating whether an ML approach is useful.
-                    </p>
-
-                    <div class="serviceTags">
-                        <span>PyTorch</span>
-                        <span>ML</span>
-                        <span data-i18n="services.tags.prototyping">
-                            Prototyping
-                        </span>
-                    </div>
-
-                </article>
-
-
-                <article class="serviceCard">
-
-                    <div class="serviceCardTop">
-
-                        <span class="serviceNumber">
-                            03
-                        </span>
-
-                        <div class="serviceIcon">
-                            <span aria-hidden="true">✓</span>
-                        </div>
-
-                    </div>
-
-                    <h3 data-i18n="services.evaluation.title">
-                        ML Model Evaluation
-                    </h3>
-
-                    <p data-i18n="services.evaluation.description">
-                        Measuring model performance using appropriate metrics, error analysis
-                        and structured comparisons to understand where a model succeeds or fails.
-                    </p>
-
-                    <div class="serviceTags">
-                        <span>F1</span>
-
-                        <span data-i18n="services.tags.precision">
-                            Precision
-                        </span>
-
-                        <span data-i18n="services.tags.errorAnalysis">
-                            Error Analysis
-                        </span>
-                    </div>
-
-                </article>
-
-
-                <article class="serviceCard">
-
-                    <div class="serviceCardTop">
-
-                        <span class="serviceNumber">
-                            04
-                        </span>
-
-                        <div class="serviceIcon">
-                            <span aria-hidden="true">◇</span>
-                        </div>
-
-                    </div>
-
-                    <h3 data-i18n="services.llm.title">
-                        AI & LLM Quality Evaluation
-                    </h3>
-
-                    <p data-i18n="services.llm.description">
-                        Designing test cases, evaluation criteria and error categories to assess
-                        chatbot and LLM behaviour across realistic prompts and edge cases.
-                    </p>
-
-                    <div class="serviceTags">
-                        <span>LLM</span>
-
-                        <span data-i18n="services.tags.evaluation">
-                            Evaluation
-                        </span>
-
-                        <span>QA</span>
-                    </div>
-
-                </article>
-
-
-                <article class="serviceCard">
-
-                    <div class="serviceCardTop">
-
-                        <span class="serviceNumber">
-                            05
-                        </span>
-
-                        <div class="serviceIcon">
-                            <span aria-hidden="true">↻</span>
-                        </div>
-
-                    </div>
-
-                    <h3 data-i18n="services.automation.title">
-                        Data Workflow Automation
-                    </h3>
-
-                    <p data-i18n="services.automation.description">
-                        Automating repetitive data tasks such as merging files, transforming
-                        exports, calculating metrics and generating repeatable reports.
-                    </p>
-
-                    <div class="serviceTags">
-                        <span>Python</span>
-
-                        <span data-i18n="services.tags.automation">
-                            Automation
-                        </span>
-
-                        <span data-i18n="services.tags.workflows">
-                            Workflows
-                        </span>
-                    </div>
-
-                </article>
-
-
-                <article class="serviceCard">
-
-                    <div class="serviceCardTop">
-
-                        <span class="serviceNumber">
-                            06
-                        </span>
-
-                        <div class="serviceIcon">
-                            <span aria-hidden="true">◴</span>
-                        </div>
-
-                    </div>
-
-                    <h3 data-i18n="services.performance.title">
-                        PyTorch Pipeline Performance Analysis
-                    </h3>
-
-                    <p data-i18n="services.performance.description">
-                        Benchmarking data-loading pipelines, comparing DataLoader configurations
-                        and identifying bottlenecks that affect throughput and model training.
-                    </p>
-
-                    <div class="serviceTags">
-                        <span>PyTorch</span>
-                        <span>DataLoader</span>
-
-                        <span data-i18n="services.tags.benchmarking">
-                            Benchmarking
-                        </span>
-                    </div>
-
-                </article>
-
-            </div>
-
         </div>
-
     </section>
 
 
