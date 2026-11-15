@@ -441,9 +441,20 @@ window.addEventListener("visibilitychange", () => {
 status.hidden = true;
 
 const clock = new THREE.Clock();
+let ambientFrameElapsed = 0;
+let stillBackgroundDrawn = false;
 renderer.setAnimationLoop(() => {
   const dt = Math.min(clock.getDelta(), 0.05);
   if (document.hidden) return;
+  if (backgroundMode) {
+    // Limit GPU load on a continuously visible canvas.
+    if (reducedMotion && stillBackgroundDrawn) return;
+    ambientFrameElapsed += dt;
+    const interval = window.innerWidth < 800 ? 1 / 12 : 1 / 24;
+    if (!reducedMotion && ambientFrameElapsed < interval) return;
+    ambientFrameElapsed = 0;
+    stillBackgroundDrawn = true;
+  }
   if (motion) elapsed += dt;
   robot.position.y = Math.sin(elapsed * 1.3) * 0.032;
   head.rotation.y = Math.sin(elapsed * 0.52) * 0.07;
